@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\vvn\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\vvn\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_BattleCityECS.-878066409.00" t="ExcludeRecursive" />
+    <e p="C:\Users\vvn\Documents\BattleCityECS" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="FindReference2" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Script" t="Include">
+                <e p="FR2_Asset.cs" t="Include" />
+                <e p="FR2_AssetType.cs" t="Include" />
+                <e p="FR2_Cache.cs" t="Include" />
+                <e p="FR2_CacheEditor.cs" t="Include" />
+                <e p="FR2_Duplicate.cs" t="Include" />
+                <e p="FR2_Export.cs" t="Include" />
+                <e p="FR2_Helper.cs" t="Include" />
+                <e p="FR2_Ref.cs" t="Include" />
+                <e p="FR2_SceneCache.cs" t="Include" />
+                <e p="FR2_SceneWindow.cs" t="Include" />
+                <e p="FR2_Selection.cs" t="Include" />
+                <e p="FR2_TreeUI.cs" t="Include" />
+                <e p="FR2_TreeUI2.cs" t="Include" />
+                <e p="FR2_Unity.cs" t="Include" />
+                <e p="FR2_UsedInBuild.cs" t="Include" />
+                <e p="FR2_Window.cs" t="Include" />
+                <e p="FR2_WindowAll.cs" t="Include" />
+                <e p="FR2_WindowBase.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Sirenix" t="Include">
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                  <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" t="Include" />
+                  <e p="SyncListDrawer.cs" t="Include" />
+                  <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                  <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                </e>
+                <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                <e p="Sirenix.OdinInspector.CompatibilityLayer.asmdef" t="Include" />
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="ECS" t="Include">
+            <e p="Components" t="Include">
+              <e p="Area.cs" t="Include" />
+              <e p="AreaView.cs" t="Include" />
+              <e p="Barrel.cs" t="Include" />
+              <e p="BulletView.cs" t="Include" />
+              <e p="Controller.cs" t="Include" />
+              <e p="Direction.cs" t="Include" />
+              <e p="Engine.cs" t="Include" />
+              <e p="Size.cs" t="Include" />
+              <e p="Speed.cs" t="Include" />
+              <e p="TankView.cs" t="Include" />
+              <e p="Translation.cs" t="Include" />
+            </e>
+            <e p="Providers" t="Include">
+              <e p="AreaProvider.cs" t="Include" />
+              <e p="AreaViewProvider.cs" t="Include" />
+              <e p="BarrelProvider.cs" t="Include" />
+              <e p="BulletViewProvider.cs" t="Include" />
+              <e p="ControllerProvider.cs" t="Include" />
+              <e p="DirectionProvider.cs" t="Include" />
+              <e p="EngineProvider.cs" t="Include" />
+              <e p="SizeProvider.cs" t="Include" />
+              <e p="SpeedProvider.cs" t="Include" />
+              <e p="TankViewProvider.cs" t="Include" />
+              <e p="TranslationProvider.cs" t="Include" />
+            </e>
+            <e p="Systems" t="Include">
+              <e p="GridInitializer.cs" t="Include" />
+              <e p="MovementSystem.cs" t="Include" />
+              <e p="ShootSystem.cs" t="Include" />
+              <e p="ViewUpdaterSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Grid" t="Include">
+            <e p="GridSystem.cs" t="Include" />
+            <e p="Node.cs" t="Include" />
+          </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="AreaType.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ScriptTemplates" t="Include">
+          <e p="ECS__Component.cs.txt" t="Include" />
+          <e p="ECS__FixedSystem.cs.txt" t="Include" />
+          <e p="ECS__Globals__CustomEvent.cs.txt" t="Include" />
+          <e p="ECS__Globals__CustomVariable.cs.txt" t="Include" />
+          <e p="ECS__Initializer.cs.txt" t="Include" />
+          <e p="ECS__LateSystem.cs.txt" t="Include" />
+          <e p="ECS__Provider.cs.txt" t="Include" />
+          <e p="ECS__System.cs.txt" t="Include" />
+        </e>
+      </e>
+      <e p="BattleCityECS.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

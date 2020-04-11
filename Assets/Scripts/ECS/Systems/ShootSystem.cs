@@ -1,0 +1,46 @@
+﻿using Morpeh;
+using UnityEngine;
+using Unity.IL2CPP.CompilerServices;
+
+[Il2CppSetOption(Option.NullChecks, false)]
+[Il2CppSetOption(Option.ArrayBoundsChecks, false)]
+[Il2CppSetOption(Option.DivideByZeroChecks, false)]
+[CreateAssetMenu(menuName = "ECS/Systems/" + nameof(ShootSystem))]
+public sealed class ShootSystem : UpdateSystem
+{
+    private Filter filter;
+    public GameObject prefab;
+    
+    public override void OnAwake() {
+        filter = World.Filter.With<Translation>().With<Direction>().With<Barrel>();
+    }
+
+    public override void OnUpdate(float deltaTime) {
+        foreach (var entity in filter)
+        {
+            ref var parentBarrel = ref entity.GetComponent<Barrel>();
+            if(parentBarrel.lastShotRemain > parentBarrel.culldown)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    parentBarrel.lastShotRemain = 0;
+                    var bullet = Instantiate(prefab);
+                    ref var bulletTranslation = ref bullet.GetComponent<TranslationProvider>().GetData();
+                    ref var bulletDirection = ref bullet.GetComponent<DirectionProvider>().GetData();
+                    ref var bulletSpeed = ref bullet.GetComponent<SpeedProvider>().GetData();
+                    ref var parentTranslation = ref entity.GetComponent<Translation>();
+                    ref var parentDirection = ref entity.GetComponent<Direction>();
+
+                    bulletTranslation.x = parentTranslation.x;
+                    bulletTranslation.y = parentTranslation.y;
+                    bulletDirection.lookAtDirection = parentDirection.lookAtDirection;
+                    bulletSpeed.value = parentBarrel.bulletSpeed;
+                }
+            }
+            else
+            {
+                parentBarrel.lastShotRemain += deltaTime;
+            } 
+        }
+    }
+}

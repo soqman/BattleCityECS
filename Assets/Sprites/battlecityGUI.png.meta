@@ -1,0 +1,1898 @@
+fileFormatVersion: 2
+guid: 5ce4ce29f1d323e499d570940afd1298
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 600934450302687807
+    second: battlecityGUI_0
+  - first:
+      213: -1295427813105648493
+    second: battlecityGUI_1
+  - first:
+      213: 6212330642111203190
+    second: battlecityGUI_2
+  - first:
+      213: -5341980216645951601
+    second: battlecityGUI_3
+  - first:
+      213: 759152004068031999
+    second: battlecityGUI_4
+  - first:
+      213: -2888212108044681582
+    second: battlecityGUI_5
+  - first:
+      213: 6475104208318312853
+    second: battlecityGUI_6
+  - first:
+      213: -3110243413479687782
+    second: battlecityGUI_7
+  - first:
+      213: 2084016799746209987
+    second: battlecityGUI_8
+  - first:
+      213: 7742681502666740731
+    second: battlecityGUI_9
+  - first:
+      213: 6242649642883876779
+    second: battlecityGUI_10
+  - first:
+      213: -5252121701838013264
+    second: battlecityGUI_11
+  - first:
+      213: -773905665666190651
+    second: battlecityGUI_12
+  - first:
+      213: -5271706339061058488
+    second: battlecityGUI_13
+  - first:
+      213: 1965423091551818686
+    second: battlecityGUI_14
+  - first:
+      213: 9148169382364121902
+    second: battlecityGUI_15
+  - first:
+      213: -4592828149230800105
+    second: battlecityGUI_16
+  - first:
+      213: -7959587816161721307
+    second: battlecityGUI_17
+  - first:
+      213: 6372403275386997131
+    second: battlecityGUI_18
+  - first:
+      213: 5582156884140847051
+    second: battlecityGUI_19
+  - first:
+      213: -6828730595601286939
+    second: battlecityGUI_20
+  - first:
+      213: 186536392468241111
+    second: battlecityGUI_21
+  - first:
+      213: -4276977911724693923
+    second: battlecityGUI_22
+  - first:
+      213: 7193148415758810558
+    second: battlecityGUI_23
+  - first:
+      213: -5664196549468942348
+    second: battlecityGUI_24
+  - first:
+      213: -2058584572511209343
+    second: battlecityGUI_25
+  - first:
+      213: -4189366097207297583
+    second: battlecityGUI_26
+  - first:
+      213: 4297805140304963177
+    second: battlecityGUI_27
+  - first:
+      213: -1697284304312124722
+    second: battlecityGUI_28
+  - first:
+      213: -3708398964805514696
+    second: battlecityGUI_29
+  - first:
+      213: -736219175713637417
+    second: battlecityGUI_30
+  - first:
+      213: 5006608849885384172
+    second: battlecityGUI_31
+  - first:
+      213: -7127253165646813494
+    second: battlecityGUI_32
+  - first:
+      213: -6456616196059688723
+    second: battlecityGUI_33
+  - first:
+      213: -6633349005901868653
+    second: battlecityGUI_34
+  - first:
+      213: 2654211433796091903
+    second: battlecityGUI_35
+  - first:
+      213: -3683982219833326327
+    second: battlecityGUI_36
+  - first:
+      213: 4424762981766091437
+    second: battlecityGUI_37
+  - first:
+      213: 3574780690654217787
+    second: battlecityGUI_38
+  - first:
+      213: -826131183439259508
+    second: battlecityGUI_39
+  - first:
+      213: -3651474414828587459
+    second: battlecityGUI_40
+  - first:
+      213: 9073746012338690668
+    second: battlecityGUI_41
+  - first:
+      213: 933103781398618778
+    second: battlecityGUI_42
+  - first:
+      213: -2857858863215977761
+    second: battlecityGUI_43
+  - first:
+      213: -5971317926275138316
+    second: battlecityGUI_44
+  - first:
+      213: -2272562530202920921
+    second: battlecityGUI_45
+  - first:
+      213: 4183251511085151388
+    second: battlecityGUI_46
+  - first:
+      213: -5041986431878867167
+    second: battlecityGUI_47
+  - first:
+      213: -8565853882971996506
+    second: battlecityGUI_48
+  - first:
+      213: 6603574581248493984
+    second: battlecityGUI_49
+  - first:
+      213: 3136537877511822416
+    second: battlecityGUI_50
+  - first:
+      213: 8249605654338790668
+    second: battlecityGUI_51
+  - first:
+      213: 3853018574157634196
+    second: battlecityGUI_52
+  - first:
+      213: 3715387383114333440
+    second: battlecityGUI_53
+  - first:
+      213: -3662967311554557059
+    second: battlecityGUI_54
+  - first:
+      213: -8918351020865491347
+    second: battlecityGUI_55
+  - first:
+      213: 1241055148730400976
+    second: battlecityGUI_56
+  - first:
+      213: 3552766466537542015
+    second: battlecityGUI_57
+  - first:
+      213: -7531278599709333355
+    second: battlecityGUI_58
+  - first:
+      213: 7124968733944971234
+    second: battlecityGUI_59
+  - first:
+      213: -3687655796104165701
+    second: battlecityGUI_60
+  - first:
+      213: -5697265590527359199
+    second: battlecityGUI_61
+  - first:
+      213: 8097756405336827575
+    second: battlecityGUI_62
+  - first:
+      213: -1556328927000672359
+    second: battlecityGUI_63
+  - first:
+      213: 7729628745307093993
+    second: battlecityGUI_64
+  - first:
+      213: -8956830082253749764
+    second: battlecityGUI_65
+  - first:
+      213: -5448687266438470441
+    second: battlecityGUI_66
+  - first:
+      213: 5347608844145853856
+    second: battlecityGUI_67
+  - first:
+      213: -6716242408619407237
+    second: battlecityGUI_68
+  - first:
+      213: 6982544942028685130
+    second: battlecityGUI_69
+  - first:
+      213: 4436753344645108957
+    second: battlecityGUI_70
+  - first:
+      213: 7070351588735311902
+    second: battlecityGUI_71
+  - first:
+      213: 1857409489744403632
+    second: battlecityGUI_72
+  - first:
+      213: 5459846841425885715
+    second: battlecityGUI_73
+  - first:
+      213: 2733732035484662272
+    second: battlecityGUI_74
+  - first:
+      213: -5297766122754810382
+    second: battlecityGUI_75
+  - first:
+      213: -8264379339589824461
+    second: battlecityGUI_76
+  - first:
+      213: -3029805012855639815
+    second: battlecityGUI_77
+  - first:
+      213: -3891235914259777936
+    second: battlecityGUI_78
+  - first:
+      213: -9164552445056920859
+    second: battlecityGUI_79
+  - first:
+      213: 7022137506018650152
+    second: battlecityGUI_80
+  - first:
+      213: -6298273819008161285
+    second: battlecityGUI_81
+  - first:
+      213: -1470004240645582888
+    second: battlecityGUI_82
+  - first:
+      213: -4604376172186210428
+    second: battlecityGUI_83
+  - first:
+      213: -3524920121241569298
+    second: battlecityGUI_84
+  - first:
+      213: 1430581648426035097
+    second: battlecityGUI_85
+  - first:
+      213: -4724160459352680576
+    second: battlecityGUI_86
+  - first:
+      213: 6980994702859487293
+    second: battlecityGUI_87
+  - first:
+      213: -2984534508569106564
+    second: battlecityGUI_88
+  - first:
+      213: 8545513458337964343
+    second: battlecityGUI_89
+  - first:
+      213: -411868190305200497
+    second: battlecityGUI_90
+  - first:
+      213: -3247095032682148446
+    second: battlecityGUI_91
+  - first:
+      213: 4617397846377443581
+    second: battlecityGUI_92
+  - first:
+      213: 5860369282295847588
+    second: battlecityGUI_93
+  - first:
+      213: 5917254822749578943
+    second: battlecityGUI_94
+  - first:
+      213: 4087408166328644615
+    second: battlecityGUI_95
+  - first:
+      213: -9179475517990053017
+    second: battlecityGUI_96
+  - first:
+      213: 4520984285728879768
+    second: battlecityGUI_97
+  - first:
+      213: -1934680191249475472
+    second: battlecityGUI_98
+  - first:
+      213: -3981913196546158153
+    second: battlecityGUI_99
+  - first:
+      213: 8431870428976877698
+    second: battlecityGUI_100
+  - first:
+      213: -9064545484546233975
+    second: battlecityGUI_101
+  - first:
+      213: -4759323383558446490
+    second: battlecityGUI_102
+  - first:
+      213: -8221326632519508953
+    second: battlecityGUI_103
+  - first:
+      213: 1817245140118239931
+    second: battlecityGUI_104
+  - first:
+      213: 7118300777101464248
+    second: battlecityGUI_105
+  - first:
+      213: 8954425565925645949
+    second: battlecityGUI_106
+  - first:
+      213: -3326904152592222969
+    second: battlecityGUI_107
+  - first:
+      213: 9090524069944642872
+    second: battlecityGUI_108
+  - first:
+      213: 8622666887782221803
+    second: battlecityGUI_109
+  - first:
+      213: 4004969067742999934
+    second: battlecityGUI_110
+  - first:
+      213: 4504330098340058464
+    second: battlecityGUI_111
+  - first:
+      213: -3948840649336939721
+    second: battlecityGUI_112
+  - first:
+      213: -4183295440792110640
+    second: battlecityGUI_113
+  - first:
+      213: 1626491483569666620
+    second: battlecityGUI_114
+  - first:
+      213: -5886713768626135151
+    second: battlecityGUI_115
+  - first:
+      213: 7580237505371928655
+    second: battlecityGUI_116
+  - first:
+      213: -5779984818467666061
+    second: battlecityGUI_117
+  - first:
+      213: -236492529716436369
+    second: battlecityGUI_118
+  - first:
+      213: 2320441851127878724
+    second: battlecityGUI_119
+  - first:
+      213: -5717299527452331871
+    second: battlecityGUI_120
+  - first:
+      213: -7071499031894172094
+    second: battlecityGUI_121
+  - first:
+      213: 7165363185068706818
+    second: battlecityGUI_122
+  - first:
+      213: 4770261339539207066
+    second: battlecityGUI_123
+  - first:
+      213: 8224754309825332609
+    second: battlecityGUI_124
+  - first:
+      213: 3612524507504078537
+    second: battlecityGUI_125
+  - first:
+      213: 500326921185999090
+    second: battlecityGUI_126
+  - first:
+      213: -5057912145846065439
+    second: battlecityGUI_127
+  - first:
+      213: 8002787604193574963
+    second: battlecityGUI_128
+  - first:
+      213: 4748966417913791972
+    second: battlecityGUI_129
+  - first:
+      213: 6992227965959410850
+    second: battlecityGUI_130
+  - first:
+      213: 7056817280978608344
+    second: battlecityGUI_131
+  - first:
+      213: 7932932378845950554
+    second: battlecityGUI_132
+  - first:
+      213: -3382961486379320476
+    second: battlecityGUI_133
+  - first:
+      213: -8212713793163280258
+    second: battlecityGUI_134
+  - first:
+      213: 1729632310512076658
+    second: battlecityGUI_135
+  - first:
+      213: 7032982555279210876
+    second: battlecityGUI_136
+  - first:
+      213: 139478048258304224
+    second: battlecityGUI_137
+  - first:
+      213: 253080264708029815
+    second: battlecityGUI_138
+  - first:
+      213: -5033832702648027065
+    second: battlecityGUI_139
+  - first:
+      213: 4867803692200727524
+    second: battlecityGUI_140
+  - first:
+      213: 872567771820489327
+    second: battlecityGUI_141
+  - first:
+      213: 3976965675849953811
+    second: battlecityGUI_142
+  - first:
+      213: -5253837575453643258
+    second: battlecityGUI_143
+  - first:
+      213: -2709214709654104774
+    second: battlecityGUI_144
+  - first:
+      213: -2526578120877973772
+    second: battlecityGUI_145
+  - first:
+      213: 5889325200756005620
+    second: battlecityGUI_146
+  - first:
+      213: 8250292174764312112
+    second: battlecityGUI_147
+  - first:
+      213: 6247091123336749428
+    second: battlecityGUI_148
+  - first:
+      213: -2081718872710804631
+    second: battlecityGUI_149
+  - first:
+      213: -2909184464851493156
+    second: battlecityGUI_150
+  - first:
+      213: 977800341606312450
+    second: battlecityGUI_151
+  - first:
+      213: -3477312892512090439
+    second: battlecityGUI_152
+  - first:
+      213: -4366574246516445933
+    second: battlecityGUI_153
+  - first:
+      213: 8549669575224997146
+    second: battlecityGUI_154
+  - first:
+      213: -6067573596918642502
+    second: battlecityGUI_155
+  - first:
+      213: -5919201849128134636
+    second: battlecityGUI_156
+  - first:
+      213: -8053927163627144151
+    second: battlecityGUI_157
+  - first:
+      213: 3546158965314415729
+    second: battlecityGUI_158
+  - first:
+      213: 5642988296874579632
+    second: battlecityGUI_159
+  - first:
+      213: -392494073632474469
+    second: battlecityGUI_160
+  - first:
+      213: -9142275568010433951
+    second: battlecityGUI_161
+  - first:
+      213: 2821963999632036252
+    second: battlecityGUI_162
+  - first:
+      213: -8605563246222399216
+    second: battlecityGUI_163
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: battlecityGUI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a169bd2b2f65800800000000000000
+      internalID: 600934450302687807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677005efdc1a63650800000000000000
+      internalID: 6212330642111203190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd300db9bc098a00800000000000000
+      internalID: 759152004068031999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591337c88f03cd950800000000000000
+      internalID: 6475104208318312853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2fd4cb5e88245f0800000000000000
+      internalID: -773905665666190651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3db4573e5964b10800000000000000
+      internalID: 1965423091551818686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b0bec8593d4fe70800000000000000
+      internalID: 9148169382364121902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_29
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a47591ace198cc0800000000000000
+      internalID: -3708398964805514696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbf1c27f8c68c5f0800000000000000
+      internalID: -736219175713637417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedceba093c0b7540800000000000000
+      internalID: 5006608849885384172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de014de37cd7566a0800000000000000
+      internalID: -6456616196059688723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff32368c37a5d420800000000000000
+      internalID: 2654211433796091903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_37
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2577f0d7ae76d30800000000000000
+      internalID: 4424762981766091437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88da31d01ef884f0800000000000000
+      internalID: -826131183439259508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a90976ceb6ced70800000000000000
+      internalID: 9073746012338690668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda5fc76188d658d0800000000000000
+      internalID: -2857858863215977761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_45
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72854695b6c3670e0800000000000000
+      internalID: -2272562530202920921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997c570361fc66ae0800000000000000
+      internalID: -1556328927000672359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf18bb9de72f2b380800000000000000
+      internalID: -8956830082253749764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a50d0139e5863a40800000000000000
+      internalID: 5347608844145853856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_69
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ff1d131abf6e060800000000000000
+      internalID: 6982544942028685130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a7a3756c545cb40800000000000000
+      internalID: 5459846841425885715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad8b09854000f2d0800000000000000
+      internalID: -3247095032682148446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_93
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aadadb00d6345150800000000000000
+      internalID: 5860369282295847588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f53ae34013e4ea0800000000000000
+      internalID: -5886713768626135151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_117
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37785186e6e59cfa0800000000000000
+      internalID: -5779984818467666061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_119
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4445d62c19dd33020800000000000000
+      internalID: 2320441851127878724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_121
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24edd6ec81dfcdd90800000000000000
+      internalID: -7071499031894172094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_123
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9373051a6f533240800000000000000
+      internalID: 4770261339539207066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2774c142c63e00810800000000000000
+      internalID: 1729632310512076658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_136
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79bfe62f5c2a9160800000000000000
+      internalID: 7032982555279210876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_137
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8a660cb868fe100800000000000000
+      internalID: 139478048258304224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_138
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d759de82f138300800000000000000
+      internalID: 253080264708029815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_139
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7487bebc3db342ab0800000000000000
+      internalID: -5033832702648027065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_140
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e395f5daa9ed8340800000000000000
+      internalID: 4867803692200727524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_141
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a70d1f3cbfb1c00800000000000000
+      internalID: 872567771820489327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_142
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31235f81635013730800000000000000
+      internalID: 3976965675849953811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_143
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e6c77af8e9617b0800000000000000
+      internalID: -5253837575453643258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_144
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35ddca539fe66ad0800000000000000
+      internalID: -2709214709654104774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe5bcfd59acfecd0800000000000000
+      internalID: -2526578120877973772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_146
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa51dd21161bb150800000000000000
+      internalID: 5889325200756005620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_147
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0360302650dee7270800000000000000
+      internalID: 8250292174764312112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_148
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471abf5374022b650800000000000000
+      internalID: 6247091123336749428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_149
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b88d5f6bf3c13e0800000000000000
+      internalID: -2081718872710804631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_150
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde117a842080a7d0800000000000000
+      internalID: -2909184464851493156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_151
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a23b6ea38d19d00800000000000000
+      internalID: 977800341606312450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b64eec095a1ebfc0800000000000000
+      internalID: -3477312892512090439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_153
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31da40f9bdfc663c0800000000000000
+      internalID: -4366574246516445933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15304a3e2786a670800000000000000
+      internalID: 8549669575224997146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_155
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8002306f5abcba0800000000000000
+      internalID: -6067573596918642502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_156
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418d1ec8745cadda0800000000000000
+      internalID: -5919201849128134636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_157
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c722d8ae3ba3090800000000000000
+      internalID: -8053927163627144151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_158
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ce1a46acc763130800000000000000
+      internalID: 3546158965314415729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_159
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b655ea45fbef4e40800000000000000
+      internalID: 5642988296874579632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_160
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ab0b438b49d8af0800000000000000
+      internalID: -392494073632474469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_161
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a610a0fcc102180800000000000000
+      internalID: -9142275568010433951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_162
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9112076e41a92720800000000000000
+      internalID: 2821963999632036252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_163
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019a1c062d5e29880800000000000000
+      internalID: -8605563246222399216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 118
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c3da77447b50ee0800000000000000
+      internalID: -1295427813105648493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 119
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f57a5cb497dd5b0800000000000000
+      internalID: -5341980216645951601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 118
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29eb300e3620be7d0800000000000000
+      internalID: -2888212108044681582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlecityGUI_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 119
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a997b8e181236d4d0800000000000000
+      internalID: -3110243413479687782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6c7c81db9ba586b4685a183c74c3b118
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

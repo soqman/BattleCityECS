@@ -1,0 +1,7256 @@
+fileFormatVersion: 2
+guid: 10dcb08eb3aabbe4684a202f743c7f49
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5693969363092647309
+    second: battlecitySpriteSheet_0
+  - first:
+      213: -7197500776140211800
+    second: battlecitySpriteSheet_1
+  - first:
+      213: -5268870587088384076
+    second: battlecitySpriteSheet_2
+  - first:
+      213: -6451317144535673945
+    second: battlecitySpriteSheet_3
+  - first:
+      213: 5200473770375587622
+    second: battlecitySpriteSheet_4
+  - first:
+      213: 3512292691442692961
+    second: battlecitySpriteSheet_5
+  - first:
+      213: 103962436443715990
+    second: battlecitySpriteSheet_6
+  - first:
+      213: -6203514972430071919
+    second: battlecitySpriteSheet_7
+  - first:
+      213: -4213114710783024491
+    second: battlecitySpriteSheet_8
+  - first:
+      213: 4493725852350829190
+    second: battlecitySpriteSheet_9
+  - first:
+      213: -5226591882471360950
+    second: battlecitySpriteSheet_10
+  - first:
+      213: 143915306122969229
+    second: battlecitySpriteSheet_11
+  - first:
+      213: 1541640136006818305
+    second: battlecitySpriteSheet_12
+  - first:
+      213: -7959644077073736346
+    second: battlecitySpriteSheet_13
+  - first:
+      213: 6301575109205205531
+    second: battlecitySpriteSheet_14
+  - first:
+      213: -5823872610849200186
+    second: battlecitySpriteSheet_15
+  - first:
+      213: -6810529748937209764
+    second: battlecitySpriteSheet_16
+  - first:
+      213: 4903046465895657259
+    second: battlecitySpriteSheet_17
+  - first:
+      213: 1233411035169757047
+    second: battlecitySpriteSheet_18
+  - first:
+      213: -1439638146303290382
+    second: battlecitySpriteSheet_19
+  - first:
+      213: -246030532477197958
+    second: battlecitySpriteSheet_20
+  - first:
+      213: -5679721757617486056
+    second: battlecitySpriteSheet_21
+  - first:
+      213: 4110964493225819214
+    second: battlecitySpriteSheet_22
+  - first:
+      213: -1849992803772847977
+    second: battlecitySpriteSheet_23
+  - first:
+      213: -2252243754981040879
+    second: battlecitySpriteSheet_24
+  - first:
+      213: 5877425587450554846
+    second: battlecitySpriteSheet_25
+  - first:
+      213: 358340581656670019
+    second: battlecitySpriteSheet_26
+  - first:
+      213: 2741951069690075101
+    second: battlecitySpriteSheet_27
+  - first:
+      213: -1081764788241986962
+    second: battlecitySpriteSheet_28
+  - first:
+      213: 3744198747110042254
+    second: battlecitySpriteSheet_29
+  - first:
+      213: 160970762891370506
+    second: battlecitySpriteSheet_30
+  - first:
+      213: 2780641077229774292
+    second: battlecitySpriteSheet_31
+  - first:
+      213: -4333024572359758812
+    second: battlecitySpriteSheet_32
+  - first:
+      213: 3257432168907354273
+    second: battlecitySpriteSheet_33
+  - first:
+      213: -8339610386370020475
+    second: battlecitySpriteSheet_34
+  - first:
+      213: -539715097731037196
+    second: battlecitySpriteSheet_35
+  - first:
+      213: 2770085955751063036
+    second: battlecitySpriteSheet_36
+  - first:
+      213: -2338386832305923612
+    second: battlecitySpriteSheet_37
+  - first:
+      213: -8732769902438410078
+    second: battlecitySpriteSheet_38
+  - first:
+      213: 1335807073350376810
+    second: battlecitySpriteSheet_39
+  - first:
+      213: 7207081795845214439
+    second: battlecitySpriteSheet_40
+  - first:
+      213: 6591194282775897881
+    second: battlecitySpriteSheet_41
+  - first:
+      213: -4628221423012638144
+    second: battlecitySpriteSheet_42
+  - first:
+      213: -8461879857012421973
+    second: battlecitySpriteSheet_43
+  - first:
+      213: 6701351889755637169
+    second: battlecitySpriteSheet_44
+  - first:
+      213: 4062294325593980670
+    second: battlecitySpriteSheet_45
+  - first:
+      213: 4232891958568804684
+    second: battlecitySpriteSheet_46
+  - first:
+      213: 4068156124591510196
+    second: battlecitySpriteSheet_47
+  - first:
+      213: -7713195855640617316
+    second: battlecitySpriteSheet_48
+  - first:
+      213: -3260186113598529730
+    second: battlecitySpriteSheet_49
+  - first:
+      213: -5508058040259149759
+    second: battlecitySpriteSheet_50
+  - first:
+      213: 7964175847949763121
+    second: battlecitySpriteSheet_51
+  - first:
+      213: -200486115643127550
+    second: battlecitySpriteSheet_52
+  - first:
+      213: 8818672391112887108
+    second: battlecitySpriteSheet_53
+  - first:
+      213: 5681916135093953271
+    second: battlecitySpriteSheet_54
+  - first:
+      213: 8089354262603556212
+    second: battlecitySpriteSheet_55
+  - first:
+      213: -5464265539615487167
+    second: battlecitySpriteSheet_56
+  - first:
+      213: -1924614960817940293
+    second: battlecitySpriteSheet_57
+  - first:
+      213: -138230949383258493
+    second: battlecitySpriteSheet_58
+  - first:
+      213: 7419009309214914276
+    second: battlecitySpriteSheet_59
+  - first:
+      213: -4926320884522495233
+    second: battlecitySpriteSheet_60
+  - first:
+      213: 6158762269626478839
+    second: battlecitySpriteSheet_61
+  - first:
+      213: 6547352056245041361
+    second: battlecitySpriteSheet_62
+  - first:
+      213: -4304090117239789189
+    second: battlecitySpriteSheet_63
+  - first:
+      213: -329919490645525405
+    second: battlecitySpriteSheet_64
+  - first:
+      213: 5850027155116803962
+    second: battlecitySpriteSheet_65
+  - first:
+      213: -2889133980541540150
+    second: battlecitySpriteSheet_66
+  - first:
+      213: -4866394270172773017
+    second: battlecitySpriteSheet_67
+  - first:
+      213: -7764264854594713229
+    second: battlecitySpriteSheet_68
+  - first:
+      213: -5434727581543033029
+    second: battlecitySpriteSheet_69
+  - first:
+      213: -7359045972991623117
+    second: battlecitySpriteSheet_70
+  - first:
+      213: 1941909709835886707
+    second: battlecitySpriteSheet_71
+  - first:
+      213: 8983264017107027942
+    second: battlecitySpriteSheet_72
+  - first:
+      213: 3258492494469634626
+    second: battlecitySpriteSheet_73
+  - first:
+      213: -621368164732607003
+    second: battlecitySpriteSheet_74
+  - first:
+      213: 3898782015005645727
+    second: battlecitySpriteSheet_75
+  - first:
+      213: 1109277955008184373
+    second: battlecitySpriteSheet_76
+  - first:
+      213: 2004029258578661913
+    second: battlecitySpriteSheet_77
+  - first:
+      213: -6587971242309323876
+    second: battlecitySpriteSheet_78
+  - first:
+      213: -5590142658670407099
+    second: battlecitySpriteSheet_79
+  - first:
+      213: -7515407723449403929
+    second: battlecitySpriteSheet_80
+  - first:
+      213: 3209344238350705514
+    second: battlecitySpriteSheet_81
+  - first:
+      213: 4946461117967574441
+    second: battlecitySpriteSheet_82
+  - first:
+      213: 1158683598209991012
+    second: battlecitySpriteSheet_83
+  - first:
+      213: -8919990357521038912
+    second: battlecitySpriteSheet_84
+  - first:
+      213: -8826949982604626478
+    second: battlecitySpriteSheet_85
+  - first:
+      213: 405496939448543933
+    second: battlecitySpriteSheet_86
+  - first:
+      213: -5859568753154035102
+    second: battlecitySpriteSheet_87
+  - first:
+      213: 2968482884445476611
+    second: battlecitySpriteSheet_88
+  - first:
+      213: 6123614799635639802
+    second: battlecitySpriteSheet_89
+  - first:
+      213: -3725373703249460027
+    second: battlecitySpriteSheet_90
+  - first:
+      213: -1207594501781088677
+    second: battlecitySpriteSheet_91
+  - first:
+      213: -3034881746430371062
+    second: battlecitySpriteSheet_92
+  - first:
+      213: 1205297163139809793
+    second: battlecitySpriteSheet_93
+  - first:
+      213: 7189255763482797568
+    second: battlecitySpriteSheet_94
+  - first:
+      213: -1862372142146032600
+    second: battlecitySpriteSheet_95
+  - first:
+      213: -7441163543531345213
+    second: battlecitySpriteSheet_96
+  - first:
+      213: -3221285438391565220
+    second: battlecitySpriteSheet_97
+  - first:
+      213: -2570118422228235492
+    second: battlecitySpriteSheet_98
+  - first:
+      213: 4304731518403662047
+    second: battlecitySpriteSheet_99
+  - first:
+      213: 5054455915931455997
+    second: battlecitySpriteSheet_100
+  - first:
+      213: 5619534087553103807
+    second: battlecitySpriteSheet_101
+  - first:
+      213: 619467303431109323
+    second: battlecitySpriteSheet_102
+  - first:
+      213: -4827063395968412053
+    second: battlecitySpriteSheet_103
+  - first:
+      213: 6236208735063979196
+    second: battlecitySpriteSheet_104
+  - first:
+      213: 5298127414355698926
+    second: battlecitySpriteSheet_105
+  - first:
+      213: -5219515388543766212
+    second: battlecitySpriteSheet_106
+  - first:
+      213: -4071259457790480966
+    second: battlecitySpriteSheet_107
+  - first:
+      213: 5687126877529250287
+    second: battlecitySpriteSheet_108
+  - first:
+      213: -3200446887312132008
+    second: battlecitySpriteSheet_109
+  - first:
+      213: -7790688871580272187
+    second: battlecitySpriteSheet_110
+  - first:
+      213: -1652093207207987746
+    second: battlecitySpriteSheet_111
+  - first:
+      213: 1424412965606295871
+    second: battlecitySpriteSheet_112
+  - first:
+      213: 5361376408990079609
+    second: battlecitySpriteSheet_113
+  - first:
+      213: 8526557317581497060
+    second: battlecitySpriteSheet_114
+  - first:
+      213: 3448171325800248620
+    second: battlecitySpriteSheet_115
+  - first:
+      213: 8956888380915093278
+    second: battlecitySpriteSheet_116
+  - first:
+      213: 7724767146149064094
+    second: battlecitySpriteSheet_117
+  - first:
+      213: -8022374882404986336
+    second: battlecitySpriteSheet_118
+  - first:
+      213: 6155911669755338697
+    second: battlecitySpriteSheet_119
+  - first:
+      213: -12260535451923489
+    second: battlecitySpriteSheet_120
+  - first:
+      213: 9095928691609283102
+    second: battlecitySpriteSheet_121
+  - first:
+      213: -3993572910270926729
+    second: battlecitySpriteSheet_122
+  - first:
+      213: -8033348673494456299
+    second: battlecitySpriteSheet_123
+  - first:
+      213: 2259509311125108769
+    second: battlecitySpriteSheet_124
+  - first:
+      213: 607190836981287193
+    second: battlecitySpriteSheet_125
+  - first:
+      213: -1740934097849335870
+    second: battlecitySpriteSheet_126
+  - first:
+      213: -5869684541208115920
+    second: battlecitySpriteSheet_127
+  - first:
+      213: 761423774136772863
+    second: battlecitySpriteSheet_128
+  - first:
+      213: 3276154352027832772
+    second: battlecitySpriteSheet_129
+  - first:
+      213: -1366536760138895987
+    second: battlecitySpriteSheet_130
+  - first:
+      213: 3510859212237908822
+    second: battlecitySpriteSheet_131
+  - first:
+      213: -8050013949498310602
+    second: battlecitySpriteSheet_132
+  - first:
+      213: 2093500313993788045
+    second: battlecitySpriteSheet_133
+  - first:
+      213: -812767987307340171
+    second: battlecitySpriteSheet_134
+  - first:
+      213: -4197795390772351651
+    second: battlecitySpriteSheet_135
+  - first:
+      213: -6132172002565199717
+    second: battlecitySpriteSheet_136
+  - first:
+      213: -7956368638839368400
+    second: battlecitySpriteSheet_137
+  - first:
+      213: -536822950032480190
+    second: battlecitySpriteSheet_138
+  - first:
+      213: 1167562307097911246
+    second: battlecitySpriteSheet_139
+  - first:
+      213: 699787649462333223
+    second: battlecitySpriteSheet_140
+  - first:
+      213: 7899722902040828941
+    second: battlecitySpriteSheet_141
+  - first:
+      213: -523242765691933583
+    second: battlecitySpriteSheet_142
+  - first:
+      213: 1787083410059530302
+    second: battlecitySpriteSheet_143
+  - first:
+      213: -1491371330044120654
+    second: battlecitySpriteSheet_144
+  - first:
+      213: -4259311220761296187
+    second: battlecitySpriteSheet_145
+  - first:
+      213: -7526265765392528713
+    second: battlecitySpriteSheet_146
+  - first:
+      213: 8410521764509063085
+    second: battlecitySpriteSheet_147
+  - first:
+      213: -329761911298191965
+    second: battlecitySpriteSheet_148
+  - first:
+      213: -8881291387939305672
+    second: battlecitySpriteSheet_149
+  - first:
+      213: -5074444797599347652
+    second: battlecitySpriteSheet_150
+  - first:
+      213: 5711291000739522396
+    second: battlecitySpriteSheet_151
+  - first:
+      213: 6852184334345415175
+    second: battlecitySpriteSheet_152
+  - first:
+      213: -5663090668741219839
+    second: battlecitySpriteSheet_153
+  - first:
+      213: 5556235166588027943
+    second: battlecitySpriteSheet_154
+  - first:
+      213: -494624473186026340
+    second: battlecitySpriteSheet_155
+  - first:
+      213: 7063257917359275005
+    second: battlecitySpriteSheet_156
+  - first:
+      213: -1289063873398862972
+    second: battlecitySpriteSheet_157
+  - first:
+      213: 6296096013588398553
+    second: battlecitySpriteSheet_158
+  - first:
+      213: 2580272965507423645
+    second: battlecitySpriteSheet_159
+  - first:
+      213: 6613990619252503908
+    second: battlecitySpriteSheet_160
+  - first:
+      213: 8382797571401700969
+    second: battlecitySpriteSheet_161
+  - first:
+      213: -6780450362155785708
+    second: battlecitySpriteSheet_162
+  - first:
+      213: 2277579051394011902
+    second: battlecitySpriteSheet_163
+  - first:
+      213: -3217496582095281449
+    second: battlecitySpriteSheet_164
+  - first:
+      213: -7477125022796230449
+    second: battlecitySpriteSheet_165
+  - first:
+      213: 2743162332557310436
+    second: battlecitySpriteSheet_166
+  - first:
+      213: -6877359308646228903
+    second: battlecitySpriteSheet_167
+  - first:
+      213: 4016826868427535550
+    second: battlecitySpriteSheet_168
+  - first:
+      213: 1048865474359866806
+    second: battlecitySpriteSheet_169
+  - first:
+      213: -3582358109739944687
+    second: battlecitySpriteSheet_170
+  - first:
+      213: 551706326894828816
+    second: battlecitySpriteSheet_171
+  - first:
+      213: -6475083065028799859
+    second: battlecitySpriteSheet_172
+  - first:
+      213: 2910756122470791196
+    second: battlecitySpriteSheet_173
+  - first:
+      213: 9156967836184745728
+    second: battlecitySpriteSheet_174
+  - first:
+      213: 8854931665037751163
+    second: battlecitySpriteSheet_175
+  - first:
+      213: -8264414382376152847
+    second: battlecitySpriteSheet_176
+  - first:
+      213: 5335030153634006721
+    second: battlecitySpriteSheet_177
+  - first:
+      213: 527756226160735539
+    second: battlecitySpriteSheet_178
+  - first:
+      213: -1211231276958431080
+    second: battlecitySpriteSheet_179
+  - first:
+      213: -4815232651446596699
+    second: battlecitySpriteSheet_180
+  - first:
+      213: 8778316088309636866
+    second: battlecitySpriteSheet_181
+  - first:
+      213: 4056227807517704568
+    second: battlecitySpriteSheet_182
+  - first:
+      213: -3812220316276371166
+    second: battlecitySpriteSheet_183
+  - first:
+      213: -7271238600540710042
+    second: battlecitySpriteSheet_184
+  - first:
+      213: 6754396503105971213
+    second: battlecitySpriteSheet_185
+  - first:
+      213: 7024642530762643956
+    second: battlecitySpriteSheet_186
+  - first:
+      213: -3167017211451585714
+    second: battlecitySpriteSheet_187
+  - first:
+      213: -638943238848643948
+    second: battlecitySpriteSheet_188
+  - first:
+      213: -2809906548816494082
+    second: battlecitySpriteSheet_189
+  - first:
+      213: 5329863765879804642
+    second: battlecitySpriteSheet_190
+  - first:
+      213: -1009259911925192495
+    second: battlecitySpriteSheet_191
+  - first:
+      213: 6114135987803207912
+    second: battlecitySpriteSheet_192
+  - first:
+      213: 5567945862594739109
+    second: battlecitySpriteSheet_193
+  - first:
+      213: -2591453743493220953
+    second: battlecitySpriteSheet_194
+  - first:
+      213: 5410611720819601317
+    second: battlecitySpriteSheet_195
+  - first:
+      213: -654111572590593081
+    second: battlecitySpriteSheet_196
+  - first:
+      213: -3716183099558716955
+    second: battlecitySpriteSheet_197
+  - first:
+      213: 3519515003578102856
+    second: battlecitySpriteSheet_198
+  - first:
+      213: -3870393081482466676
+    second: battlecitySpriteSheet_199
+  - first:
+      213: 9222302604340437858
+    second: battlecitySpriteSheet_200
+  - first:
+      213: -7626511065072683232
+    second: battlecitySpriteSheet_201
+  - first:
+      213: 2515774652117162719
+    second: battlecitySpriteSheet_202
+  - first:
+      213: -1881890681823136401
+    second: battlecitySpriteSheet_203
+  - first:
+      213: -2200309635855949288
+    second: battlecitySpriteSheet_204
+  - first:
+      213: -2543393695437448280
+    second: battlecitySpriteSheet_205
+  - first:
+      213: 895596992392079630
+    second: battlecitySpriteSheet_206
+  - first:
+      213: -2462649557254445804
+    second: battlecitySpriteSheet_207
+  - first:
+      213: -1410803274862668109
+    second: battlecitySpriteSheet_208
+  - first:
+      213: -8704307215740932543
+    second: battlecitySpriteSheet_209
+  - first:
+      213: -5820682856428579135
+    second: battlecitySpriteSheet_210
+  - first:
+      213: 6841650403892040463
+    second: battlecitySpriteSheet_211
+  - first:
+      213: 2086266914696547856
+    second: battlecitySpriteSheet_212
+  - first:
+      213: 9165312192212349359
+    second: battlecitySpriteSheet_213
+  - first:
+      213: 3636463798203831161
+    second: battlecitySpriteSheet_214
+  - first:
+      213: 4080272477584503437
+    second: battlecitySpriteSheet_215
+  - first:
+      213: 7680211743645556953
+    second: battlecitySpriteSheet_216
+  - first:
+      213: -999234473891518629
+    second: battlecitySpriteSheet_217
+  - first:
+      213: -3330694316860560578
+    second: battlecitySpriteSheet_218
+  - first:
+      213: 6237362302669216587
+    second: battlecitySpriteSheet_219
+  - first:
+      213: 4442172118431402609
+    second: battlecitySpriteSheet_220
+  - first:
+      213: 900353455367114030
+    second: battlecitySpriteSheet_221
+  - first:
+      213: 7905248076545239032
+    second: battlecitySpriteSheet_222
+  - first:
+      213: 4604084894354636029
+    second: battlecitySpriteSheet_223
+  - first:
+      213: 5905674502720117734
+    second: battlecitySpriteSheet_224
+  - first:
+      213: 6861796613507060184
+    second: battlecitySpriteSheet_225
+  - first:
+      213: -1804553471860932986
+    second: battlecitySpriteSheet_226
+  - first:
+      213: 9095951706580620799
+    second: battlecitySpriteSheet_227
+  - first:
+      213: 2325232502842399411
+    second: battlecitySpriteSheet_228
+  - first:
+      213: -7350172878373668145
+    second: battlecitySpriteSheet_229
+  - first:
+      213: -6103095858165062940
+    second: battlecitySpriteSheet_230
+  - first:
+      213: -2333054893553348597
+    second: battlecitySpriteSheet_231
+  - first:
+      213: 9173578169255914821
+    second: battlecitySpriteSheet_232
+  - first:
+      213: 6006569346917634596
+    second: battlecitySpriteSheet_233
+  - first:
+      213: -6173008027411691898
+    second: battlecitySpriteSheet_234
+  - first:
+      213: 1719800495161740753
+    second: battlecitySpriteSheet_235
+  - first:
+      213: -3030967608780412612
+    second: battlecitySpriteSheet_236
+  - first:
+      213: 1295876766179726410
+    second: battlecitySpriteSheet_237
+  - first:
+      213: 9200749284593220628
+    second: battlecitySpriteSheet_238
+  - first:
+      213: 6039710374083007656
+    second: battlecitySpriteSheet_239
+  - first:
+      213: -6572323267640958810
+    second: battlecitySpriteSheet_240
+  - first:
+      213: 2442101434505248829
+    second: battlecitySpriteSheet_241
+  - first:
+      213: 5741763267859714760
+    second: battlecitySpriteSheet_242
+  - first:
+      213: 8451353544580221921
+    second: battlecitySpriteSheet_243
+  - first:
+      213: -7615102396064634520
+    second: battlecitySpriteSheet_244
+  - first:
+      213: -258863142579940628
+    second: battlecitySpriteSheet_245
+  - first:
+      213: 7487441986144433022
+    second: battlecitySpriteSheet_246
+  - first:
+      213: 2141769132707413603
+    second: battlecitySpriteSheet_247
+  - first:
+      213: -4988164888534480844
+    second: battlecitySpriteSheet_248
+  - first:
+      213: -4137856721913825873
+    second: battlecitySpriteSheet_249
+  - first:
+      213: -7275016591293018285
+    second: battlecitySpriteSheet_250
+  - first:
+      213: -6861012788552054883
+    second: battlecitySpriteSheet_251
+  - first:
+      213: 8398745215383992523
+    second: battlecitySpriteSheet_252
+  - first:
+      213: 3367572865312023264
+    second: battlecitySpriteSheet_253
+  - first:
+      213: -1912092442318374034
+    second: battlecitySpriteSheet_254
+  - first:
+      213: 7646240695945870204
+    second: battlecitySpriteSheet_255
+  - first:
+      213: -7880393028219876451
+    second: battlecitySpriteSheet_256
+  - first:
+      213: 2368036060388437868
+    second: battlecitySpriteSheet_257
+  - first:
+      213: 6865640784278285591
+    second: battlecitySpriteSheet_258
+  - first:
+      213: 8365494090212269639
+    second: battlecitySpriteSheet_259
+  - first:
+      213: -1128125553823606366
+    second: battlecitySpriteSheet_260
+  - first:
+      213: 5630466727804492578
+    second: battlecitySpriteSheet_261
+  - first:
+      213: 9138217245981005128
+    second: battlecitySpriteSheet_262
+  - first:
+      213: 2420463340159469645
+    second: battlecitySpriteSheet_263
+  - first:
+      213: 2509990635748134949
+    second: battlecitySpriteSheet_264
+  - first:
+      213: 3182645169995879211
+    second: battlecitySpriteSheet_265
+  - first:
+      213: -7530686675079494174
+    second: battlecitySpriteSheet_266
+  - first:
+      213: -4284978277350218560
+    second: battlecitySpriteSheet_267
+  - first:
+      213: -5997886652598382530
+    second: battlecitySpriteSheet_268
+  - first:
+      213: -5752975500644667607
+    second: battlecitySpriteSheet_269
+  - first:
+      213: 8681357627051607977
+    second: battlecitySpriteSheet_270
+  - first:
+      213: 9123596760812034293
+    second: battlecitySpriteSheet_271
+  - first:
+      213: -94404511665517847
+    second: battlecitySpriteSheet_272
+  - first:
+      213: 6023963447586373353
+    second: battlecitySpriteSheet_273
+  - first:
+      213: 5792685017182549382
+    second: battlecitySpriteSheet_274
+  - first:
+      213: 1114028750416457983
+    second: battlecitySpriteSheet_275
+  - first:
+      213: 6524378854701148999
+    second: battlecitySpriteSheet_276
+  - first:
+      213: 5819676982925898507
+    second: battlecitySpriteSheet_277
+  - first:
+      213: -8485616467290559748
+    second: battlecitySpriteSheet_278
+  - first:
+      213: 7919745680313719334
+    second: battlecitySpriteSheet_279
+  - first:
+      213: 1893171946390350078
+    second: battlecitySpriteSheet_280
+  - first:
+      213: -3997488916568916641
+    second: battlecitySpriteSheet_281
+  - first:
+      213: 9080150373667626315
+    second: battlecitySpriteSheet_282
+  - first:
+      213: -5489936194668766952
+    second: battlecitySpriteSheet_283
+  - first:
+      213: 4631843376185889315
+    second: battlecitySpriteSheet_284
+  - first:
+      213: -2951985037458022223
+    second: battlecitySpriteSheet_285
+  - first:
+      213: 904950556698234572
+    second: battlecitySpriteSheet_286
+  - first:
+      213: 4293708922880747834
+    second: battlecitySpriteSheet_287
+  - first:
+      213: 5628291590599448398
+    second: battlecitySpriteSheet_288
+  - first:
+      213: -4790560726738751116
+    second: battlecitySpriteSheet_289
+  - first:
+      213: -3319893176900927352
+    second: battlecitySpriteSheet_290
+  - first:
+      213: -3832161146494920167
+    second: battlecitySpriteSheet_291
+  - first:
+      213: -919882327748743780
+    second: battlecitySpriteSheet_292
+  - first:
+      213: 8495834431535322524
+    second: battlecitySpriteSheet_293
+  - first:
+      213: -7868346036399383313
+    second: battlecitySpriteSheet_294
+  - first:
+      213: -928416189585432005
+    second: battlecitySpriteSheet_295
+  - first:
+      213: 7000375751630050004
+    second: battlecitySpriteSheet_296
+  - first:
+      213: -6058725144627865621
+    second: battlecitySpriteSheet_297
+  - first:
+      213: 1820222572527078948
+    second: battlecitySpriteSheet_298
+  - first:
+      213: 425038909937488622
+    second: battlecitySpriteSheet_299
+  - first:
+      213: 8926646125376977699
+    second: battlecitySpriteSheet_300
+  - first:
+      213: -296659837379858839
+    second: battlecitySpriteSheet_301
+  - first:
+      213: 2274702381911913925
+    second: battlecitySpriteSheet_302
+  - first:
+      213: 9017947729389720110
+    second: battlecitySpriteSheet_303
+  - first:
+      213: 8447022648333945366
+    second: battlecitySpriteSheet_304
+  - first:
+      213: -7100342718986272986
+    second: battlecitySpriteSheet_305
+  - first:
+      213: 5475612604225717378
+    second: battlecitySpriteSheet_306
+  - first:
+      213: 7207241854949228289
+    second: battlecitySpriteSheet_307
+  - first:
+      213: 5793710221440156042
+    second: battlecitySpriteSheet_308
+  - first:
+      213: 6705651584059979856
+    second: battlecitySpriteSheet_309
+  - first:
+      213: -4187726324365949954
+    second: battlecitySpriteSheet_310
+  - first:
+      213: 7979069586749343839
+    second: battlecitySpriteSheet_311
+  - first:
+      213: 5475322840628756605
+    second: battlecitySpriteSheet_312
+  - first:
+      213: 4438074618801224033
+    second: battlecitySpriteSheet_313
+  - first:
+      213: -4952763027787287701
+    second: battlecitySpriteSheet_314
+  - first:
+      213: 2244598743717263826
+    second: battlecitySpriteSheet_315
+  - first:
+      213: -5629278107719279761
+    second: battlecitySpriteSheet_316
+  - first:
+      213: 7313014629255333169
+    second: battlecitySpriteSheet_317
+  - first:
+      213: -7353106965236309114
+    second: battlecitySpriteSheet_318
+  - first:
+      213: -8288966916783200027
+    second: battlecitySpriteSheet_319
+  - first:
+      213: -1583908699157215561
+    second: battlecitySpriteSheet_320
+  - first:
+      213: 2346104444077191439
+    second: battlecitySpriteSheet_321
+  - first:
+      213: -2811700066972251402
+    second: battlecitySpriteSheet_322
+  - first:
+      213: -4037686601825165707
+    second: battlecitySpriteSheet_323
+  - first:
+      213: 3709512320855995660
+    second: battlecitySpriteSheet_324
+  - first:
+      213: -3331644875257469313
+    second: battlecitySpriteSheet_325
+  - first:
+      213: 7194850059849529101
+    second: battlecitySpriteSheet_326
+  - first:
+      213: 808912303779583210
+    second: battlecitySpriteSheet_327
+  - first:
+      213: -7740063734072352423
+    second: battlecitySpriteSheet_328
+  - first:
+      213: 1145702096488918445
+    second: battlecitySpriteSheet_329
+  - first:
+      213: -7438386610600890611
+    second: battlecitySpriteSheet_330
+  - first:
+      213: -7153615480539078541
+    second: battlecitySpriteSheet_331
+  - first:
+      213: -9097640434028528786
+    second: battlecitySpriteSheet_332
+  - first:
+      213: 1281800176766806786
+    second: battlecitySpriteSheet_333
+  - first:
+      213: -5564545355142738175
+    second: battlecitySpriteSheet_334
+  - first:
+      213: -5130291673175120610
+    second: battlecitySpriteSheet_335
+  - first:
+      213: -4653682171757867644
+    second: battlecitySpriteSheet_336
+  - first:
+      213: -6895288576266131243
+    second: battlecitySpriteSheet_337
+  - first:
+      213: 7107196997236159560
+    second: battlecitySpriteSheet_338
+  - first:
+      213: 6899430629944079599
+    second: battlecitySpriteSheet_339
+  - first:
+      213: -6677426696758151779
+    second: battlecitySpriteSheet_340
+  - first:
+      213: 6990084623732847390
+    second: battlecitySpriteSheet_341
+  - first:
+      213: -1899630544574222924
+    second: battlecitySpriteSheet_342
+  - first:
+      213: -3315166676448557226
+    second: battlecitySpriteSheet_343
+  - first:
+      213: 3968586309549989368
+    second: battlecitySpriteSheet_344
+  - first:
+      213: -264377113921586996
+    second: battlecitySpriteSheet_345
+  - first:
+      213: -8722365759247961132
+    second: battlecitySpriteSheet_346
+  - first:
+      213: 5797421775298019324
+    second: battlecitySpriteSheet_347
+  - first:
+      213: -4531344007528852295
+    second: battlecitySpriteSheet_348
+  - first:
+      213: -9078451958386957962
+    second: battlecitySpriteSheet_349
+  - first:
+      213: -1302149222003438769
+    second: battlecitySpriteSheet_350
+  - first:
+      213: 8548098493196659462
+    second: battlecitySpriteSheet_351
+  - first:
+      213: 4085287842329126172
+    second: battlecitySpriteSheet_352
+  - first:
+      213: -159981206883971163
+    second: battlecitySpriteSheet_353
+  - first:
+      213: 5378354295775473839
+    second: battlecitySpriteSheet_354
+  - first:
+      213: 2367557143381431869
+    second: battlecitySpriteSheet_355
+  - first:
+      213: 4959995962528512615
+    second: battlecitySpriteSheet_356
+  - first:
+      213: -1105879196437888391
+    second: battlecitySpriteSheet_357
+  - first:
+      213: 7505409731105614953
+    second: battlecitySpriteSheet_358
+  - first:
+      213: 6624399070371949299
+    second: battlecitySpriteSheet_359
+  - first:
+      213: 513205376026557567
+    second: battlecitySpriteSheet_360
+  - first:
+      213: -5206786869655235161
+    second: battlecitySpriteSheet_361
+  - first:
+      213: 6184511311270500265
+    second: battlecitySpriteSheet_362
+  - first:
+      213: 997954516461390062
+    second: battlecitySpriteSheet_363
+  - first:
+      213: 7286846376793182091
+    second: battlecitySpriteSheet_364
+  - first:
+      213: -5145136062312291837
+    second: battlecitySpriteSheet_365
+  - first:
+      213: 6502539264637711947
+    second: battlecitySpriteSheet_366
+  - first:
+      213: 4564495535022681264
+    second: battlecitySpriteSheet_367
+  - first:
+      213: -8392565016384036468
+    second: battlecitySpriteSheet_368
+  - first:
+      213: -8275510154485695356
+    second: battlecitySpriteSheet_369
+  - first:
+      213: 776461969281089649
+    second: battlecitySpriteSheet_370
+  - first:
+      213: -1653090241278873134
+    second: battlecitySpriteSheet_371
+  - first:
+      213: -8091994977708396948
+    second: battlecitySpriteSheet_372
+  - first:
+      213: -196344065658275878
+    second: battlecitySpriteSheet_373
+  - first:
+      213: -5139755583796547829
+    second: battlecitySpriteSheet_374
+  - first:
+      213: 5081355710093855284
+    second: battlecitySpriteSheet_375
+  - first:
+      213: -346470668608138794
+    second: battlecitySpriteSheet_376
+  - first:
+      213: -74261021358236908
+    second: battlecitySpriteSheet_377
+  - first:
+      213: 3368818971019058903
+    second: battlecitySpriteSheet_378
+  - first:
+      213: -570193218185935020
+    second: battlecitySpriteSheet_379
+  - first:
+      213: -1117884477511572342
+    second: battlecitySpriteSheet_380
+  - first:
+      213: 5539721202882626851
+    second: battlecitySpriteSheet_381
+  - first:
+      213: 1381137486960974202
+    second: battlecitySpriteSheet_382
+  - first:
+      213: 973503977651145911
+    second: battlecitySpriteSheet_383
+  - first:
+      213: 2337352145458334021
+    second: battlecitySpriteSheet_384
+  - first:
+      213: -3919862834930548606
+    second: battlecitySpriteSheet_385
+  - first:
+      213: -2921758712507388275
+    second: battlecitySpriteSheet_386
+  - first:
+      213: -8587709655891745803
+    second: battlecitySpriteSheet_387
+  - first:
+      213: -7770526952322680411
+    second: battlecitySpriteSheet_388
+  - first:
+      213: 7664105327398259794
+    second: battlecitySpriteSheet_389
+  - first:
+      213: -1996999080908477707
+    second: battlecitySpriteSheet_390
+  - first:
+      213: -2418046939189302648
+    second: battlecitySpriteSheet_391
+  - first:
+      213: 1478267707135114087
+    second: battlecitySpriteSheet_392
+  - first:
+      213: 5038943375819074711
+    second: battlecitySpriteSheet_393
+  - first:
+      213: 699355792653763288
+    second: battlecitySpriteSheet_394
+  - first:
+      213: 3077438591477885574
+    second: battlecitySpriteSheet_395
+  - first:
+      213: -3508171992376006138
+    second: battlecitySpriteSheet_396
+  - first:
+      213: 5116168500392496402
+    second: battlecitySpriteSheet_397
+  - first:
+      213: -8212480996284832472
+    second: battlecitySpriteSheet_398
+  - first:
+      213: -32569783124274520
+    second: battlecitySpriteSheet_399
+  - first:
+      213: 757170934042659130
+    second: battleCityTanks_0
+  - first:
+      213: -1813166347219248042
+    second: battleCityTanks_1
+  - first:
+      213: 7962544000231716447
+    second: battleCityTanks_2
+  - first:
+      213: -2964431067731420365
+    second: battleCityTanks_3
+  - first:
+      213: -4335627622669300415
+    second: battleCityTanks_4
+  - first:
+      213: -2754633586472600391
+    second: battleCityTanks_5
+  - first:
+      213: 596124868790302290
+    second: battleCityTanks_6
+  - first:
+      213: 413744151810267996
+    second: battleCityTanks_7
+  - first:
+      213: -1804259268324756993
+    second: battleCityTanks_8
+  - first:
+      213: 3934227817281542617
+    second: battleCityTanks_9
+  - first:
+      213: 1951444766067025739
+    second: battleCityTanks_10
+  - first:
+      213: -7899027709315318274
+    second: battleCityTanks_11
+  - first:
+      213: 8924809478631755011
+    second: battleCityTanks_12
+  - first:
+      213: 5256146811678279429
+    second: battleCityTanks_13
+  - first:
+      213: 6726821906298931141
+    second: battleCityTanks_14
+  - first:
+      213: -2307665939566749304
+    second: battleCityTanks_15
+  - first:
+      213: -909524221758708425
+    second: battleCityTanks_16
+  - first:
+      213: 8238585642463190567
+    second: battleCityTanks_17
+  - first:
+      213: 4201535745820664836
+    second: battleCityTanks_18
+  - first:
+      213: 3375497563755505355
+    second: battleCityTanks_19
+  - first:
+      213: 4684362074138928445
+    second: battleCityTanks_20
+  - first:
+      213: -5007650737573663871
+    second: battleCityTanks_21
+  - first:
+      213: 2485215467167410475
+    second: battleCityTanks_22
+  - first:
+      213: 2515395826631226687
+    second: battleCityTanks_23
+  - first:
+      213: -7344672103101764428
+    second: battleCityTanks_24
+  - first:
+      213: -426565726777198803
+    second: battleCityTanks_25
+  - first:
+      213: -6912346149071048593
+    second: battleCityTanks_26
+  - first:
+      213: 9179984670887560077
+    second: battleCityTanks_27
+  - first:
+      213: 5893224416158019444
+    second: battleCityTanks_28
+  - first:
+      213: 2070165654586192618
+    second: battleCityTanks_29
+  - first:
+      213: 5598445685942816864
+    second: battleCityTanks_30
+  - first:
+      213: -98105001472232707
+    second: battleCityTanks_31
+  - first:
+      213: 8122399067955426185
+    second: battleCityTanks_32
+  - first:
+      213: -2497527267146568199
+    second: battleCityTanks_33
+  - first:
+      213: -6392941484733075508
+    second: battleCityTanks_34
+  - first:
+      213: 4976897175193410119
+    second: battleCityTanks_35
+  - first:
+      213: -551257452847019826
+    second: battleCityTanks_36
+  - first:
+      213: 2174884806273023687
+    second: battleCityTanks_37
+  - first:
+      213: -5857134044711971714
+    second: battleCityTanks_38
+  - first:
+      213: -2740101164804874504
+    second: battleCityTanks_39
+  - first:
+      213: -5788228892992793486
+    second: battleCityTanks_40
+  - first:
+      213: 1908391864066351290
+    second: battleCityTanks_41
+  - first:
+      213: 925284483169149849
+    second: battleCityTanks_42
+  - first:
+      213: -552853949974223357
+    second: battleCityTanks_43
+  - first:
+      213: -6030463830668321867
+    second: battleCityTanks_44
+  - first:
+      213: -589215557164012757
+    second: battleCityTanks_45
+  - first:
+      213: 4168013267488338248
+    second: battleCityTanks_46
+  - first:
+      213: -2264809828704303572
+    second: battleCityTanks_47
+  - first:
+      213: 3322977437354212382
+    second: battleCityTanks_48
+  - first:
+      213: -8340990895911304610
+    second: battleCityTanks_49
+  - first:
+      213: 8789618307338520562
+    second: battleCityTanks_50
+  - first:
+      213: -989459136109169831
+    second: battleCityTanks_51
+  - first:
+      213: 1262786367116836131
+    second: battleCityTanks_52
+  - first:
+      213: -5678152597772694070
+    second: battleCityTanks_53
+  - first:
+      213: 4302453603889533762
+    second: battleCityTanks_54
+  - first:
+      213: 7135849245088910192
+    second: battleCityTanks_55
+  - first:
+      213: 2395406914924245604
+    second: battleCityTanks_56
+  - first:
+      213: 8987601373361763576
+    second: battleCityTanks_57
+  - first:
+      213: -5664857035719728764
+    second: battleCityTanks_58
+  - first:
+      213: 2472617348652369834
+    second: battleCityTanks_59
+  - first:
+      213: 2797328837487991761
+    second: battleCityTanks_60
+  - first:
+      213: 6917993602491640171
+    second: battleCityTanks_61
+  - first:
+      213: -412343712146399572
+    second: battleCityTanks_62
+  - first:
+      213: 3469737403272037807
+    second: battleCityTanks_63
+  - first:
+      213: 4174897896406238165
+    second: battleCityTanks_64
+  - first:
+      213: -131979216644732074
+    second: battleCityTanks_65
+  - first:
+      213: -2375217417045537497
+    second: battleCityTanks_66
+  - first:
+      213: 4062208299045436806
+    second: battleCityTanks_67
+  - first:
+      213: 7365947247766128708
+    second: battleCityTanks_68
+  - first:
+      213: -33078219703748994
+    second: battleCityTanks_69
+  - first:
+      213: -8030322822199743332
+    second: battleCityTanks_70
+  - first:
+      213: -7848393683337192198
+    second: battleCityTanks_71
+  - first:
+      213: 313702282090783760
+    second: battleCityTanks_72
+  - first:
+      213: 8804590154123840708
+    second: battleCityTanks_73
+  - first:
+      213: -8254482004693443230
+    second: battleCityTanks_74
+  - first:
+      213: -4099169451259453321
+    second: battleCityTanks_75
+  - first:
+      213: -8744264006307106849
+    second: battleCityTanks_76
+  - first:
+      213: -2018441136815602121
+    second: battleCityTanks_77
+  - first:
+      213: -3752940883585283760
+    second: battleCityTanks_78
+  - first:
+      213: -3827096799906055246
+    second: battleCityTanks_79
+  - first:
+      213: 6912347398765409795
+    second: battleCityTanks_80
+  - first:
+      213: 6117662284621100574
+    second: battleCityTanks_81
+  - first:
+      213: -5509965043179789337
+    second: battleCityTanks_82
+  - first:
+      213: -5980547606880040606
+    second: battleCityTanks_83
+  - first:
+      213: 3812428279527780616
+    second: battleCityTanks_84
+  - first:
+      213: 5807148750470968366
+    second: battleCityTanks_85
+  - first:
+      213: -2928899977277468822
+    second: battleCityTanks_86
+  - first:
+      213: 8849189513046812896
+    second: battleCityTanks_87
+  - first:
+      213: 6242572007834223466
+    second: battleCityTanks_88
+  - first:
+      213: -3557429299071534178
+    second: battleCityTanks_89
+  - first:
+      213: 1293849692619110961
+    second: battleCityTanks_90
+  - first:
+      213: -2643438637177159626
+    second: battleCityTanks_91
+  - first:
+      213: 1524281890224073362
+    second: battleCityTanks_92
+  - first:
+      213: -6423733918305209608
+    second: battleCityTanks_93
+  - first:
+      213: 6032701593330844300
+    second: battleCityTanks_94
+  - first:
+      213: -2687108398869058518
+    second: battleCityTanks_95
+  - first:
+      213: 2871694140483431857
+    second: battleCityTanks_96
+  - first:
+      213: 8544741693146605975
+    second: battleCityTanks_97
+  - first:
+      213: 2032880256697604405
+    second: battleCityTanks_98
+  - first:
+      213: 3540088700603816210
+    second: battleCityTanks_99
+  - first:
+      213: -5648922202871172034
+    second: battleCityTanks_100
+  - first:
+      213: 3039630615879451695
+    second: battleCityTanks_101
+  - first:
+      213: 3006431743696889794
+    second: battleCityTanks_102
+  - first:
+      213: 7327966313836474709
+    second: battleCityTanks_103
+  - first:
+      213: -2423065343279172691
+    second: battleCityTanks_104
+  - first:
+      213: 8818787840281204854
+    second: battleCityTanks_105
+  - first:
+      213: 8462558255933711796
+    second: battleCityTanks_106
+  - first:
+      213: 2980892332304802855
+    second: battleCityTanks_107
+  - first:
+      213: -2705483877140924017
+    second: battleCityTanks_108
+  - first:
+      213: 3939481729733668727
+    second: battleCityTanks_109
+  - first:
+      213: 5029194595826532426
+    second: battleCityTanks_110
+  - first:
+      213: -1962662598924092316
+    second: battleCityTanks_111
+  - first:
+      213: 8420257480959762791
+    second: battleCityTanks_112
+  - first:
+      213: 5331291713988349970
+    second: battleCityTanks_113
+  - first:
+      213: 6207827850791847596
+    second: battleCityTanks_114
+  - first:
+      213: 7237894865511069897
+    second: battleCityTanks_115
+  - first:
+      213: 3383994629091386205
+    second: battleCityTanks_116
+  - first:
+      213: -394134549592416439
+    second: battleCityTanks_117
+  - first:
+      213: -6707365457862828787
+    second: battleCityTanks_118
+  - first:
+      213: 1418121971237056840
+    second: battleCityTanks_119
+  - first:
+      213: -9122174461661226886
+    second: battleCityTanks_120
+  - first:
+      213: -8763928589189078533
+    second: battleCityTanks_121
+  - first:
+      213: -1803355815828724692
+    second: battleCityTanks_122
+  - first:
+      213: 777167275754900958
+    second: battleCityTanks_123
+  - first:
+      213: 99128193515299872
+    second: battleCityTanks_124
+  - first:
+      213: 4507267609318525310
+    second: battleCityTanks_125
+  - first:
+      213: -5910681113249349782
+    second: battleCityTanks_126
+  - first:
+      213: 1668839579895306021
+    second: battleCityTanks_127
+  - first:
+      213: -9073576062673589621
+    second: battleCityTanks_128
+  - first:
+      213: 7019683751751991553
+    second: battleCityTanks_129
+  - first:
+      213: -7716642454043430421
+    second: battleCityTanks_130
+  - first:
+      213: 1048082380650090931
+    second: battleCityTanks_131
+  - first:
+      213: 650821195886779167
+    second: battleCityTanks_132
+  - first:
+      213: -8549040069076486746
+    second: battleCityTanks_133
+  - first:
+      213: -3094094403330871752
+    second: battleCityTanks_134
+  - first:
+      213: 6853972376466599658
+    second: battleCityTanks_135
+  - first:
+      213: 9044836944919962008
+    second: battleCityTanks_136
+  - first:
+      213: -5658351984597349801
+    second: battleCityTanks_137
+  - first:
+      213: -2467434259974690094
+    second: battleCityTanks_138
+  - first:
+      213: 1295612941469624439
+    second: battleCityTanks_139
+  - first:
+      213: -4344572870012105387
+    second: battleCityTanks_140
+  - first:
+      213: -5695031342764286976
+    second: battleCityTanks_141
+  - first:
+      213: 901833788587506971
+    second: battleCityTanks_142
+  - first:
+      213: 9171872586819236161
+    second: battleCityTanks_143
+  - first:
+      213: 7782952165296723499
+    second: battleCityTanks_144
+  - first:
+      213: -8941636248136143728
+    second: battleCityTanks_145
+  - first:
+      213: 5963814162985643344
+    second: battleCityTanks_146
+  - first:
+      213: -6218419894247144323
+    second: battleCityTanks_147
+  - first:
+      213: 2269297935209044287
+    second: battleCityTanks_148
+  - first:
+      213: -6437264628303460529
+    second: battleCityTanks_149
+  - first:
+      213: -5884594409643073291
+    second: battleCityTanks_150
+  - first:
+      213: 5634217214901422853
+    second: battleCityTanks_151
+  - first:
+      213: 1109197153437328431
+    second: battleCityTanks_152
+  - first:
+      213: -5603719600859596025
+    second: battleCityTanks_153
+  - first:
+      213: -8869693246333379842
+    second: battleCityTanks_154
+  - first:
+      213: -4453380540882309288
+    second: battleCityTanks_155
+  - first:
+      213: -996145437293546463
+    second: battleCityTanks_156
+  - first:
+      213: -8618591838326879855
+    second: battleCityTanks_157
+  - first:
+      213: 5037165535445214435
+    second: battleCityTanks_158
+  - first:
+      213: 4953830147604729348
+    second: battleCityTanks_159
+  - first:
+      213: 1670482311638210241
+    second: battleCityTanks_160
+  - first:
+      213: 6588873012073777014
+    second: battleCityTanks_161
+  - first:
+      213: -5191994953947864248
+    second: battleCityTanks_162
+  - first:
+      213: -3024735217698637496
+    second: battleCityTanks_163
+  - first:
+      213: -2713943981503331531
+    second: battleCityTanks_164
+  - first:
+      213: -3404409694053021725
+    second: battleCityTanks_165
+  - first:
+      213: 8603895423775152412
+    second: battleCityTanks_166
+  - first:
+      213: 6735755912692360518
+    second: battleCityTanks_167
+  - first:
+      213: 5765490510196343458
+    second: battleCityTanks_168
+  - first:
+      213: -3218110322846834224
+    second: battleCityTanks_169
+  - first:
+      213: -287353461391514517
+    second: battleCityTanks_170
+  - first:
+      213: -6558234747700389898
+    second: battleCityTanks_171
+  - first:
+      213: 6311024676267857345
+    second: battleCityTanks_172
+  - first:
+      213: -3643395664754426493
+    second: battleCityTanks_173
+  - first:
+      213: -6992094908817340804
+    second: battleCityTanks_174
+  - first:
+      213: 8502861073096196260
+    second: battleCityTanks_175
+  - first:
+      213: -515629302182055994
+    second: battleCityTanks_176
+  - first:
+      213: -4781558098569947717
+    second: battleCityTanks_177
+  - first:
+      213: 213212182007823218
+    second: battleCityTanks_178
+  - first:
+      213: -200421332928051565
+    second: battleCityTanks_179
+  - first:
+      213: -5966390701356355659
+    second: battleCityTanks_180
+  - first:
+      213: -7557898499805044312
+    second: battleCityTanks_181
+  - first:
+      213: -4439306410104488893
+    second: battleCityTanks_182
+  - first:
+      213: 2323658736641463068
+    second: battleCityTanks_183
+  - first:
+      213: -8103568890753044235
+    second: battleCityTanks_184
+  - first:
+      213: 5862741903813796273
+    second: battleCityTanks_185
+  - first:
+      213: -1635111083175332033
+    second: battleCityTanks_186
+  - first:
+      213: 7893091787212458633
+    second: battleCityTanks_187
+  - first:
+      213: -2671276569079389408
+    second: battleCityTanks_188
+  - first:
+      213: -2427239593310417329
+    second: battleCityTanks_189
+  - first:
+      213: 1904875862030937192
+    second: battleCityTanks_190
+  - first:
+      213: 7121144049672624346
+    second: battleCityTanks_191
+  - first:
+      213: -9222668328030252209
+    second: battleCityTanks_192
+  - first:
+      213: -1891625418103752133
+    second: battleCityTanks_193
+  - first:
+      213: -1569011281689261244
+    second: battleCityTanks_194
+  - first:
+      213: 8159670957137803315
+    second: battleCityTanks_195
+  - first:
+      213: -1370376146611209552
+    second: battleCityTanks_196
+  - first:
+      213: -364548858307081178
+    second: battleCityTanks_197
+  - first:
+      213: -2466538048102895845
+    second: battleCityTanks_198
+  - first:
+      213: 3282935081044203858
+    second: battleCityTanks_199
+  - first:
+      213: 8768113972089370122
+    second: battleCityTanks_200
+  - first:
+      213: -3890083456353208704
+    second: battleCityTanks_201
+  - first:
+      213: 7968106029506394698
+    second: battleCityTanks_202
+  - first:
+      213: 144146537634055302
+    second: battleCityTanks_203
+  - first:
+      213: -5562921893793655930
+    second: battleCityTanks_204
+  - first:
+      213: 3158363708088879824
+    second: battleCityTanks_205
+  - first:
+      213: -4710612897733830304
+    second: battleCityTanks_206
+  - first:
+      213: 510271374519457437
+    second: battleCityTanks_207
+  - first:
+      213: -195364468457233593
+    second: battleCityTanks_208
+  - first:
+      213: 9102945980846033452
+    second: battleCityTanks_209
+  - first:
+      213: 58826304838172200
+    second: battleCityTanks_210
+  - first:
+      213: -7611613311696891484
+    second: battleCityTanks_211
+  - first:
+      213: 8883073993004084018
+    second: battleCityTanks_212
+  - first:
+      213: 7670238571939199290
+    second: battleCityTanks_213
+  - first:
+      213: -5844123229378495628
+    second: battleCityTanks_214
+  - first:
+      213: -6009009928672704859
+    second: battleCityTanks_215
+  - first:
+      213: 8906633580746295513
+    second: battleCityTanks_216
+  - first:
+      213: -4423301049796866996
+    second: battleCityTanks_217
+  - first:
+      213: 6152199559130169826
+    second: battleCityTanks_218
+  - first:
+      213: -4986225591780306444
+    second: battleCityTanks_219
+  - first:
+      213: -489049099054476899
+    second: battleCityTanks_220
+  - first:
+      213: 8789715392173263242
+    second: battleCityTanks_221
+  - first:
+      213: -2728429626326144084
+    second: battleCityTanks_222
+  - first:
+      213: 5630971859072790279
+    second: battleCityTanks_223
+  - first:
+      213: -3639725371503997063
+    second: battleCityTanks_224
+  - first:
+      213: 2769742602604008175
+    second: battleCityTanks_225
+  - first:
+      213: 1300585438237448773
+    second: battleCityTanks_226
+  - first:
+      213: -4625517038390336072
+    second: battleCityTanks_227
+  - first:
+      213: 4911473339534587069
+    second: battleCityTanks_228
+  - first:
+      213: 6873990978245902471
+    second: battleCityTanks_229
+  - first:
+      213: -5390042617910418739
+    second: battleCityTanks_230
+  - first:
+      213: 6620533266157769454
+    second: battleCityTanks_231
+  - first:
+      213: -1514450747958531103
+    second: battleCityTanks_232
+  - first:
+      213: -8651087781960105625
+    second: battleCityTanks_233
+  - first:
+      213: -6830060576815460727
+    second: battleCityTanks_234
+  - first:
+      213: 7853215110679571663
+    second: battleCityTanks_235
+  - first:
+      213: -7621627726103021044
+    second: battleCityTanks_236
+  - first:
+      213: -5591558168594975297
+    second: battleCityTanks_237
+  - first:
+      213: -2404485598359643456
+    second: battleCityTanks_238
+  - first:
+      213: -8725917503698793095
+    second: battleCityTanks_239
+  - first:
+      213: -7716218826391703854
+    second: battleCityTanks_240
+  - first:
+      213: -5241023668622864177
+    second: battleCityTanks_241
+  - first:
+      213: -7561736723638353944
+    second: battleCityTanks_242
+  - first:
+      213: 8859161651488853373
+    second: battleCityTanks_243
+  - first:
+      213: 4389745407149535597
+    second: battleCityTanks_244
+  - first:
+      213: -9182207738778770993
+    second: battleCityTanks_245
+  - first:
+      213: -6200601694289283048
+    second: battleCityTanks_246
+  - first:
+      213: 469637305257258698
+    second: battleCityTanks_247
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: battleCityTanks_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 241
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a390ddde3f2028a00800000000000000
+      internalID: 757170934042659130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 241
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cdd4350d656d6e0800000000000000
+      internalID: -1813166347219248042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56ba32b493a08e60800000000000000
+      internalID: 7962544000231716447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b9cbe66a93cd6d0800000000000000
+      internalID: -2964431067731420365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dcc68f5a1c4d3c0800000000000000
+      internalID: -4335627622669300415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcb0f7095395c9d0800000000000000
+      internalID: -2754633586472600391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256b506e86cd54800800000000000000
+      internalID: 596124868790302290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_7
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bdb8c2d1aedb500800000000000000
+      internalID: 413744151810267996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 241
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1fbcc31cbf5f6e0800000000000000
+      internalID: -1804259268324756993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 241
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9d68afa5f299630800000000000000
+      internalID: 3934227817281542617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b476830fcace41b10800000000000000
+      internalID: 1951444766067025739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_11
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdfa433624016290800000000000000
+      internalID: -7899027709315318274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d82e56fea4bdb70800000000000000
+      internalID: 8924809478631755011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507c26d4da591f840800000000000000
+      internalID: 5256146811678279429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7834032e87a5d50800000000000000
+      internalID: 6726821906298931141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_15
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 242
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8891bd3fd0689ffd0800000000000000
+      internalID: -2307665939566749304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73565770a88b063f0800000000000000
+      internalID: -909524221758708425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_17
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ed6aeedf5555270800000000000000
+      internalID: 8238585642463190567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4042fb8008ade4a30800000000000000
+      internalID: 4201535745820664836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6e7db662d28de20800000000000000
+      internalID: 3375497563755505355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35ec54dc72320140800000000000000
+      internalID: 4684362074138928445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_21
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18be2b39f20418ab0800000000000000
+      internalID: -5007650737573663871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29e1d6dc424d7220800000000000000
+      internalID: 2485215467167410475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35badb5d2b78e220800000000000000
+      internalID: 2515395826631226687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_24
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bce5eec2ab721a90800000000000000
+      internalID: -7344672103101764428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_25
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27b6164bb8841af0800000000000000
+      internalID: -426565726777198803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60b414fcc96210a0800000000000000
+      internalID: -6912346149071048593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83c8c7ab6bd56f70800000000000000
+      internalID: 9179984670887560077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_28
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fe1c20260f8c150800000000000000
+      internalID: 5893224416158019444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_29
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 224
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2f2d3d1b4babc10800000000000000
+      internalID: 2070165654586192618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06090f480bca1bd40800000000000000
+      internalID: 5598445685942816864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_31
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 226
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2fe8c550673aef0800000000000000
+      internalID: -98105001472232707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 209
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98372710bee88b070800000000000000
+      internalID: 8122399067955426185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_33
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 209
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd60e8de20075dd0800000000000000
+      internalID: -2497527267146568199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf60a44795b747a0800000000000000
+      internalID: -6392941484733075508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a5c03bc9d711540800000000000000
+      internalID: 4976897175193410119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_36
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 208
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8444f644a8958f0800000000000000
+      internalID: -551257452847019826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 208
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce3c41553ebe2e10800000000000000
+      internalID: 2174884806273023687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_38
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7498176e9747bea0800000000000000
+      internalID: -5857134044711971714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_39
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fedb2f128439f9d0800000000000000
+      internalID: -2740101164804874504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_40
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 209
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274138a3d741cafa0800000000000000
+      internalID: -5788228892992793486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_41
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 209
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0abed0a48fb7a10800000000000000
+      internalID: 1908391864066351290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9936a77c55547dc00800000000000000
+      internalID: 925284483169149849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3066d1bf24ed358f0800000000000000
+      internalID: -552853949974223357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_44
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 208
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb5c26c81d7f4ca0800000000000000
+      internalID: -6030463830668321867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_45
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 208
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bea13929fa2d7f0800000000000000
+      internalID: -589215557164012757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_46
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841f1c3dbf1c7d930800000000000000
+      internalID: 4168013267488338248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_47
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 210
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c264444d577c190e0800000000000000
+      internalID: -2264809828704303572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cb2269f569d1e20800000000000000
+      internalID: 3322977437354212382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_49
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52807ef8f8de3c80800000000000000
+      internalID: -8340990895911304610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7ce28f74ffaf970800000000000000
+      internalID: 8789618307338520562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953b278782cb442f0800000000000000
+      internalID: -989459136109169831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_52
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d7437a281568110800000000000000
+      internalID: 1262786367116836131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_53
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd0c45eb462331b0800000000000000
+      internalID: -5678152597772694070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_54
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2435f62e1c265bb30800000000000000
+      internalID: 4302453603889533762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_55
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b8340c411a70360800000000000000
+      internalID: 7135849245088910192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_56
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462f290d5e13e3120800000000000000
+      internalID: 2395406914924245604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_57
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f47a0aa4df5abc70800000000000000
+      internalID: 8987601373361763576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481ad8a2a826261b0800000000000000
+      internalID: -5664857035719728764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa784ebc060805220800000000000000
+      internalID: 2472617348652369834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_60
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db9d6eb1cb12d620800000000000000
+      internalID: 2797328837487991761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_61
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 193
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6960f24786a10060800000000000000
+      internalID: 6917993602491640171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_62
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caed528149f074af0800000000000000
+      internalID: -412343712146399572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_63
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 193
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa58ae9e8cbf62030800000000000000
+      internalID: 3469737403272037807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_64
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3c1d8648730f930800000000000000
+      internalID: 4174897896406238165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_65
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b082a0a9d1b2ef0800000000000000
+      internalID: -131979216644732074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 177
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d0ea8f758890fd0800000000000000
+      internalID: -2375217417045537497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 177
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d3f3cececdf5830800000000000000
+      internalID: 4062208299045436806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_68
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448cd51def9193660800000000000000
+      internalID: 7365947247766128708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_69
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7671c0d88b7a8ff0800000000000000
+      internalID: -33078219703748994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_70
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 178
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c621f80ff8e8090800000000000000
+      internalID: -8030322822199743332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_71
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 178
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc544f0787e41390800000000000000
+      internalID: -7848393683337192198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_72
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0142041409e7a5400800000000000000
+      internalID: 313702282090783760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_73
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc0471b810303a70800000000000000
+      internalID: 8804590154123840708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 177
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d9461d950327d80800000000000000
+      internalID: -8254482004693443230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 177
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7702c873a13dc17c0800000000000000
+      internalID: -4099169451259453321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_76
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfa4d1273226a680800000000000000
+      internalID: -8744264006307106849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_77
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7360210fa7e0df3e0800000000000000
+      internalID: -2018441136815602121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_78
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 178
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059cbda7620eaebc0800000000000000
+      internalID: -3752940883585283760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_79
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 178
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbb090ccbb63eac0800000000000000
+      internalID: -3827096799906055246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 161
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306f18306579def50800000000000000
+      internalID: 6912347398765409795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_81
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 161
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1635a26f6d46e450800000000000000
+      internalID: 6117662284621100574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 161
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3e27c7cfba883b0800000000000000
+      internalID: -5509965043179789337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 161
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2694a9943a3d00da0800000000000000
+      internalID: -5980547606880040606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80138e4325778e430800000000000000
+      internalID: 3812428279527780616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 145
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24fcad5503279050800000000000000
+      internalID: 5807148750470968366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_86
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 162
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f0ab71df47a57d0800000000000000
+      internalID: -2928899977277468822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_87
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 162
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e864432af2aeca70800000000000000
+      internalID: 8849189513046812896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_88
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 161
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6381c3aa2212a650800000000000000
+      internalID: 6242572007834223466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_89
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 161
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b364b86e871aec0800000000000000
+      internalID: -3557429299071534178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_90
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 161
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a7f49b07da4f110800000000000000
+      internalID: 1293849692619110961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_91
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 161
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6304385a09e905bd0800000000000000
+      internalID: -2643438637177159626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 145
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29aed5c9d46572510800000000000000
+      internalID: 1524281890224073362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_93
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 145
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f23ac329005ad6a0800000000000000
+      internalID: -6423733918305209608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_94
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 162
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c820b62f22678b350800000000000000
+      internalID: 6032701593330844300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_95
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 162
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ce07ce52975bad0800000000000000
+      internalID: -2687108398869058518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_96
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 145
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bde51b1b9e4ad720800000000000000
+      internalID: 2871694140483431857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_97
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 145
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79929754c45059670800000000000000
+      internalID: 8544741693146605975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_98
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5399d53a2dd363c10800000000000000
+      internalID: 2032880256697604405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_99
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 145
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2195dd0caebe02130800000000000000
+      internalID: 3540088700603816210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_100
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 146
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34fb0e8f2ffa91b0800000000000000
+      internalID: -5648922202871172034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_101
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 146
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2485e3c0ffee2a20800000000000000
+      internalID: 3039630615879451695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_102
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 145
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7e28cfdbdf8b920800000000000000
+      internalID: 3006431743696889794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_103
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 145
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5517046898a22b560800000000000000
+      internalID: 7327966313836474709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_104
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 145
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3f84288ea8f5ed0800000000000000
+      internalID: -2423065343279172691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_105
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 145
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678de7911d0a26a70800000000000000
+      internalID: 8818787840281204854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_106
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 146
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b56affa5eb017570800000000000000
+      internalID: 8462558255933711796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_107
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 146
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724a6b468c14e5920800000000000000
+      internalID: 2980892332304802855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_108
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89f77d7fb0347ad0800000000000000
+      internalID: -2705483877140924017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_109
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77faaebc2c9dba630800000000000000
+      internalID: 3939481729733668727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a400e8ec6d94bc540800000000000000
+      internalID: 5029194595826532426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_111
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c3f21d3c833c4e0800000000000000
+      internalID: -1962662598924092316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_112
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761aee50193cad470800000000000000
+      internalID: 8420257480959762791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_113
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2105246419d8cf940800000000000000
+      internalID: 5331291713988349970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca689313a82a62650800000000000000
+      internalID: 6207827850791847596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_115
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8396c380b227460800000000000000
+      internalID: 7237894865511069897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_116
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5362dc9f2d56fe20800000000000000
+      internalID: 3383994629091386205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_117
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fd5d127b0c78af0800000000000000
+      internalID: -394134549592416439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_118
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d5c5937a6aae2a0800000000000000
+      internalID: -6707365457862828787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_119
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841f2c75b6e2ea310800000000000000
+      internalID: 1418121971237056840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_120
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78da8198a6876180800000000000000
+      internalID: -9122174461661226886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_121
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 129
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1ae74a165406680800000000000000
+      internalID: -8763928589189078533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_122
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24e4e9a07139f6e0800000000000000
+      internalID: -1803355815828724692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_123
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddcd6a058d09ca00800000000000000
+      internalID: 777167275754900958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_124
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 113
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024a4b9119c206100800000000000000
+      internalID: 99128193515299872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_125
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 113
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e790e0992080d8e30800000000000000
+      internalID: 4507267609318525310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_126
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f7928f7da09fda0800000000000000
+      internalID: -5910681113249349782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_127
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52795ca81c8e82710800000000000000
+      internalID: 1668839579895306021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_128
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a6ad515ae241280800000000000000
+      internalID: -9073576062673589621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_129
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10142ca2e2dea6160800000000000000
+      internalID: 7019683751751991553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_130
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1fa04929af8e490800000000000000
+      internalID: -7716642454043430421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_131
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b19ef94f598b8e00800000000000000
+      internalID: 1048082380650090931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_132
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 113
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b5021fd6e280900800000000000000
+      internalID: 650821195886779167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_133
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 113
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a57d181a55bb5980800000000000000
+      internalID: -8549040069076486746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_134
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e60fb88819f05d0800000000000000
+      internalID: -3094094403330871752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_135
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeea1afff833e1f50800000000000000
+      internalID: 6853972376466599658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_136
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891a841a747b58d70800000000000000
+      internalID: 9044836944919962008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_137
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ac2f769de7971b0800000000000000
+      internalID: -5658351984597349801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_138
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da64931d99e1cdd0800000000000000
+      internalID: -2467434259974690094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_139
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 114
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77822b61b11faf110800000000000000
+      internalID: 1295612941469624439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_140
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d01264ef9f4b3c0800000000000000
+      internalID: -4344572870012105387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_141
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c91d5da2f27f0b0800000000000000
+      internalID: -5695031342764286976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_142
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1df3377d05f38c00800000000000000
+      internalID: 901833788587506971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_143
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141f086e589094f70800000000000000
+      internalID: 9171872586819236161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_144
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b265e5c22c9920c60800000000000000
+      internalID: 7782952165296723499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_145
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ca617053de8e380800000000000000
+      internalID: -8941636248136143728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_146
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05de3333269b3c250800000000000000
+      internalID: 5963814162985643344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_147
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d744d238d0cb3b9a0800000000000000
+      internalID: -6218419894247144323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_148
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3999a5e27a2e7f10800000000000000
+      internalID: 2269297935209044287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_149
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4709c83ded3aa6a0800000000000000
+      internalID: -6437264628303460529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_150
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0a9f5ff88b55ea0800000000000000
+      internalID: -5884594409643073291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_151
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b0791a4b2c03e40800000000000000
+      internalID: 5634217214901422853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_152
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24a18c2fe8a46f00800000000000000
+      internalID: 1109197153437328431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_153
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 96
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bbed976b69b32b0800000000000000
+      internalID: -5603719600859596025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_154
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa1e917cf488e480800000000000000
+      internalID: -8869693246333379842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_155
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 98
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fa21b3ef96232c0800000000000000
+      internalID: -4453380540882309288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_156
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 81
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124fd79a00bfc22f0800000000000000
+      internalID: -996145437293546463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_157
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 81
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1990274e26c946880800000000000000
+      internalID: -8618591838326879855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_158
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e46d0fcd5b97e540800000000000000
+      internalID: 5037165535445214435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_159
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec991d54a8fb440800000000000000
+      internalID: 4953830147604729348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_160
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 80
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6d4c4dfcebe2710800000000000000
+      internalID: 1670482311638210241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_161
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 80
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677c0da5811607b50800000000000000
+      internalID: 6588873012073777014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_162
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8432156091452f7b0800000000000000
+      internalID: -5191994953947864248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_163
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8497571685bf506d0800000000000000
+      internalID: -3024735217698637496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_164
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 81
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5334f22f352265ad0800000000000000
+      internalID: -2713943981503331531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_165
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 81
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7c21cab6b11c0d0800000000000000
+      internalID: -3404409694053021725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_166
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c191ab27d4d276770800000000000000
+      internalID: 8603895423775152412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_167
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645e3c5a0563a7d50800000000000000
+      internalID: 6735755912692360518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_168
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 80
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a283287213230050800000000000000
+      internalID: 5765490510196343458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_169
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 80
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d162be26b9f653d0800000000000000
+      internalID: -3218110322846834224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_170
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64a7c0ac8d130cf0800000000000000
+      internalID: -287353461391514517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_171
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 82
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7d1b57e387cf4a0800000000000000
+      internalID: -6558234747700389898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_172
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c59bad7183459750800000000000000
+      internalID: 6311024676267857345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_173
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d3d1a42fe007dc0800000000000000
+      internalID: -3643395664754426493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_174
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c760024e9b617fe90800000000000000
+      internalID: -6992094908817340804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_175
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0456c881b300670800000000000000
+      internalID: 8502861073096196260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_176
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfe7afa1ed18d8f0800000000000000
+      internalID: -515629302182055994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_177
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb598dd3e3e74adb0800000000000000
+      internalID: -4781558098569947717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_178
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bbc52995b75f200800000000000000
+      internalID: 213212182007823218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_179
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396c96d0cd5f73df0800000000000000
+      internalID: -200421332928051565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_180
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfe576b44f133da0800000000000000
+      internalID: -5966390701356355659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_181
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1a9ae9b53fc1790800000000000000
+      internalID: -7557898499805044312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_182
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c7b98275a6462c0800000000000000
+      internalID: -4439306410104488893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_183
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c135fb84f4b4f3020800000000000000
+      internalID: 2323658736641463068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_184
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f032c547075a8f80800000000000000
+      internalID: -8103568890753044235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_185
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 65
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b16e9a03b4ac5150800000000000000
+      internalID: 5862741903813796273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_186
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37b70f022bee49e0800000000000000
+      internalID: -1635111083175332033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_187
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 65
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a0a5c3925e98d60800000000000000
+      internalID: 7893091787212458633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_188
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023e23b0d18bdead0800000000000000
+      internalID: -2671276569079389408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_189
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e08ff2376b05ed0800000000000000
+      internalID: -2427239593310417329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_190
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ce199018a7f6a10800000000000000
+      internalID: 1904875862030937192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_191
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 49
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad89f13a8c263d260800000000000000
+      internalID: 7121144049672624346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_192
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43d28af400820080800000000000000
+      internalID: -9222668328030252209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_193
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a73d954b89fb5e0800000000000000
+      internalID: -1891625418103752133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_194
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 50
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bc4526d80c93ae0800000000000000
+      internalID: -1569011281689261244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_195
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 50
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3383544f089fc3170800000000000000
+      internalID: 8159670957137803315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_196
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baf19cb7227bfce0800000000000000
+      internalID: -1370376146611209552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_197
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c055daebcd0faf0800000000000000
+      internalID: -364548858307081178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_198
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 49
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f67d9a6b815cdd0800000000000000
+      internalID: -2466538048102895845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_199
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 49
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259de4eff045f8d20800000000000000
+      internalID: 3282935081044203858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_200
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06b680c3399ea970800000000000000
+      internalID: 8768113972089370122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_201
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 49
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086717df4b5a30ac0800000000000000
+      internalID: -3890083456353208704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_202
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 50
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a706d8736649e60800000000000000
+      internalID: 7968106029506394698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_203
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 50
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684c743238c100200800000000000000
+      internalID: 144146537634055302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_204
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6839f2fd2088cc2b0800000000000000
+      internalID: -5562921893793655930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_205
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 33
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da8f1c0f03c4db20800000000000000
+      internalID: 3158363708088879824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_206
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 33
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0699334078a80aeb0800000000000000
+      internalID: -4710612897733830304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_207
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 33
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9658419c19d41700800000000000000
+      internalID: 510271374519457437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_208
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743afdf0d0de94df0800000000000000
+      internalID: -195364468457233593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_209
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 17
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ac5edd329245e70800000000000000
+      internalID: 9102945980846033452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_210
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 34
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ef35b663ef0d000800000000000000
+      internalID: 58826304838172200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_211
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 34
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a11ca4650e1e5690800000000000000
+      internalID: -7611613311696891484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_212
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 33
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23be48a6bb4074b70800000000000000
+      internalID: 8883073993004084018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_213
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 33
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a397feea759227a60800000000000000
+      internalID: 7670238571939199290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_214
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 33
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b3949e2e085eea0800000000000000
+      internalID: -5844123229378495628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_215
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 33
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a60ba59e45bb9ca0800000000000000
+      internalID: -6009009928672704859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_216
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 17
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8c2f46d08ba9b70800000000000000
+      internalID: 8906633580746295513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_217
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 17
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cce3081274d92c0800000000000000
+      internalID: -4423301049796866996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_218
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 34
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1c44d37e0016550800000000000000
+      internalID: 6152199559130169826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_219
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 34
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f119ff0e3e5dcab0800000000000000
+      internalID: -4986225591780306444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_220
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91122d7f6c8639f0800000000000000
+      internalID: -489049099054476899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_221
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89454b44975bf970800000000000000
+      internalID: 8789715392173263242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_222
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 17
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabad20f5bba22ad0800000000000000
+      internalID: -2728429626326144084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_223
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f2148521b352e40800000000000000
+      internalID: 5630971859072790279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_224
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 18
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f07870f091d7dc0800000000000000
+      internalID: -3639725371503997063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_225
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 18
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe25a7be83a107620800000000000000
+      internalID: 2769742602604008175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_226
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 17
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a5036b09b9c0210800000000000000
+      internalID: 1300585438237448773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_227
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 17
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b52a38b2ccdecfb0800000000000000
+      internalID: -4625517038390336072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_228
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 17
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4b2ceeafe092440800000000000000
+      internalID: 4911473339534587069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_229
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 17
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780469fef52556f50800000000000000
+      internalID: 6873990978245902471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_230
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 18
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2ab33fbc8b235b0800000000000000
+      internalID: -5390042617910418739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_231
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 18
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee29df0bdebd0eb50800000000000000
+      internalID: 6620533266157769454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_232
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb6b1291179bfae0800000000000000
+      internalID: -1514450747958531103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_233
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761cb8b6f7921f780800000000000000
+      internalID: -8651087781960105625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_234
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ec384b710c631a0800000000000000
+      internalID: -6830060576815460727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_235
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc29c8f8893cfc60800000000000000
+      internalID: 7853215110679571663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_236
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a7c57d6f98a3690800000000000000
+      internalID: -7621627726103021044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_237
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb576f3987bc662b0800000000000000
+      internalID: -5591558168594975297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_238
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca1b3a761d81aed0800000000000000
+      internalID: -2404485598359643456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_239
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d8ba4234057e680800000000000000
+      internalID: -8725917503698793095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_240
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2deadb31cdb7ae490800000000000000
+      internalID: -7716218826391703854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_241
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0d154ddb42447b0800000000000000
+      internalID: -5241023668622864177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_242
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef728e73805f0790800000000000000
+      internalID: -7561736723638353944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_243
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d81cc859012fa70800000000000000
+      internalID: 8859161651488853373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_244
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61fc8f90328bec30800000000000000
+      internalID: 4389745407149535597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_245
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1af3406be329080800000000000000
+      internalID: -9182207738778770993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_246
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818b33a7c9903f9a0800000000000000
+      internalID: -6200601694289283048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityTanks_247
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace612114ac748600800000000000000
+      internalID: 469637305257258698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c4e3d843f50294d4ca94954aaf11cbda
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
