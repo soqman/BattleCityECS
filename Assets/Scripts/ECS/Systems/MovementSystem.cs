@@ -20,7 +20,7 @@ public sealed class MovementSystem : UpdateSystem
         grid = gridInitializer.Grid;
     }
 
-    private bool IsAllowToMove(Translation translation, Size size, Direction direction)
+    /*private bool IsAllowToMove(Translation translation, Size size, Direction direction)
     {
         var currentArea=new Area();
         var nextArea=new Area();
@@ -44,6 +44,32 @@ public sealed class MovementSystem : UpdateSystem
                 break;
         }
         return nextArea.areaType.isWalkable;
+    }*/
+    
+    private bool IsAllowToMove(Translation translation, Size size, Direction direction)
+    {
+        var firstArea=new Area();
+        var secondArea=new Area();
+        switch (direction.lookAtDirection)
+        {
+            case LookAtDirection.Left:
+                firstArea = grid.GetGridObject(new Vector3(translation.x - size.x / 2f-0.01f, translation.y+size.y/4f));
+                secondArea = grid.GetGridObject(new Vector3(translation.x - size.x / 2f-0.01f, translation.y-size.y/4f));
+                break;
+            case LookAtDirection.Right:
+                firstArea = grid.GetGridObject(new Vector3(translation.x + size.x / 2f, translation.y+size.y/4f));
+                secondArea = grid.GetGridObject(new Vector3(translation.x + size.x / 2f, translation.y-size.y/4f));
+                break;
+            case LookAtDirection.Up:
+                firstArea = grid.GetGridObject(new Vector3(translation.x-size.x/4f, translation.y+size.y/2f));
+                secondArea = grid.GetGridObject(new Vector3(translation.x+size.x/4f, translation.y+size.y/2f));
+                break;
+            case LookAtDirection.Down:
+                firstArea = grid.GetGridObject(new Vector3(translation.x-size.x/4f ,translation.y-size.y/2f-0.01f));
+                secondArea = grid.GetGridObject(new Vector3(translation.x+size.x/4f ,translation.y-size.y/2f-0.01f));
+                break;
+        }
+        return firstArea.areaType.isWalkable && secondArea.areaType.isWalkable;
     }
 
 
@@ -60,38 +86,38 @@ public sealed class MovementSystem : UpdateSystem
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 direction.lookAtDirection = LookAtDirection.Up;
+                translation.x = Closest(translation.x, size.x/2);
                 if (IsAllowToMove(translation, size, direction))
                 {
                     translation.y += deltaTime * speed.value;
-                    translation.x = Closest(translation.x, size.x);
                 }
                 engine.isActive = true;
 
             }else if (Input.GetKey(KeyCode.DownArrow))
             {
                 direction.lookAtDirection = LookAtDirection.Down;
+                translation.x = Closest(translation.x, size.x/2);
                 if (IsAllowToMove(translation, size, direction))
                 {
                     translation.y -= deltaTime * speed.value;
-                    translation.x = Closest(translation.x, size.x);
                 }
                 engine.isActive = true;
             }else if (Input.GetKey(KeyCode.LeftArrow))
             {
                 direction.lookAtDirection = LookAtDirection.Left;
+                translation.y = Closest(translation.y, size.y/2);
                 if (IsAllowToMove(translation, size, direction))
                 {
                     translation.x -= deltaTime * speed.value;
-                    translation.y = Closest(translation.y, size.y);
                 }
                 engine.isActive = true;
             }else if (Input.GetKey(KeyCode.RightArrow))
             {
                 direction.lookAtDirection = LookAtDirection.Right;
+                translation.y = Closest(translation.y, size.y/2);
                 if (IsAllowToMove(translation, size, direction))
                 {
                     translation.x += deltaTime * speed.value;
-                    translation.y = Closest(translation.y, size.y);
                 }
                 engine.isActive = true;
             }
@@ -124,16 +150,17 @@ public sealed class MovementSystem : UpdateSystem
         }
     }
     
-    static float Closest(float src, float divider)
+    private float Closest(float src, float divider)
     {
-        float mod = Math.Abs(src % divider);
+        float mod = src % divider;
+        if (mod <= -divider / 2)
+        {
+            return src - mod - divider;
+        }
         if (mod >= divider / 2)
         {
-            Debug.Log("src:"+src+" mod:"+mod+" res+div:"+(src - mod+divider));
             return src - mod + divider;
         }
-
-        Debug.Log("src:"+src+" mod:"+mod+" res:"+(src - mod));
         return src - mod;
     }
 }
