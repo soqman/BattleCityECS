@@ -81,6 +81,18 @@ public class GridSystem<TGridObject>
         SetGridObject(x,y,value);
     }
 
+    public void GetPareOfGridObjectVertical(Vector3 worldPosition, out TGridObject first, out TGridObject second)
+    {
+        first = GetGridObject(worldPosition+new Vector3(0,0.01f,0));
+        second = GetGridObject(worldPosition+new Vector3(0,-0.01f,0));
+    }
+    
+    public void GetPareOfGridObjectHorizontal(Vector3 worldPosition, out TGridObject first, out TGridObject second)
+    {
+        first = GetGridObject(worldPosition+new Vector3(0.01f,0,0));
+        second = GetGridObject(worldPosition+new Vector3(-0.01f,0,0));
+    }
+
     public TGridObject GetGridObject(int x, int y)
     {
         if (x < 0 || y < 0 || x >= _width || y >= _height) return default(TGridObject);

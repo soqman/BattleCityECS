@@ -10,9 +10,9 @@ using Unity.IL2CPP.CompilerServices;
 public sealed class GridInitializer : Initializer
 {
     private GridSystem<Area> grid;
-    private const int COLUMNS_COUNT = 13;
-    private const int ROWS_COUNT = 13;
-    private const float CELL_SIZE = 1f;
+    private const int COLUMNS_COUNT = 26;
+    private const int ROWS_COUNT = 26;
+    private const float CELL_SIZE = 0.5f;
     private readonly Vector3 OFFSET = new Vector3(-6.5f,-6.5f,0);
     [SerializeField] private GameObject cellPrefab;
     [SerializeField] private List<AreaType> areaTypes;
@@ -46,8 +46,25 @@ public sealed class GridInitializer : Initializer
                 
                 var areaProvider = cell.AddComponent<AreaProvider>();
                 ref var area = ref areaProvider.GetData();
-                if (i % 2 == 0 || j%2==0) area.areaType = empty;
-                else area.areaType = areaTypes[Random.Range(0, areaTypes.Count)];
+                if (i % 2 == 0 && j % 2 == 0)
+                {
+                    if (i / 2 % 2 == 0 || j / 2 % 2 == 0)
+                    {
+                        area.areaType = empty;
+                    }
+                    else
+                    {
+                        area.areaType = areaTypes[Random.Range(0, areaTypes.Count)];
+                    }
+                }
+                else
+                {
+                    var x=i;
+                    var y=j;
+                    if (x % 2 != 0) x--;
+                    if (y % 2 != 0) y--;
+                    area.areaType = grid.GetGridObject(x, y).areaType;
+                }
                 area.x = i;
                 area.y = j;
                 grid.SetGridObject(i,j,area);

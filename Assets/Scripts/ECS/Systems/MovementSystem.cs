@@ -53,31 +53,39 @@ public sealed class MovementSystem : UpdateSystem
         switch (direction.lookAtDirection)
         {
             case LookAtDirection.Left:
-                firstArea = grid.GetGridObject(new Vector3(translation.x - size.x / 2f-0.01f, translation.y+size.y/4f));
-                secondArea = grid.GetGridObject(new Vector3(translation.x - size.x / 2f-0.01f, translation.y-size.y/4f));
+                grid.GetPareOfGridObjectVertical(new Vector3(translation.x - size.x / 2f, translation.y),out firstArea,out secondArea);
                 break;
             case LookAtDirection.Right:
-                firstArea = grid.GetGridObject(new Vector3(translation.x + size.x / 2f, translation.y+size.y/4f));
-                secondArea = grid.GetGridObject(new Vector3(translation.x + size.x / 2f, translation.y-size.y/4f));
+                grid.GetPareOfGridObjectVertical(new Vector3(translation.x + size.x / 2f, translation.y),out firstArea,out secondArea);
                 break;
             case LookAtDirection.Up:
-                firstArea = grid.GetGridObject(new Vector3(translation.x-size.x/4f, translation.y+size.y/2f));
-                secondArea = grid.GetGridObject(new Vector3(translation.x+size.x/4f, translation.y+size.y/2f));
+                grid.GetPareOfGridObjectHorizontal(new Vector3(translation.x, translation.y+size.y/2f),out firstArea,out secondArea);
                 break;
             case LookAtDirection.Down:
-                firstArea = grid.GetGridObject(new Vector3(translation.x-size.x/4f ,translation.y-size.y/2f-0.01f));
-                secondArea = grid.GetGridObject(new Vector3(translation.x+size.x/4f ,translation.y-size.y/2f-0.01f));
+                grid.GetPareOfGridObjectHorizontal(new Vector3(translation.x ,translation.y-size.y/2f),out firstArea,out secondArea);
                 break;
         }
         if (firstArea.areaType == null || secondArea.areaType == null) return false;
         return firstArea.areaType.isWalkable && secondArea.areaType.isWalkable;
     }
 
-    private bool CheckObstacle(Translation translation)
+    private bool CheckObstacle(Translation translation,Direction direction)
     {
-        var area=grid.GetGridObject(new Vector3(translation.x, translation.y));
-        if (area.areaType == null) return true;
-        return !area.areaType.isBulletTransparent;
+        var firstArea=new Area();
+        var secondArea=new Area();
+        switch (direction.lookAtDirection)
+        {
+            case LookAtDirection.Left:
+            case LookAtDirection.Right:
+                grid.GetPareOfGridObjectVertical(new Vector3(translation.x, translation.y),out firstArea,out secondArea);
+                break;
+            case LookAtDirection.Up:
+            case LookAtDirection.Down:
+                grid.GetPareOfGridObjectHorizontal(new Vector3(translation.x ,translation.y),out firstArea,out secondArea);
+                break;
+        }
+        if (firstArea.areaType == null || secondArea.areaType==null) return true;
+        return !firstArea.areaType.isBulletTransparent || !secondArea.areaType.isBulletTransparent;;
     }
 
     private void UnitsMove(float deltaTime)
@@ -163,7 +171,7 @@ public sealed class MovementSystem : UpdateSystem
                     break;
             }
 
-            if (CheckObstacle(translation))
+            if (CheckObstacle(translation,direction))
             {
                 entity.RemoveComponent<Direction>();
                 entity.RemoveComponent<Speed>();
