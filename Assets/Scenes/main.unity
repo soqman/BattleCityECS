@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    value: 1
+    value: 2
 --- !u!114 &436332226
 MonoBehaviour:
   m_ObjectHideFlags: 0

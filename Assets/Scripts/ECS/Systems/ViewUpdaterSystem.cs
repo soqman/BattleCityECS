@@ -14,7 +14,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
     public override void OnAwake()
     {
         tankFilter=World.Filter.With<Translation>().With<Direction>().With<Engine>().With<TankView>();
-        bulletFilter=World.Filter.With<Translation>().With<BulletView>();
+        bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Direction>();
         areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>();
         UpdateAreas();
     }
@@ -58,7 +58,23 @@ public sealed class ViewUpdaterSystem : UpdateSystem
         {
             var translation = entity.GetComponent<Translation>();
             var bulletView = entity.GetComponent<BulletView>();
+            var direction = entity.GetComponent<Direction>();
             bulletView.Transform.position=new Vector3(translation.x,translation.y,0);
+            switch (direction.lookAtDirection)
+            {
+                case LookAtDirection.Up:
+                    bulletView.Transform.localRotation=Quaternion.Euler(0,0,0);
+                    break;
+                case LookAtDirection.Down:
+                    bulletView.Transform.localRotation=Quaternion.Euler(0,0,180);
+                    break;
+                case LookAtDirection.Left:
+                    bulletView.Transform.localRotation=Quaternion.Euler(0,0,90);
+                    break;
+                case LookAtDirection.Right:
+                    bulletView.Transform.localRotation=Quaternion.Euler(0,0,-90);
+                    break;
+            }
         }
     }
     

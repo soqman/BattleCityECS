@@ -69,12 +69,12 @@ public sealed class MovementSystem : UpdateSystem
                 secondArea = grid.GetGridObject(new Vector3(translation.x+size.x/4f ,translation.y-size.y/2f-0.01f));
                 break;
         }
+        if (firstArea.areaType == null || secondArea.areaType == null) return false;
         return firstArea.areaType.isWalkable && secondArea.areaType.isWalkable;
     }
 
-
-
-    public override void OnUpdate(float deltaTime) {
+    private void UnitsMove(float deltaTime)
+    {
         foreach (var entity in filterController) {
             
             ref var translation = ref entity.GetComponent<Translation>();
@@ -126,6 +126,10 @@ public sealed class MovementSystem : UpdateSystem
                 engine.isActive = false;
             }
         }
+    }
+
+    private void BulletsMove(float deltaTime)
+    {
         foreach (var entity in filterBullets) {
             
             ref var translation = ref entity.GetComponent<Translation>();
@@ -134,20 +138,30 @@ public sealed class MovementSystem : UpdateSystem
 
             switch (direction.lookAtDirection)
             {
-                case LookAtDirection.Up: 
+                case LookAtDirection.Up:
+                    direction.lookAtDirection = LookAtDirection.Up;
                     translation.y -= -deltaTime * speed.value;
                     break;
-                case LookAtDirection.Down: 
+                case LookAtDirection.Down:
+                    direction.lookAtDirection = LookAtDirection.Down;
                     translation.y -= deltaTime * speed.value;
                     break;
-                case LookAtDirection.Left: 
+                case LookAtDirection.Left:
+                    direction.lookAtDirection = LookAtDirection.Left;
                     translation.x -= deltaTime * speed.value;
                     break;
-                case LookAtDirection.Right: 
+                case LookAtDirection.Right:
+                    direction.lookAtDirection = LookAtDirection.Right;
                     translation.x -= -deltaTime * speed.value;
                     break;
             }
         }
+    }
+    
+    public override void OnUpdate(float deltaTime)
+    {
+        UnitsMove(deltaTime);
+        BulletsMove(deltaTime);
     }
     
     private float Closest(float src, float divider)
