@@ -61,6 +61,7 @@
               <e p="AreaView.cs" t="Include" />
               <e p="Barrel.cs" t="Include" />
               <e p="BulletView.cs" t="Include" />
+              <e p="Burst.cs" t="Include" />
               <e p="Controller.cs" t="Include" />
               <e p="Direction.cs" t="Include" />
               <e p="Engine.cs" t="Include" />

@@ -73,6 +73,13 @@ public sealed class MovementSystem : UpdateSystem
         return firstArea.areaType.isWalkable && secondArea.areaType.isWalkable;
     }
 
+    private bool CheckObstacle(Translation translation)
+    {
+        var area=grid.GetGridObject(new Vector3(translation.x, translation.y));
+        if (area.areaType == null) return true;
+        return !area.areaType.isBulletTransparent;
+    }
+
     private void UnitsMove(float deltaTime)
     {
         foreach (var entity in filterController) {
@@ -154,6 +161,13 @@ public sealed class MovementSystem : UpdateSystem
                     direction.lookAtDirection = LookAtDirection.Right;
                     translation.x -= -deltaTime * speed.value;
                     break;
+            }
+
+            if (CheckObstacle(translation))
+            {
+                entity.RemoveComponent<Direction>();
+                entity.RemoveComponent<Speed>();
+                entity.AddComponent<Burst>();
             }
         }
     }
