@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2a4cf64c11dd7448794b9d9fbc7e9a, type: 3}
   m_Name: stone
   m_EditorClassIdentifier: 
-  sprite: {fileID: 7515193203044842962, guid: cfb5a3ac73da4fa49a558eff0af219e7, type: 3}
+  wholeSprite: {fileID: 4614157767852045427, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  leftSprite: {fileID: 0}
+  rightSprite: {fileID: 0}
+  upSprite: {fileID: 0}
+  downSprite: {fileID: 0}
+  leftUpSprite: {fileID: 0}
+  rightUpSprite: {fileID: 0}
+  rightDownSprite: {fileID: 0}
+  leftDownSprite: {fileID: 0}
   isWalkable: 0
   isBulletTransparent: 0
   health: -1

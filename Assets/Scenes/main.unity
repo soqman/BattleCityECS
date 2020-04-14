@@ -160,6 +160,10 @@ MonoBehaviour:
     system: {fileID: 11400000, guid: 6e84e75a7b519dc408b6c96b51b848ee, type: 2}
   - enabled: 1
     system: {fileID: 11400000, guid: ca5f1bd6b14937044b9bd8e995425ace, type: 2}
+  - enabled: 1
+    system: {fileID: 11400000, guid: ca22f4099586db5489c6f6417a1bc3ac, type: 2}
+  - enabled: 1
+    system: {fileID: 11400000, guid: f9d908653bb595c4684bb9a327c34376, type: 2}
   fixedUpdateSystems: []
   lateUpdateSystems: []
 --- !u!4 &266719630

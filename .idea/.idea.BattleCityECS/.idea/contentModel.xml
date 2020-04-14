@@ -58,11 +58,14 @@
           <e p="ECS" t="Include">
             <e p="Components" t="Include">
               <e p="Area.cs" t="Include" />
+              <e p="AreaUpdateIndicator.cs" t="Include" />
               <e p="AreaView.cs" t="Include" />
               <e p="Barrel.cs" t="Include" />
               <e p="BulletView.cs" t="Include" />
               <e p="Burst.cs" t="Include" />
+              <e p="Collider.cs" t="Include" />
               <e p="Controller.cs" t="Include" />
+              <e p="Damage.cs" t="Include" />
               <e p="Direction.cs" t="Include" />
               <e p="Engine.cs" t="Include" />
               <e p="Size.cs" t="Include" />
@@ -75,6 +78,7 @@
               <e p="AreaViewProvider.cs" t="Include" />
               <e p="BarrelProvider.cs" t="Include" />
               <e p="BulletViewProvider.cs" t="Include" />
+              <e p="BurstProvider.cs" t="Include" />
               <e p="ControllerProvider.cs" t="Include" />
               <e p="DirectionProvider.cs" t="Include" />
               <e p="EngineProvider.cs" t="Include" />
@@ -84,6 +88,8 @@
               <e p="TranslationProvider.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
+              <e p="BurstSystem.cs" t="Include" />
+              <e p="DamageSystem.cs" t="Include" />
               <e p="GridInitializer.cs" t="Include" />
               <e p="MovementSystem.cs" t="Include" />
               <e p="ShootSystem.cs" t="Include" />
@@ -91,7 +97,7 @@
             </e>
           </e>
           <e p="Grid" t="Include">
-            <e p="GridSystem.cs" t="Include" />
+            <e p="Grid.cs" t="Include" />
             <e p="Node.cs" t="Include" />
           </e>
           <e p="ScriptableObjects" t="Include">

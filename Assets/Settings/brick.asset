@@ -12,7 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2a4cf64c11dd7448794b9d9fbc7e9a, type: 3}
   m_Name: brick
   m_EditorClassIdentifier: 
-  sprite: {fileID: 7589495798216042644, guid: cfb5a3ac73da4fa49a558eff0af219e7, type: 3}
+  wholeSprite: {fileID: -9168059258119935580, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  leftSprite: {fileID: 1855202325411961189, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  rightSprite: {fileID: -6116402390210205744, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  upSprite: {fileID: 6359825985735184455, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  downSprite: {fileID: -5511042438278039831, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  leftUpSprite: {fileID: 8659207944374958647, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  rightUpSprite: {fileID: -2135804621178603756, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  rightDownSprite: {fileID: 8553675010575726136, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
+  leftDownSprite: {fileID: 3772433308668735133, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+    type: 3}
   isWalkable: 0
   isBulletTransparent: 0
-  health: 3
+  health: 1

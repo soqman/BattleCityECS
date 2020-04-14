@@ -1,121 +1,52 @@
 fileFormatVersion: 2
-guid: cfb5a3ac73da4fa49a558eff0af219e7
+guid: 4f2c0736d5ee3d64f94aa903078d092c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7589495798216042644
-    second: battlecityMap_0
+      213: -9168059258119935580
+    second: battleCityMap_0
   - first:
-      213: 4189158149959774060
-    second: battlecityMap_1
+      213: -5511042438278039831
+    second: battleCityMap_1
   - first:
-      213: 7263184211394242294
-    second: battlecityMap_2
+      213: 1855202325411961189
+    second: battleCityMap_2
   - first:
-      213: 3327415732486487123
-    second: battlecityMap_3
+      213: 3772433308668735133
+    second: battleCityMap_3
   - first:
-      213: -4898521805251968281
-    second: battlecityMap_4
+      213: 4614157767852045427
+    second: battleCityMap_4
   - first:
-      213: 7515193203044842962
-    second: battlecityMap_5
+      213: 6359825985735184455
+    second: battleCityMap_5
   - first:
-      213: -4961057128701768597
-    second: battlecityMap_6
+      213: -6116402390210205744
+    second: battleCityMap_6
   - first:
-      213: 3059251161861696350
-    second: battlecityMap_7
+      213: -2135804621178603756
+    second: battleCityMap_7
   - first:
-      213: 8709317791857003906
-    second: battlecityMap_8
+      213: -4817464978296490270
+    second: battleCityMap_8
   - first:
-      213: -4516362943316259357
-    second: battlecityMap_9
+      213: -2730216204497039765
+    second: battleCityMap_9
   - first:
-      213: -724737010334321492
-    second: battlecityMap_10
+      213: -3685537311819861959
+    second: battleCityMap_10
   - first:
-      213: 7574991955137571215
-    second: battlecityMap_11
+      213: 8553675010575726136
+    second: battleCityMap_11
   - first:
-      213: 705019417092410410
-    second: battlecityMap_12
+      213: -4940498578157466769
+    second: battleCityMap_12
   - first:
-      213: -4684893648646601363
-    second: battlecityMap_13
+      213: -5082739807027179429
+    second: battleCityMap_13
   - first:
-      213: 7286462801464226656
-    second: battlecityMap_14
-  - first:
-      213: -495370279553136494
-    second: battlecityMap_15
-  - first:
-      213: 7654466255115028218
-    second: battlecityMap_16
-  - first:
-      213: 8540090930150572819
-    second: battlecityMap_17
-  - first:
-      213: 5712126369606881978
-    second: battlecityMap_18
-  - first:
-      213: -5732983223626218530
-    second: battlecityMap_19
-  - first:
-      213: -5011425058493710356
-    second: battlecityMap_20
-  - first:
-      213: 7042932596636701213
-    second: battlecityMap_21
-  - first:
-      213: -8957454812289582977
-    second: battlecityMap_22
-  - first:
-      213: 8114296003236297534
-    second: battlecityMap_23
-  - first:
-      213: 2695457339922263761
-    second: battlecityMap_24
-  - first:
-      213: 7477932069059083499
-    second: battlecityMap_25
-  - first:
-      213: -4146938678574149160
-    second: battlecityMap_26
-  - first:
-      213: 9018094085051893928
-    second: battlecityMap_27
-  - first:
-      213: 8945383383483693247
-    second: battlecityMap_1
-  - first:
-      213: 1201063480435574824
-    second: battlecityMap_2
-  - first:
-      213: -8212402222871171791
-    second: battlecityMap_3
-  - first:
-      213: 5533154108254878405
-    second: battlecityMap_4
-  - first:
-      213: -7163658793724269314
-    second: battlecityMap_6
-  - first:
-      213: -1904022469184050867
-    second: battlecityMap_7
-  - first:
-      213: -312534932132947152
-    second: battlecityMap_8
-  - first:
-      213: 3010666066025523518
-    second: battlecityMap_9
-  - first:
-      213: -1829479449865922474
-    second: battlecityMap_15
-  - first:
-      213: -112207176377134009
-    second: battlecityMap_10
+      213: 8659207944374958647
+    second: battleCityMap_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -201,49 +132,154 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: battlecityMap_0
+      name: battleCityMap_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 8
-        height: 8
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 498acf4b73e435960800000000000000
-      internalID: 7589495798216042644
+      spriteID: 4a9a700eda284c080800000000000000
+      internalID: -9168059258119935580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_5
+      name: battleCityMap_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8
-        height: 8
+        x: 16
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ddfae5a6645b4860800000000000000
-      internalID: 7515193203044842962
+      spriteID: 9e6b554e918d483b0800000000000000
+      internalID: -5511042438278039831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_13
+      name: battleCityMap_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56998a88fa00fb910800000000000000
+      internalID: 1855202325411961189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityMap_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e2d066b106a5430800000000000000
+      internalID: 3772433308668735133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityMap_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3743e620b08c80040800000000000000
+      internalID: 4614157767852045427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityMap_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7405b09c904a24850800000000000000
+      internalID: 6359825985735184455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityMap_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7ab24ae6c2e1ba0800000000000000
+      internalID: -6116402390210205744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityMap_7
       rect:
         serializedVersion: 2
         x: 48
@@ -251,68 +287,47 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d658fe55c0aebfeb0800000000000000
-      internalID: -4684893648646601363
+      spriteID: 417f20553091c52e0800000000000000
+      internalID: -2135804621178603756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_14
+      name: battleCityMap_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0637f560057be1560800000000000000
-      internalID: 7286462801464226656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: battlecityMap_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb83a38eac2642c70800000000000000
-      internalID: 8945383383483693247
+      spriteID: 2e6b0c2502de42db0800000000000000
+      internalID: -4817464978296490270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_2
+      name: battleCityMap_9
       rect:
         serializedVersion: 2
         x: 16
-        y: 8
-        width: 8
-        height: 8
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,41 +335,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8288e083fd80ba010800000000000000
-      internalID: 1201063480435574824
+      spriteID: b6e40fac3d25c1ad0800000000000000
+      internalID: -2730216204497039765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_3
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 8
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13da22180bfa70e80800000000000000
-      internalID: -8212402222871171791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: battlecityMap_4
+      name: battleCityMap_10
       rect:
         serializedVersion: 2
         x: 32
-        y: 8
-        width: 8
-        height: 8
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,20 +356,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ca76067856b9cc40800000000000000
-      internalID: 5533154108254878405
+      spriteID: 930778a77575adcc0800000000000000
+      internalID: -3685537311819861959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_6
+      name: battleCityMap_11
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
-        width: 8
-        height: 8
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,20 +377,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc26f32842959c90800000000000000
-      internalID: -7163658793724269314
+      spriteID: 83670815a12c4b670800000000000000
+      internalID: 8553675010575726136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_7
+      name: battleCityMap_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b0a9318b2df6bb0800000000000000
+      internalID: -4940498578157466769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battleCityMap_13
       rect:
         serializedVersion: 2
         x: 16
         y: 0
-        width: 8
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,20 +419,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d492ce7f6ad8395e0800000000000000
-      internalID: -1904022469184050867
+      spriteID: b505864331b7679b0800000000000000
+      internalID: -5082739807027179429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battlecityMap_8
+      name: battleCityMap_14
       rect:
         serializedVersion: 2
-        x: 24
+        x: 48
         y: 0
-        width: 8
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,50 +440,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b90569227a9abf0800000000000000
-      internalID: -312534932132947152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: battlecityMap_9
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3926caf5d808c920800000000000000
-      internalID: 3010666066025523518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: battlecityMap_15
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6585dd222226c96e0800000000000000
-      internalID: -1829479449865922474
+      spriteID: 73ab5b83fbfab2870800000000000000
+      internalID: 8659207944374958647
       vertices: []
       indices: 
       edges: []
@@ -476,7 +449,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ca29c5e28df2d174fa7c1b48cde45b96
+    spriteID: a88d7ef191b7aba49a65f344a704625d
     internalID: 0
     vertices: []
     indices: 

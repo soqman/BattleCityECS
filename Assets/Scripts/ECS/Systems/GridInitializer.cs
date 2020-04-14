@@ -9,7 +9,6 @@ using Unity.IL2CPP.CompilerServices;
 [CreateAssetMenu(menuName = "ECS/Initializers/" + nameof(GridInitializer))]
 public sealed class GridInitializer : Initializer
 {
-    private GridSystem<Area> grid;
     private const int COLUMNS_COUNT = 26;
     private const int ROWS_COUNT = 26;
     private const float CELL_SIZE = 0.5f;
@@ -17,35 +16,19 @@ public sealed class GridInitializer : Initializer
     [SerializeField] private GameObject cellPrefab;
     [SerializeField] private List<AreaType> areaTypes;
     [SerializeField] private AreaType empty;
-
-    public GridSystem<Area> Grid
-    {
-        get { return grid; }
-    }
-
+    private Area[,] areas;
+    public Grid Grid { get; private set; }
 
     public override void OnAwake()
     {
-        grid = new GridSystem<Area>(COLUMNS_COUNT,ROWS_COUNT, CELL_SIZE, OFFSET);
+        Grid = new Grid(COLUMNS_COUNT,ROWS_COUNT, CELL_SIZE, OFFSET);
+        areas=new Area[COLUMNS_COUNT,ROWS_COUNT];
         for (var j = 0; j < ROWS_COUNT; j++)
         {
             for (var i = 0; i < COLUMNS_COUNT; i++)
             {
-                var cell=Instantiate(cellPrefab);
-                
-                var sizeProvider=cell.AddComponent<SizeProvider>();
-                ref var size = ref sizeProvider.GetData();
-                size.x = CELL_SIZE;
-                size.y = CELL_SIZE;
-                
-                var translationProvider = cell.AddComponent<TranslationProvider>();
-                ref var translation = ref translationProvider.GetData();
-                var position = grid.GetWorldPosition(i, j);
-                translation.x = position.x;
-                translation.y = position.y;
-                
-                var areaProvider = cell.AddComponent<AreaProvider>();
-                ref var area = ref areaProvider.GetData();
+                var entity = World.CreateEntity();
+                ref var area = ref entity.AddComponent<Area>();
                 if (i % 2 == 0 && j % 2 == 0)
                 {
                     if (i / 2 % 2 == 0 || j / 2 % 2 == 0)
@@ -63,13 +46,36 @@ public sealed class GridInitializer : Initializer
                     var y=j;
                     if (x % 2 != 0) x--;
                     if (y % 2 != 0) y--;
-                    area.areaType = grid.GetGridObject(x, y).areaType;
+                    area.areaType = areas[x,y].areaType;
                 }
                 area.x = i;
                 area.y = j;
-                grid.SetGridObject(i,j,area);
+                areas[i,j]=area;
+
+                ref var translation = ref entity.AddComponent<Translation>();
+                var position = Grid.GetWorldPosition(i, j);
+                translation.x = position.x;
+                translation.y = position.y;
+
+                entity.AddComponent<AreaUpdateIndicator>();
+                
+                var areaGameObject=Instantiate(cellPrefab);
+                ref var areaView = ref entity.AddComponent<AreaView>();
+                areaView.spriteRenderer = areaGameObject.GetComponentInChildren<SpriteRenderer>();
+                areaView.Transform = areaGameObject.transform;
             }
         }
+    }
+
+    public void MarkForUpdate(int x, int y)
+    {
+    }
+
+    public bool GetArea(int x, int y, ref Area area)
+    {
+        if (x < 0 || x >= COLUMNS_COUNT || y < 0 || y >= ROWS_COUNT) return false;
+        area = areas[x, y];
+        return true;
     }
 
     public override void Dispose() {

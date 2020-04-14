@@ -1,4 +1,5 @@
-﻿using Morpeh;
+﻿using System;
+using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
@@ -15,13 +16,13 @@ public sealed class ViewUpdaterSystem : UpdateSystem
     {
         tankFilter=World.Filter.With<Translation>().With<Direction>().With<Engine>().With<TankView>();
         bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Direction>();
-        areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>();
-        UpdateAreas();
+        areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>().With<AreaUpdateIndicator>();
     }
 
     public override void OnUpdate(float deltaTime) {
         UpdateTanks();
         UpdateBullets();
+        UpdateAreas();
     }
 
     private void UpdateTanks()
@@ -86,7 +87,43 @@ public sealed class ViewUpdaterSystem : UpdateSystem
             var areaView = entity.GetComponent<AreaView>();
             var area = entity.GetComponent<Area>();
             areaView.Transform.position=new Vector3(translation.x,translation.y,0);
-            areaView.spriteRenderer.sprite = area.areaType.sprite;
+            areaView.spriteRenderer.sprite = area.areaType.wholeSprite;
+            switch (area.Damage)
+            {
+                case DamageType.Whole:
+                    break;
+                case DamageType.Left:
+                    areaView.spriteRenderer.sprite = area.areaType.leftSprite;
+                    break;
+                case DamageType.Right:
+                    areaView.spriteRenderer.sprite = area.areaType.rightSprite;
+                    break;
+                case DamageType.Up:
+                    areaView.spriteRenderer.sprite = area.areaType.upSprite;
+                    break;
+                case DamageType.Down:
+                    areaView.spriteRenderer.sprite = area.areaType.downSprite;
+                    break;
+                case DamageType.LeftUp:
+                    areaView.spriteRenderer.sprite = area.areaType.leftUpSprite;
+                    break;
+                case DamageType.LeftDown:
+                    areaView.spriteRenderer.sprite = area.areaType.leftDownSprite;
+                    break;
+                case DamageType.RightUp:
+                    areaView.spriteRenderer.sprite = area.areaType.rightUpSprite;
+                    break;
+                case DamageType.RightDown:
+                    areaView.spriteRenderer.sprite = area.areaType.rightDownSprite;
+                    break;
+                case DamageType.Destroyed:
+                    areaView.spriteRenderer.sprite = null;
+                    //needDestroy;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+            entity.RemoveComponent<AreaUpdateIndicator>();
         }
     }
 }

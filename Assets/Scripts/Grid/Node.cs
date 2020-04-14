@@ -2,10 +2,10 @@
 {
     private int x;
     private int y;
-    private GridSystem<Node> _gridSystem;
-    public Node(GridSystem<Node>gridSystem,int x,int y)
+    private Grid _grid;
+    public Node(Grid grid,int x,int y)
     {
-        this._gridSystem = gridSystem;
+        _grid = grid;
         this.x = x;
         this.y = y;
     }

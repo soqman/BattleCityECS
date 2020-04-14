@@ -12,7 +12,7 @@ public sealed class MovementSystem : UpdateSystem
     private Filter filterController;
     private Filter filterBullets;
     [SerializeField] private GridInitializer gridInitializer;
-    private GridSystem<Area> grid;
+    private Grid grid;
     
     public override void OnAwake() {
         filterController = World.Filter.With<Translation>().With<Direction>().With<Speed>().With<Controller>().With<Engine>().With<Size>();
@@ -20,72 +20,200 @@ public sealed class MovementSystem : UpdateSystem
         grid = gridInitializer.Grid;
     }
 
-    /*private bool IsAllowToMove(Translation translation, Size size, Direction direction)
+    private void Check()
     {
-        var currentArea=new Area();
-        var nextArea=new Area();
-        switch (direction.lookAtDirection)
+        for (int i = 0; i < 26; i++)
         {
-            case LookAtDirection.Left:
-                currentArea = grid.GetGridObject(new Vector3(translation.x + size.x / 2f-0.01f, translation.y-0.01f));
-                nextArea = grid.GetGridObject(currentArea.x-1, currentArea.y);
-                break;
-            case LookAtDirection.Right:
-                currentArea = grid.GetGridObject(new Vector3(translation.x - size.x / 2f-0.01f, translation.y-0.01f));
-                nextArea = grid.GetGridObject(currentArea.x+1, currentArea.y);
-                break;
-            case LookAtDirection.Up:
-                currentArea = grid.GetGridObject(new Vector3(translation.x-0.01f, translation.y-size.y/2f-0.01f));
-                nextArea = grid.GetGridObject(currentArea.x, currentArea.y+1);
-                break;
-            case LookAtDirection.Down:
-                currentArea = grid.GetGridObject(new Vector3(translation.x-0.01f ,translation.y+size.y/2f-0.01f));
-                nextArea = grid.GetGridObject(currentArea.x, currentArea.y-1);
-                break;
+            for (int j = 0; j < 26; j++)
+            {
+                var area=new Area();
+                gridInitializer.GetArea(i, j, ref area);
+                area.Damage = DamageType.RightUp;
+                //gridInitializer.MarkForUpdate(i,j);
+            }
+            
         }
-        return nextArea.areaType.isWalkable;
-    }*/
+
+        Debug.Log("CHECK");
+    }
     
     private bool IsAllowToMove(Translation translation, Size size, Direction direction)
     {
-        var firstArea=new Area();
-        var secondArea=new Area();
+        var firstAreaX=0;
+        var firstAreaY=0;
+        var secondAreaX=0;
+        var secondAreaY=0;
         switch (direction.lookAtDirection)
         {
             case LookAtDirection.Left:
-                grid.GetPareOfGridObjectVertical(new Vector3(translation.x - size.x / 2f, translation.y),out firstArea,out secondArea);
+                
+                grid.GetXYPareByVertical(new Vector3(translation.x - size.x / 2f, translation.y),out firstAreaX,out firstAreaY,out secondAreaX,out secondAreaY);
                 break;
             case LookAtDirection.Right:
-                grid.GetPareOfGridObjectVertical(new Vector3(translation.x + size.x / 2f, translation.y),out firstArea,out secondArea);
+                grid.GetXYPareByVertical(new Vector3(translation.x + size.x / 2f, translation.y),out firstAreaX,out firstAreaY,out secondAreaX,out secondAreaY);
                 break;
             case LookAtDirection.Up:
-                grid.GetPareOfGridObjectHorizontal(new Vector3(translation.x, translation.y+size.y/2f),out firstArea,out secondArea);
+                grid.GetXYPareByHorizontal(new Vector3(translation.x, translation.y+size.y/2f),out firstAreaX,out firstAreaY,out secondAreaX,out secondAreaY);
                 break;
             case LookAtDirection.Down:
-                grid.GetPareOfGridObjectHorizontal(new Vector3(translation.x ,translation.y-size.y/2f),out firstArea,out secondArea);
+                grid.GetXYPareByHorizontal(new Vector3(translation.x ,translation.y-size.y/2f),out firstAreaX,out firstAreaY,out secondAreaX,out secondAreaY);
                 break;
         }
-        if (firstArea.areaType == null || secondArea.areaType == null) return false;
+        var firstArea=new Area();
+        var secondArea = new Area();
+        if (!gridInitializer.GetArea(firstAreaX, firstAreaY, ref firstArea)) return false;
+        if (!gridInitializer.GetArea(secondAreaX, secondAreaY, ref secondArea)) return false;
         return firstArea.areaType.isWalkable && secondArea.areaType.isWalkable;
     }
 
     private bool CheckObstacle(Translation translation,Direction direction)
     {
-        var firstArea=new Area();
-        var secondArea=new Area();
+        var res = false;
+        var firstAreaX=0;
+        var firstAreaY=0;
+        var secondAreaX=0;
+        var secondAreaY=0;
         switch (direction.lookAtDirection)
         {
             case LookAtDirection.Left:
             case LookAtDirection.Right:
-                grid.GetPareOfGridObjectVertical(new Vector3(translation.x, translation.y),out firstArea,out secondArea);
+                grid.GetXYPareByVertical(new Vector3(translation.x, translation.y),out firstAreaX,out firstAreaY,out secondAreaX,out secondAreaY);
                 break;
             case LookAtDirection.Up:
             case LookAtDirection.Down:
-                grid.GetPareOfGridObjectHorizontal(new Vector3(translation.x ,translation.y),out firstArea,out secondArea);
+                grid.GetXYPareByHorizontal(new Vector3(translation.x ,translation.y),out firstAreaX,out firstAreaY,out secondAreaX,out secondAreaY);
                 break;
         }
-        if (firstArea.areaType == null || secondArea.areaType==null) return true;
-        return !firstArea.areaType.isBulletTransparent || !secondArea.areaType.isBulletTransparent;;
+        var firstArea=new Area();
+        var secondArea = new Area();
+        if (gridInitializer.GetArea(firstAreaX, firstAreaY, ref firstArea))
+        {
+            if (!firstArea.areaType.isBulletTransparent)
+            {
+                if (firstArea.areaType.health > 0)
+                {
+                    SetDamage(ref firstArea,direction);
+                    gridInitializer.MarkForUpdate(firstAreaX,firstAreaY);
+                }
+                res = true;
+            }
+        }
+        else
+        {
+            res = true;
+        }
+
+        if (gridInitializer.GetArea(secondAreaX, secondAreaY, ref secondArea))
+        {
+            if (!secondArea.areaType.isBulletTransparent)
+            {
+                if (secondArea.areaType.health > 0)
+                {
+                    SetDamage(ref secondArea,direction);
+                    gridInitializer.MarkForUpdate(secondAreaX,secondAreaY);
+                }
+                res = true;
+            }
+        }
+        else
+        {
+            res = true;
+        }
+        return res;
+    }
+
+    private void SetDamage(ref Area area, Direction direction)
+    {
+        switch (area.Damage)
+        {
+            case DamageType.Whole:
+            {
+                switch (direction.lookAtDirection)
+                {
+                    case LookAtDirection.Left:
+                        area.Damage = DamageType.Left;
+                        break;
+                    case LookAtDirection.Right:
+                        area.Damage = DamageType.Right;
+                        break;
+                    case LookAtDirection.Up:
+                        area.Damage = DamageType.Up;
+                        break;
+                    case LookAtDirection.Down:
+                        area.Damage = DamageType.Down;
+                        break;
+                }
+                break;
+            }
+            case DamageType.Left:
+                switch (direction.lookAtDirection)
+                {
+                    case LookAtDirection.Left:
+                    case LookAtDirection.Right:
+                        area.Damage = DamageType.Destroyed;
+                        break;
+                    case LookAtDirection.Up:
+                        area.Damage = DamageType.LeftUp;
+                        break;
+                    case LookAtDirection.Down:
+                        area.Damage = DamageType.LeftDown;
+                        break;
+                }
+                break;
+            case DamageType.Right:
+                switch (direction.lookAtDirection)
+                {
+                    case LookAtDirection.Left:
+                    case LookAtDirection.Right:
+                        area.Damage = DamageType.Destroyed;
+                        break;
+                    case LookAtDirection.Up:
+                        area.Damage = DamageType.RightUp;
+                        break;
+                    case LookAtDirection.Down:
+                        area.Damage = DamageType.RightDown;
+                        break;
+                }
+                break;
+            case DamageType.Up:
+                switch (direction.lookAtDirection)
+                {
+                    case LookAtDirection.Left:
+                        area.Damage = DamageType.LeftUp;
+                        break;
+                    case LookAtDirection.Right:
+                        area.Damage = DamageType.RightUp;
+                        break;
+                    case LookAtDirection.Up:
+                    case LookAtDirection.Down:
+                        area.Damage = DamageType.Destroyed;
+                        break;
+                }
+                break;
+            case DamageType.Down:
+                switch (direction.lookAtDirection)
+                {
+                    case LookAtDirection.Left:
+                        area.Damage = DamageType.LeftDown;
+                        break;
+                    case LookAtDirection.Right:
+                        area.Damage = DamageType.RightDown;
+                        break;
+                    case LookAtDirection.Up:
+                    case LookAtDirection.Down:
+                        area.Damage = DamageType.Destroyed;
+                        break;
+                }
+                break;
+            case DamageType.LeftUp:
+            case DamageType.LeftDown:
+            case DamageType.RightUp:
+            case DamageType.RightDown:
+                area.Damage = DamageType.Destroyed;
+                break;
+            case DamageType.Destroyed:
+                break;
+        }
     }
 
     private void UnitsMove(float deltaTime)
@@ -175,7 +303,7 @@ public sealed class MovementSystem : UpdateSystem
             {
                 entity.RemoveComponent<Direction>();
                 entity.RemoveComponent<Speed>();
-                entity.AddComponent<Burst>();
+                if (entity.Has<Burst>()) entity.GetComponent<Burst>().isActive = true;
             }
         }
     }
@@ -184,6 +312,10 @@ public sealed class MovementSystem : UpdateSystem
     {
         UnitsMove(deltaTime);
         BulletsMove(deltaTime);
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Check();
+        }
     }
     
     private float Closest(float src, float divider)
