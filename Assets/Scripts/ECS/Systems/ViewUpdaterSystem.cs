@@ -14,8 +14,8 @@ public sealed class ViewUpdaterSystem : UpdateSystem
     private Filter areaFilter;
     public override void OnAwake()
     {
-        tankFilter=World.Filter.With<Translation>().With<Direction>().With<Engine>().With<TankView>();
-        bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Direction>();
+        tankFilter=World.Filter.With<Translation>().With<Rotation>().With<Engine>().With<TankView>();
+        bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Rotation>();
         areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>().With<AreaUpdateIndicator>();
     }
 
@@ -30,22 +30,22 @@ public sealed class ViewUpdaterSystem : UpdateSystem
         foreach (var entity in tankFilter)
         {
             var translation = entity.GetComponent<Translation>();
-            var direction = entity.GetComponent<Direction>();
+            var direction = entity.GetComponent<Rotation>();
             var engine = entity.GetComponent<Engine>();
             var tankView = entity.GetComponent<TankView>();
             tankView.Transform.position=new Vector3(translation.x,translation.y,0);
-            switch (direction.lookAtDirection)
+            switch (direction.direction)
             {
-                case LookAtDirection.Up:
+                case Direction.Up:
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,0);
                     break;
-                case LookAtDirection.Down:
+                case Direction.Down:
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,180);
                     break;
-                case LookAtDirection.Left:
+                case Direction.Left:
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,90);
                     break;
-                case LookAtDirection.Right:
+                case Direction.Right:
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,-90);
                     break;
             }
@@ -59,20 +59,20 @@ public sealed class ViewUpdaterSystem : UpdateSystem
         {
             var translation = entity.GetComponent<Translation>();
             var bulletView = entity.GetComponent<BulletView>();
-            var direction = entity.GetComponent<Direction>();
+            var direction = entity.GetComponent<Rotation>();
             bulletView.Transform.position=new Vector3(translation.x,translation.y,0);
-            switch (direction.lookAtDirection)
+            switch (direction.direction)
             {
-                case LookAtDirection.Up:
+                case Direction.Up:
                     bulletView.Transform.localRotation=Quaternion.Euler(0,0,0);
                     break;
-                case LookAtDirection.Down:
+                case Direction.Down:
                     bulletView.Transform.localRotation=Quaternion.Euler(0,0,180);
                     break;
-                case LookAtDirection.Left:
+                case Direction.Left:
                     bulletView.Transform.localRotation=Quaternion.Euler(0,0,90);
                     break;
-                case LookAtDirection.Right:
+                case Direction.Right:
                     bulletView.Transform.localRotation=Quaternion.Euler(0,0,-90);
                     break;
             }

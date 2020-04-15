@@ -14,47 +14,48 @@ public sealed class CollisionsSystem : UpdateSystem
     
     public override void OnAwake()
     {
-        rigidbodies = World.Filter.With<Speed>().With<Collider>();
-        colliders = World.Filter.With<Collider>();
+        rigidbodies = World.Filter.With<Speed>().With<Collider>().With<Translation>();
+        colliders = World.Filter.With<Collider>().With<Translation>();
     }
 
     public override void OnUpdate(float deltaTime)
     {
         RemoveCollisions();
         var collidersBag = colliders.Select<Collider>();
+        var translationsBag = colliders.Select<Translation>();
         foreach (var entity in rigidbodies)
         {
             ref var collider = ref entity.GetComponent<Collider>();
+            ref var translation = ref entity.GetComponent<Translation>();
             for (var i = 0; i < colliders.Length; i++)
             {
                 ref var currentCollider = ref collidersBag.GetComponent(i);
+
                 if (entity.ID == colliders.GetEntity(i).ID) continue;
-                var xPositionA = collider.xSize + collider.xOffset;
-                var yPositionA = collider.ySize + collider.yOffset;
-                var xPositionB = currentCollider.xSize + currentCollider.xOffset;
-                var yPositionB = currentCollider.ySize + currentCollider.yOffset;
+                var xPositionA = collider.xOffset+translation.x;
+                var yPositionA = collider.yOffset+translation.y;
+                var xPositionB = currentCollider.xOffset+translationsBag.GetComponent(i).x;
+                var yPositionB = currentCollider.yOffset+translationsBag.GetComponent(i).y;
                 var xDistance = Mathf.Abs(xPositionB - xPositionA);
                 var yDistance = Mathf.Abs(yPositionB - yPositionA);
                 var xMinDistance = (collider.xSize + currentCollider.xSize) / 2f;
                 var yMinDistance = (collider.ySize + currentCollider.ySize) / 2f;
                 var xOverlap = xMinDistance - xDistance;
                 var yOverlap = yMinDistance - yDistance;
-                if (!(xDistance <= xMinDistance) || !(yDistance <= yMinDistance)) continue;
+                
+                if (!(xDistance < xMinDistance) || !(yDistance < yMinDistance)) continue;
                 if (xOverlap > yOverlap)
                 {
-                    AddCollision(entity, new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > yPositionB ? Collision.CollisionDirection.U:Collision.CollisionDirection.D});
-                    AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = yPositionA > yPositionB ? Collision.CollisionDirection.D:Collision.CollisionDirection.U});
+                    if (collider.mask == (collider.mask | (1 << currentCollider.layer)))
+                    AddCollision(entity, new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > yPositionB ? Direction.Down:Direction.Up});
+                    if (currentCollider.mask == (currentCollider.mask | (1 << collider.layer)))
+                    AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = yPositionA > yPositionB ? Direction.Up:Direction.Down});
                 }else if (yOverlap > xOverlap)
                 {
-                    AddCollision(entity,new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > xPositionB?Collision.CollisionDirection.L:Collision.CollisionDirection.R});
-                    AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = xPositionA>xPositionB?Collision.CollisionDirection.R:Collision.CollisionDirection.L});
-                }
-                else
-                {
-                    //AddCollision(entity, new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > yPositionB ? Collision.CollisionDirection.U:Collision.CollisionDirection.D});
-                    //AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = yPositionA > yPositionB ? Collision.CollisionDirection.D:Collision.CollisionDirection.U});
-                    //AddCollision(entity,new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > xPositionB?Collision.CollisionDirection.L:Collision.CollisionDirection.R});
-                    //AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = xPositionA>xPositionB?Collision.CollisionDirection.R:Collision.CollisionDirection.L});
+                    if (collider.mask == (collider.mask | (1 << currentCollider.layer)))
+                    AddCollision(entity,new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = xPositionA > xPositionB?Direction.Left:Direction.Right});
+                    if (currentCollider.mask == (currentCollider.mask | (1 << collider.layer)))
+                    AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = xPositionA>xPositionB?Direction.Right:Direction.Left});
                 }
             }
         }

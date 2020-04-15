@@ -9,4 +9,6 @@ using Unity.IL2CPP.CompilerServices;
 public struct BulletView : IComponent
 {
     public Transform Transform;
+    public GameObject GameObject;
+    public Animator Animator;
 }

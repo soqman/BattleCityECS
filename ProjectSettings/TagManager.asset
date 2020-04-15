@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bullets
+  - Tanks
+  - Player
+  - AreaBulletTransparent
+  - AreaSolid
   - 
   - 
   - 

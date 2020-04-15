@@ -312,12 +312,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    isWalkable: 0
-    isBulletTransparent: 0
     xSize: 1
     ySize: 1
     xOffset: 0
     yOffset: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 6912
+    layer: 10
 --- !u!114 &436332227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    lookAtDirection: 2
+    direction: 0
 --- !u!114 &436332229
 MonoBehaviour:
   m_ObjectHideFlags: 0

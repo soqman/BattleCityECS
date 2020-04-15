@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.UIElements;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "new AreaType", menuName = "ScriptableObjects/AreaType")]
 public class AreaType : ScriptableObject
@@ -12,7 +13,6 @@ public class AreaType : ScriptableObject
     public Sprite rightUpSprite;
     public Sprite rightDownSprite;
     public Sprite leftDownSprite;
-    public bool isWalkable;
-    public bool isBulletTransparent;
-    public int health;
+    public LayerMask mask;
+    public int layer;
 }

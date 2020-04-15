@@ -6,9 +6,8 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [System.Serializable]
-public struct Direction : IComponent
+public struct Rotation : IComponent
 {
-    public LookAtDirection lookAtDirection;
+    public Direction direction;
 }
-
-public enum LookAtDirection{Left,Right,Up,Down};
+public enum Direction{Left,Right,Up,Down};

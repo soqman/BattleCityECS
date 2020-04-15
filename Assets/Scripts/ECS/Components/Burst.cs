@@ -8,7 +8,4 @@ using Unity.IL2CPP.CompilerServices;
 [System.Serializable]
 public struct Burst : IComponent
 {
-    public GameObject GameObject;
-    public Animator Animator;
-    public bool isActive;
 }

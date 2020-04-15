@@ -11,17 +11,9 @@ using Unity.IL2CPP.CompilerServices;
 public struct Collision : IComponent
 {
     public List<CollisionItem> collisions;
-    public enum CollisionDirection
-    {
-        L = 0,
-        R = 2,
-        U = 4,
-        D = 8,
-    }
-
     public struct CollisionItem
     {
         public IEntity collideWith;
-        public CollisionDirection direction;
+        public Direction direction;
     }
 }

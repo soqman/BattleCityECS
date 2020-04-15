@@ -64,8 +64,8 @@ public sealed class GridInitializer : Initializer
                     collider.ySize = CELL_SIZE;
                     collider.xOffset = CELL_SIZE / 2;
                     collider.yOffset = CELL_SIZE / 2;
-                    collider.isBulletTransparent = areaType.isBulletTransparent;
-                    collider.isWalkable = areaType.isWalkable;
+                    collider.mask = areaType.mask;
+                    collider.layer = areaType.layer;
                 }
 
                 entity.AddComponent<AreaUpdateIndicator>();

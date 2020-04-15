@@ -12,7 +12,7 @@ public sealed class ShootSystem : UpdateSystem
     public GameObject prefab;
     
     public override void OnAwake() {
-        filter = World.Filter.With<Translation>().With<Direction>().With<Barrel>();
+        filter = World.Filter.With<Translation>().With<Rotation>().With<Barrel>();
     }
 
     public override void OnUpdate(float deltaTime) {
@@ -29,11 +29,11 @@ public sealed class ShootSystem : UpdateSystem
                     ref var bulletDirection = ref bullet.GetComponent<DirectionProvider>().GetData();
                     ref var bulletSpeed = ref bullet.GetComponent<SpeedProvider>().GetData();
                     ref var parentTranslation = ref entity.GetComponent<Translation>();
-                    ref var parentDirection = ref entity.GetComponent<Direction>();
+                    ref var parentDirection = ref entity.GetComponent<Rotation>();
 
                     bulletTranslation.x = parentTranslation.x;
                     bulletTranslation.y = parentTranslation.y;
-                    bulletDirection.lookAtDirection = parentDirection.lookAtDirection;
+                    bulletDirection.direction = parentDirection.direction;
                     bulletSpeed.value = parentBarrel.bulletSpeed;
                 }
             }

@@ -1,4 +1,5 @@
 ﻿using Morpeh;
+using Sirenix.OdinInspector.Editor.Drawers;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
@@ -8,10 +9,10 @@ using Unity.IL2CPP.CompilerServices;
 [System.Serializable]
 public struct Collider : IComponent
 {
-    public bool isWalkable;
-    public bool isBulletTransparent;
     public float xSize;
     public float ySize;
     public float xOffset;
     public float yOffset;
+    public LayerMask mask;
+    public int layer;
 }

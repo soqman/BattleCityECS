@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
@@ -13,8 +13,8 @@ public sealed class MovementSystem : UpdateSystem
     private Filter filterBullets;
     
     public override void OnAwake() {
-        filterController = World.Filter.With<Translation>().With<Direction>().With<Speed>().With<Controller>().With<Engine>().Without<Collision>();
-        filterBullets = World.Filter.With<Translation>().With<Direction>().With<Speed>().Without<Controller>().Without<Collision>();
+        filterController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<Controller>();
+        filterBullets = World.Filter.With<Translation>().With<Rotation>().With<Speed>().Without<Controller>().Without<Collision>();
     }
 
     private void UnitsMove(float deltaTime)
@@ -22,31 +22,63 @@ public sealed class MovementSystem : UpdateSystem
         foreach (var entity in filterController) {
             
             ref var translation = ref entity.GetComponent<Translation>();
-            ref var direction = ref entity.GetComponent<Direction>();
+            ref var direction = ref entity.GetComponent<Rotation>();
             ref var speed = ref entity.GetComponent<Speed>();
             
             if (Input.GetKey(KeyCode.UpArrow))
             {
-                direction.lookAtDirection = LookAtDirection.Up;
+                direction.direction = Direction.Up;
                 translation.x = Closest(translation.x, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Up))break;
+                }
                 translation.y += deltaTime * speed.value;
             }else if (Input.GetKey(KeyCode.DownArrow))
             {
-                direction.lookAtDirection = LookAtDirection.Down;
+                direction.direction = Direction.Down;
                 translation.x = Closest(translation.x, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Down))break;
+                }
                 translation.y -= deltaTime * speed.value;
             }else if (Input.GetKey(KeyCode.LeftArrow))
             {
-                direction.lookAtDirection = LookAtDirection.Left;
+                direction.direction = Direction.Left;
                 translation.y = Closest(translation.y, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Left))break;
+                }
                 translation.x -= deltaTime * speed.value;
             }else if (Input.GetKey(KeyCode.RightArrow))
             {
-                direction.lookAtDirection = LookAtDirection.Right;
+                direction.direction = Direction.Right;
                 translation.y = Closest(translation.y, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Right))break;
+                }
                 translation.x += deltaTime * speed.value;
             }
         }
+    }
+
+    private bool HasCollisionInThisDirection(Collision collision, Direction direction)
+    {
+        foreach (var item in collision.collisions)
+        {
+            if (item.collideWith.Has<Area>() && item.direction==direction)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void BulletsMove(float deltaTime)
@@ -54,25 +86,25 @@ public sealed class MovementSystem : UpdateSystem
         foreach (var entity in filterBullets) {
             
             ref var translation = ref entity.GetComponent<Translation>();
-            ref var direction = ref entity.GetComponent<Direction>();
+            ref var rotation = ref entity.GetComponent<Rotation>();
             ref var speed = ref entity.GetComponent<Speed>();
 
-            switch (direction.lookAtDirection)
+            switch (rotation.direction)
             {
-                case LookAtDirection.Up:
-                    direction.lookAtDirection = LookAtDirection.Up;
+                case Direction.Up:
+                    rotation.direction = Direction.Up;
                     translation.y -= -deltaTime * speed.value;
                     break;
-                case LookAtDirection.Down:
-                    direction.lookAtDirection = LookAtDirection.Down;
+                case Direction.Down:
+                    rotation.direction = Direction.Down;
                     translation.y -= deltaTime * speed.value;
                     break;
-                case LookAtDirection.Left:
-                    direction.lookAtDirection = LookAtDirection.Left;
+                case Direction.Left:
+                    rotation.direction = Direction.Left;
                     translation.x -= deltaTime * speed.value;
                     break;
-                case LookAtDirection.Right:
-                    direction.lookAtDirection = LookAtDirection.Right;
+                case Direction.Right:
+                    rotation.direction = Direction.Right;
                     translation.x -= -deltaTime * speed.value;
                     break;
             }
