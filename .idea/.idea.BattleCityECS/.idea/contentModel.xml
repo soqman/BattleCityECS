@@ -64,14 +64,17 @@
               <e p="BulletView.cs" t="Include" />
               <e p="Burst.cs" t="Include" />
               <e p="Collider.cs" t="Include" />
+              <e p="Collision.cs" t="Include" />
               <e p="Controller.cs" t="Include" />
               <e p="Damage.cs" t="Include" />
               <e p="Direction.cs" t="Include" />
               <e p="Engine.cs" t="Include" />
-              <e p="Size.cs" t="Include" />
               <e p="Speed.cs" t="Include" />
               <e p="TankView.cs" t="Include" />
               <e p="Translation.cs" t="Include" />
+            </e>
+            <e p="Initializers" t="Include">
+              <e p="GridInitializer.cs" t="Include" />
             </e>
             <e p="Providers" t="Include">
               <e p="AreaProvider.cs" t="Include" />
@@ -79,18 +82,17 @@
               <e p="BarrelProvider.cs" t="Include" />
               <e p="BulletViewProvider.cs" t="Include" />
               <e p="BurstProvider.cs" t="Include" />
+              <e p="ColliderProvider.cs" t="Include" />
               <e p="ControllerProvider.cs" t="Include" />
               <e p="DirectionProvider.cs" t="Include" />
               <e p="EngineProvider.cs" t="Include" />
-              <e p="SizeProvider.cs" t="Include" />
               <e p="SpeedProvider.cs" t="Include" />
               <e p="TankViewProvider.cs" t="Include" />
               <e p="TranslationProvider.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
               <e p="BurstSystem.cs" t="Include" />
-              <e p="DamageSystem.cs" t="Include" />
-              <e p="GridInitializer.cs" t="Include" />
+              <e p="CollisionsSystem.cs" t="Include" />
               <e p="MovementSystem.cs" t="Include" />
               <e p="ShootSystem.cs" t="Include" />
               <e p="ViewUpdaterSystem.cs" t="Include" />

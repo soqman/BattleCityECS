@@ -10,4 +10,8 @@ public struct Collider : IComponent
 {
     public bool isWalkable;
     public bool isBulletTransparent;
+    public float xSize;
+    public float ySize;
+    public float xOffset;
+    public float yOffset;
 }

@@ -8,10 +8,8 @@ using Unity.IL2CPP.CompilerServices;
 [System.Serializable]
 public struct Area : IComponent
 {
-    public AreaType areaType;
     public int x;
     public int y;
-    public DamageType Damage;
+    public DamageType State;
 }
-
 public enum DamageType{Whole,Left,Right,Up,Down,LeftUp,LeftDown,RightUp,RightDown,Destroyed}

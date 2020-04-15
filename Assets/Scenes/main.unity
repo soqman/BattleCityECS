@@ -155,6 +155,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9f2f1009e7c06914da474c8e5237ff0a, type: 2}
   updateSystems:
   - enabled: 1
+    system: {fileID: 11400000, guid: 83e5b124321d8c448a74425094d3c126, type: 2}
+  - enabled: 1
     system: {fileID: 11400000, guid: d27997f1d6bdbcc429f984f31afff42e, type: 2}
   - enabled: 1
     system: {fileID: 11400000, guid: 6e84e75a7b519dc408b6c96b51b848ee, type: 2}
@@ -162,8 +164,6 @@ MonoBehaviour:
     system: {fileID: 11400000, guid: ca5f1bd6b14937044b9bd8e995425ace, type: 2}
   - enabled: 1
     system: {fileID: 11400000, guid: ca22f4099586db5489c6f6417a1bc3ac, type: 2}
-  - enabled: 1
-    system: {fileID: 11400000, guid: f9d908653bb595c4684bb9a327c34376, type: 2}
   fixedUpdateSystems: []
   lateUpdateSystems: []
 --- !u!4 &266719630
@@ -190,7 +190,6 @@ GameObject:
   m_Component:
   - component: {fileID: 436332223}
   - component: {fileID: 436332227}
-  - component: {fileID: 436332226}
   - component: {fileID: 436332225}
   - component: {fileID: 436332224}
   - component: {fileID: 436332229}
@@ -199,6 +198,7 @@ GameObject:
   - component: {fileID: 436332232}
   - component: {fileID: 436332234}
   - component: {fileID: 436332222}
+  - component: {fileID: 436332226}
   m_Layer: 0
   m_Name: tank
   m_TagString: Untagged
@@ -308,12 +308,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 436332221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a80f1961e8be9674a84686b712387b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73f9fd26b6078234dbf9d1e79ae2bbc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    x: 1
-    y: 1
+    isWalkable: 0
+    isBulletTransparent: 0
+    xSize: 1
+    ySize: 1
+    xOffset: 0
+    yOffset: 0
 --- !u!114 &436332227
 MonoBehaviour:
   m_ObjectHideFlags: 0

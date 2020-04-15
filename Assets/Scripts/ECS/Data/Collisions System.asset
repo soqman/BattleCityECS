@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aacedbc3126f825488522a78d8b92d32, type: 3}
-  m_Name: Damage System
+  m_Script: {fileID: 11500000, guid: cd02563132ef6e54a99fc85c0b28c5e2, type: 3}
+  m_Name: Collisions System
   m_EditorClassIdentifier: 

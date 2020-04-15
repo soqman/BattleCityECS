@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a78de80fa11ad2469b53f84b271ee70, type: 3}
   m_Name: Grid Initializer
   m_EditorClassIdentifier: 
-  cellPrefab: {fileID: 5017796263077825093, guid: df41861761e6774449f9d1338a0fc8a2,
+  areaPrefab: {fileID: 5017796263077825093, guid: df41861761e6774449f9d1338a0fc8a2,
     type: 3}
   areaTypes:
   - {fileID: 11400000, guid: b0fd181a3ccdb274bb64ee47d0acccb3, type: 2}

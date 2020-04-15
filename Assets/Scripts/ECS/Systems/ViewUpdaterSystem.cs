@@ -87,38 +87,37 @@ public sealed class ViewUpdaterSystem : UpdateSystem
             var areaView = entity.GetComponent<AreaView>();
             var area = entity.GetComponent<Area>();
             areaView.Transform.position=new Vector3(translation.x,translation.y,0);
-            areaView.spriteRenderer.sprite = area.areaType.wholeSprite;
-            switch (area.Damage)
+            areaView.spriteRenderer.sprite = areaView.wholeSprite;
+            switch (area.State)
             {
                 case DamageType.Whole:
                     break;
                 case DamageType.Left:
-                    areaView.spriteRenderer.sprite = area.areaType.leftSprite;
+                    areaView.spriteRenderer.sprite = areaView.leftSprite;
                     break;
                 case DamageType.Right:
-                    areaView.spriteRenderer.sprite = area.areaType.rightSprite;
+                    areaView.spriteRenderer.sprite = areaView.rightSprite;
                     break;
                 case DamageType.Up:
-                    areaView.spriteRenderer.sprite = area.areaType.upSprite;
+                    areaView.spriteRenderer.sprite = areaView.upSprite;
                     break;
                 case DamageType.Down:
-                    areaView.spriteRenderer.sprite = area.areaType.downSprite;
+                    areaView.spriteRenderer.sprite = areaView.downSprite;
                     break;
                 case DamageType.LeftUp:
-                    areaView.spriteRenderer.sprite = area.areaType.leftUpSprite;
+                    areaView.spriteRenderer.sprite = areaView.leftUpSprite;
                     break;
                 case DamageType.LeftDown:
-                    areaView.spriteRenderer.sprite = area.areaType.leftDownSprite;
+                    areaView.spriteRenderer.sprite = areaView.leftDownSprite;
                     break;
                 case DamageType.RightUp:
-                    areaView.spriteRenderer.sprite = area.areaType.rightUpSprite;
+                    areaView.spriteRenderer.sprite = areaView.rightUpSprite;
                     break;
                 case DamageType.RightDown:
-                    areaView.spriteRenderer.sprite = area.areaType.rightDownSprite;
+                    areaView.spriteRenderer.sprite = areaView.rightDownSprite;
                     break;
                 case DamageType.Destroyed:
                     areaView.spriteRenderer.sprite = null;
-                    //needDestroy;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
