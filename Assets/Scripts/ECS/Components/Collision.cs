@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
@@ -9,16 +10,18 @@ using Unity.IL2CPP.CompilerServices;
 [System.Serializable]
 public struct Collision : IComponent
 {
-    public IEntity colliderWith;
+    public List<CollisionItem> collisions;
     public enum CollisionDirection
     {
         L = 0,
         R = 2,
         U = 4,
         D = 8,
-        LU = 16,
-        UR = 32,
-        RD = 64,
-        DL = 128
+    }
+
+    public struct CollisionItem
+    {
+        public IEntity collideWith;
+        public CollisionDirection direction;
     }
 }

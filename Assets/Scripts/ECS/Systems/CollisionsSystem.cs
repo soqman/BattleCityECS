@@ -1,4 +1,5 @@
-﻿using Morpeh;
+﻿using System.Collections.Generic;
+using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
@@ -36,43 +37,40 @@ public sealed class CollisionsSystem : UpdateSystem
                 var yDistance = Mathf.Abs(yPositionB - yPositionA);
                 var xMinDistance = (collider.xSize + currentCollider.xSize) / 2f;
                 var yMinDistance = (collider.ySize + currentCollider.ySize) / 2f;
-                if (xDistance <= xMinDistance && yDistance <= yMinDistance)
+                var xOverlap = xMinDistance - xDistance;
+                var yOverlap = yMinDistance - yDistance;
+                if (!(xDistance <= xMinDistance) || !(yDistance <= yMinDistance)) continue;
+                if (xOverlap > yOverlap)
                 {
-                    //AddCollisions(entity,colliders.GetEntity(i));
+                    AddCollision(entity, new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > yPositionB ? Collision.CollisionDirection.U:Collision.CollisionDirection.D});
+                    AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = yPositionA > yPositionB ? Collision.CollisionDirection.D:Collision.CollisionDirection.U});
+                }else if (yOverlap > xOverlap)
+                {
+                    AddCollision(entity,new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > xPositionB?Collision.CollisionDirection.L:Collision.CollisionDirection.R});
+                    AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = xPositionA>xPositionB?Collision.CollisionDirection.R:Collision.CollisionDirection.L});
+                }
+                else
+                {
+                    //AddCollision(entity, new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > yPositionB ? Collision.CollisionDirection.U:Collision.CollisionDirection.D});
+                    //AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = yPositionA > yPositionB ? Collision.CollisionDirection.D:Collision.CollisionDirection.U});
+                    //AddCollision(entity,new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = yPositionA > xPositionB?Collision.CollisionDirection.L:Collision.CollisionDirection.R});
+                    //AddCollision(colliders.GetEntity(i),new Collision.CollisionItem{collideWith = entity,direction = xPositionA>xPositionB?Collision.CollisionDirection.R:Collision.CollisionDirection.L});
                 }
             }
         }
     }
 
-    private void AddCollisions(IEntity first, IEntity second, Collision.CollisionDirection directionFirst, Collision.CollisionDirection directionSecond )
+    private void AddCollision(IEntity collisionTarget,Collision.CollisionItem collisionItem )
     {
-        if (first.Has<Collision>())
+        if (collisionTarget.Has<Collision>())
         {
-            ref var alreadyCollision = ref first.GetComponent<Collision>();
-            if (alreadyCollision.colliderWith.ID != second.ID)
-            {
-                ref var collision = ref first.AddComponent<Collision>();
-                collision.colliderWith = second;
-            }
+            ref var alreadyCollision = ref collisionTarget.GetComponent<Collision>();
+            alreadyCollision.collisions.Add(collisionItem);
         }
         else
         {
-            ref var collision = ref first.AddComponent<Collision>();
-            collision.colliderWith = second;
-        }
-        if (second.Has<Collision>())
-        {
-            /*ref var alreadyCollision = ref second.GetComponent<Collision>();
-            if (alreadyCollision.colliderWith.ID != first.ID)
-            {
-                ref var collision = ref second.AddComponent<Collision>();
-                collision.colliderWith = first;
-            }*/
-        }
-        else
-        {
-            ref var collision = ref second.AddComponent<Collision>();
-            collision.colliderWith = first;
+            ref var collision = ref collisionTarget.AddComponent<Collision>();
+            collision.collisions = new List<Collision.CollisionItem>{collisionItem};
         }
     }
 
