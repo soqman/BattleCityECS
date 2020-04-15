@@ -24,6 +24,7 @@ public sealed class BurstSystem : UpdateSystem
         foreach (var entity in bulletsBurst)
         {
             var bulletView = entity.GetComponent<BulletView>();
+            if (entity.Has<Collider>()) entity.RemoveComponent<Collider>();
             bulletView.Animator.SetTrigger("burst");
             Destroy(bulletView.GameObject,1f);
         }

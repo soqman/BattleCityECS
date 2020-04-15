@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    direction: 0
+    direction: 2
 --- !u!114 &7584534776024164886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    xSize: 0.2
-    ySize: 0.2
+    xSize: 0.1
+    ySize: 0.1
     xOffset: 0
     yOffset: 0
     mask:

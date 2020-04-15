@@ -10,6 +10,6 @@ public struct Area : IComponent
 {
     public int x;
     public int y;
-    public DamageType State;
+    public DamagedState State;
 }
-public enum DamageType{Whole,Left,Right,Up,Down,LeftUp,LeftDown,RightUp,RightDown,Destroyed}
+public enum DamagedState{Whole,Left,Right,Up,Down,LeftUp,LeftDown,RightUp,RightDown,Destroyed}

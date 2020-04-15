@@ -1013,11 +1013,6 @@ MonoBehaviour:
     stamp: 0
     type: 9
     UseGUIDsList: []
-  - guid: ccc6b1d9a8a765c499f45b021740d93f
-    loadInfoTS: 0
-    stamp: 1586612391
-    type: 2
-    UseGUIDsList: []
   - guid: 0dce1a768a95a57478893b2059f98000
     loadInfoTS: 0
     stamp: 1586586232
@@ -1316,11 +1311,6 @@ MonoBehaviour:
     stamp: 1586691706
     type: 2
     UseGUIDsList: []
-  - guid: fb5551fa85a888d47b2ae3cded9118d6
-    loadInfoTS: 0
-    stamp: 1586690748
-    type: 2
-    UseGUIDsList: []
   - guid: c01b85d2f306c2e45a4f9b8d8818e7d5
     loadInfoTS: 0
     stamp: 1586703073
@@ -1351,11 +1341,6 @@ MonoBehaviour:
     UseGUIDsList:
     - guid: eb3bac3025f0c34418009225b883742f
       ids: 73000000
-  - guid: 3fc15c4d4013a4444ae929b0c68b29af
-    loadInfoTS: 0
-    stamp: 1586701078
-    type: 2
-    UseGUIDsList: []
   - guid: 4f2c0736d5ee3d64f94aa903078d092c
     loadInfoTS: 0
     stamp: 0
@@ -1400,6 +1385,16 @@ MonoBehaviour:
     UseGUIDsList:
     - guid: cd02563132ef6e54a99fc85c0b28c5e2
       ids: 73000000
+  - guid: e39064e9818c3764d885a3f0dddec71d
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: 28cd38f9e548e0b4490fcb22ff29a49f
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
   priority: 3
   setting:
     alternateColor: 1

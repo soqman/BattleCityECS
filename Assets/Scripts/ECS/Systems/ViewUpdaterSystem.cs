@@ -87,40 +87,38 @@ public sealed class ViewUpdaterSystem : UpdateSystem
             var areaView = entity.GetComponent<AreaView>();
             var area = entity.GetComponent<Area>();
             areaView.Transform.position=new Vector3(translation.x,translation.y,0);
-            areaView.spriteRenderer.sprite = areaView.wholeSprite;
             switch (area.State)
             {
-                case DamageType.Whole:
+                case DamagedState.Whole:
+                    areaView.spriteRenderer.sprite = areaView.wholeSprite;
                     break;
-                case DamageType.Left:
+                case DamagedState.Left:
                     areaView.spriteRenderer.sprite = areaView.leftSprite;
                     break;
-                case DamageType.Right:
+                case DamagedState.Right:
                     areaView.spriteRenderer.sprite = areaView.rightSprite;
                     break;
-                case DamageType.Up:
+                case DamagedState.Up:
                     areaView.spriteRenderer.sprite = areaView.upSprite;
                     break;
-                case DamageType.Down:
+                case DamagedState.Down:
                     areaView.spriteRenderer.sprite = areaView.downSprite;
                     break;
-                case DamageType.LeftUp:
+                case DamagedState.LeftUp:
                     areaView.spriteRenderer.sprite = areaView.leftUpSprite;
                     break;
-                case DamageType.LeftDown:
+                case DamagedState.LeftDown:
                     areaView.spriteRenderer.sprite = areaView.leftDownSprite;
                     break;
-                case DamageType.RightUp:
+                case DamagedState.RightUp:
                     areaView.spriteRenderer.sprite = areaView.rightUpSprite;
                     break;
-                case DamageType.RightDown:
+                case DamagedState.RightDown:
                     areaView.spriteRenderer.sprite = areaView.rightDownSprite;
                     break;
-                case DamageType.Destroyed:
+                case DamagedState.Destroyed:
                     areaView.spriteRenderer.sprite = null;
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException();
             }
             entity.RemoveComponent<AreaUpdateIndicator>();
         }

@@ -66,7 +66,6 @@
               <e p="Collider.cs" t="Include" />
               <e p="Collision.cs" t="Include" />
               <e p="Controller.cs" t="Include" />
-              <e p="Damage.cs" t="Include" />
               <e p="Engine.cs" t="Include" />
               <e p="Rotation.cs" t="Include" />
               <e p="Speed.cs" t="Include" />
@@ -77,11 +76,9 @@
               <e p="GridInitializer.cs" t="Include" />
             </e>
             <e p="Providers" t="Include">
-              <e p="AreaProvider.cs" t="Include" />
               <e p="AreaViewProvider.cs" t="Include" />
               <e p="BarrelProvider.cs" t="Include" />
               <e p="BulletViewProvider.cs" t="Include" />
-              <e p="BurstProvider.cs" t="Include" />
               <e p="ColliderProvider.cs" t="Include" />
               <e p="ControllerProvider.cs" t="Include" />
               <e p="DirectionProvider.cs" t="Include" />
@@ -93,6 +90,7 @@
             <e p="Systems" t="Include">
               <e p="BurstSystem.cs" t="Include" />
               <e p="CollisionsSystem.cs" t="Include" />
+              <e p="DamagesSystem.cs" t="Include" />
               <e p="MovementSystem.cs" t="Include" />
               <e p="ShootSystem.cs" t="Include" />
               <e p="ViewUpdaterSystem.cs" t="Include" />
