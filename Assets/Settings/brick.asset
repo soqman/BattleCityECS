@@ -24,11 +24,11 @@ MonoBehaviour:
     type: 3}
   leftUpSprite: {fileID: 8659207944374958647, guid: 4f2c0736d5ee3d64f94aa903078d092c,
     type: 3}
-  rightUpSprite: {fileID: -2135804621178603756, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+  rightUpSprite: {fileID: 3772433308668735133, guid: 4f2c0736d5ee3d64f94aa903078d092c,
     type: 3}
   rightDownSprite: {fileID: 8553675010575726136, guid: 4f2c0736d5ee3d64f94aa903078d092c,
     type: 3}
-  leftDownSprite: {fileID: 3772433308668735133, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+  leftDownSprite: {fileID: -2135804621178603756, guid: 4f2c0736d5ee3d64f94aa903078d092c,
     type: 3}
   mask:
     serializedVersion: 2

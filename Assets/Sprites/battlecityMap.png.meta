@@ -4,55 +4,55 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -9168059258119935580
-    second: battleCityMap_0
+    second: whole-brick
   - first:
       213: -5511042438278039831
-    second: battleCityMap_1
+    second: bottom-brick
   - first:
       213: 1855202325411961189
-    second: battleCityMap_2
+    second: left-brick
   - first:
       213: 3772433308668735133
-    second: battleCityMap_3
+    second: righttop-brick
   - first:
       213: 4614157767852045427
-    second: battleCityMap_4
+    second: stone
   - first:
       213: 6359825985735184455
-    second: battleCityMap_5
+    second: up-brick
   - first:
       213: -6116402390210205744
-    second: battleCityMap_6
+    second: right-brick
   - first:
       213: -2135804621178603756
-    second: battleCityMap_7
+    second: leftbottom-brick
   - first:
       213: -4817464978296490270
-    second: battleCityMap_8
+    second: water-0
   - first:
       213: -2730216204497039765
-    second: battleCityMap_9
+    second: grass
   - first:
       213: -3685537311819861959
-    second: battleCityMap_10
+    second: wall
   - first:
       213: 8553675010575726136
-    second: battleCityMap_11
+    second: rightbottom-brick
   - first:
       213: -4940498578157466769
-    second: battleCityMap_12
+    second: water-1
   - first:
       213: -5082739807027179429
-    second: battleCityMap_13
+    second: ice
   - first:
       213: 8659207944374958647
-    second: battleCityMap_14
+    second: lefttop-brick
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -79,15 +79,15 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 0
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -132,7 +132,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: battleCityMap_0
+      name: whole-brick
       rect:
         serializedVersion: 2
         x: 0
@@ -153,7 +153,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_1
+      name: bottom-brick
       rect:
         serializedVersion: 2
         x: 16
@@ -174,7 +174,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_2
+      name: left-brick
       rect:
         serializedVersion: 2
         x: 32
@@ -195,7 +195,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_3
+      name: righttop-brick
       rect:
         serializedVersion: 2
         x: 48
@@ -216,7 +216,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_4
+      name: stone
       rect:
         serializedVersion: 2
         x: 0
@@ -237,7 +237,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_5
+      name: up-brick
       rect:
         serializedVersion: 2
         x: 16
@@ -258,7 +258,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_6
+      name: right-brick
       rect:
         serializedVersion: 2
         x: 32
@@ -279,7 +279,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_7
+      name: leftbottom-brick
       rect:
         serializedVersion: 2
         x: 48
@@ -300,7 +300,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_8
+      name: water-0
       rect:
         serializedVersion: 2
         x: 0
@@ -321,7 +321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_9
+      name: grass
       rect:
         serializedVersion: 2
         x: 16
@@ -342,7 +342,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_10
+      name: wall
       rect:
         serializedVersion: 2
         x: 32
@@ -363,7 +363,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_11
+      name: rightbottom-brick
       rect:
         serializedVersion: 2
         x: 48
@@ -384,7 +384,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_12
+      name: water-1
       rect:
         serializedVersion: 2
         x: 0
@@ -405,7 +405,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_13
+      name: ice
       rect:
         serializedVersion: 2
         x: 16
@@ -426,7 +426,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: battleCityMap_14
+      name: lefttop-brick
       rect:
         serializedVersion: 2
         x: 48
