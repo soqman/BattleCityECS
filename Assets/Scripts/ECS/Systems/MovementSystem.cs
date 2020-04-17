@@ -14,7 +14,7 @@ public sealed class MovementSystem : UpdateSystem
     
     public override void OnAwake() {
         filterController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<Controller>();
-        filterBullets = World.Filter.With<Translation>().With<Rotation>().With<Speed>().Without<Controller>().Without<Collision>();
+        filterBullets = World.Filter.With<Translation>().With<Rotation>().With<Speed>().Without<Controller>().Without<Collision>().With<BulletView>();
     }
 
     private void UnitsMove(float deltaTime)
@@ -74,6 +74,10 @@ public sealed class MovementSystem : UpdateSystem
         foreach (var item in collision.collisions)
         {
             if (item.collideWith.Has<Area>() && item.direction==direction)
+            {
+                return true;
+            }
+            if (item.collideWith.Has<Barrel>() && item.direction==direction)
             {
                 return true;
             }

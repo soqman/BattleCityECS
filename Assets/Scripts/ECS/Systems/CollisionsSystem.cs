@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
@@ -41,7 +42,7 @@ public sealed class CollisionsSystem : UpdateSystem
                 var yDistance = Mathf.Abs(yPositionB - yPositionA);
                 var xMinDistance = (collider.xSize + currentCollider.xSize) / 2f;
                 var yMinDistance = (collider.ySize + currentCollider.ySize) / 2f;
-                if (!(xDistance < xMinDistance) || !(yDistance < yMinDistance)) continue;
+                if (!(xDistance < xMinDistance) || !(yDistance < yMinDistance) || !CheckDirectionRelative(rotation.direction,xPositionA,yPositionA,xPositionB,yPositionB)) continue;
                 if (collider.mask == (collider.mask | (1 << currentCollider.layer)))
                 {
                     AddCollision(entity, new Collision.CollisionItem{collideWith = colliders.GetEntity(i),direction = rotation.direction});
@@ -52,6 +53,26 @@ public sealed class CollisionsSystem : UpdateSystem
                 }
             }
         }
+    }
+
+    private bool CheckDirectionRelative(Direction direction, float xA, float yA, float xB, float yB)
+    {
+        switch (direction)
+        {
+            case Direction.Left:
+                if (xA > xB) return true;
+                break;
+            case Direction.Right:
+                if (xA < xB) return true;
+                break;
+            case Direction.Up:
+                if (yA < yB) return true;
+                break;
+            case Direction.Down:
+                if (yA > yB) return true;
+                break;
+        }
+        return false;
     }
 
     private void AddCollision(IEntity collisionTarget,Collision.CollisionItem collisionItem )

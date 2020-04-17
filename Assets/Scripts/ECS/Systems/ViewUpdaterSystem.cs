@@ -1,5 +1,6 @@
 ﻿using System;
 using Morpeh;
+using Photon.Pun;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
@@ -7,14 +8,14 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [CreateAssetMenu(menuName = "ECS/Systems/" + nameof(ViewUpdaterSystem))]
-public sealed class ViewUpdaterSystem : UpdateSystem
+public sealed class ViewUpdaterSystem : UpdateSystem, IPunObservable
 {
     private Filter tankFilter;
     private Filter bulletFilter;
     private Filter areaFilter;
     public override void OnAwake()
     {
-        tankFilter=World.Filter.With<Translation>().With<Rotation>().With<Engine>().With<TankView>();
+        tankFilter=World.Filter.With<Translation>().With<Rotation>().With<TankView>();
         bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Rotation>();
         areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>().With<AreaUpdateIndicator>();
     }
@@ -31,7 +32,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
         {
             var translation = entity.GetComponent<Translation>();
             var direction = entity.GetComponent<Rotation>();
-            var engine = entity.GetComponent<Engine>();
+            //var engine = entity.GetComponent<Engine>();
             var tankView = entity.GetComponent<TankView>();
             tankView.Transform.position=new Vector3(translation.x,translation.y,0);
             switch (direction.direction)
@@ -49,7 +50,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,-90);
                     break;
             }
-            tankView.Animator.SetBool("on",engine.isActive);
+            //tankView.Animator.SetBool("on",engine.isActive);
         }
     }
 
@@ -122,5 +123,10 @@ public sealed class ViewUpdaterSystem : UpdateSystem
             }
             entity.RemoveComponent<AreaUpdateIndicator>();
         }
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Morpeh;
+using Photon.Pun;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
@@ -70,7 +71,7 @@ public sealed class GridInitializer : Initializer
 
                 entity.AddComponent<AreaUpdateIndicator>();
                 
-                var areaGameObject=Instantiate(areaPrefab);
+                var areaGameObject=PhotonNetwork.Instantiate(areaPrefab.name,Vector3.zero, Quaternion.identity);
                 ref var areaView = ref entity.AddComponent<AreaView>();
                 areaView.spriteRenderer = areaGameObject.GetComponentInChildren<SpriteRenderer>();
                 areaView.Transform = areaGameObject.transform;

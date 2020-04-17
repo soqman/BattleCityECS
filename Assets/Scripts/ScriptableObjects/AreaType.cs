@@ -1,5 +1,4 @@
-﻿using UnityEditor.UIElements;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "new AreaType", menuName = "ScriptableObjects/AreaType")]
 public class AreaType : ScriptableObject

@@ -1,4 +1,5 @@
 ﻿using Morpeh;
+using Photon.Pun;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
@@ -12,7 +13,7 @@ public sealed class ShootSystem : UpdateSystem
     public GameObject prefab;
     
     public override void OnAwake() {
-        filter = World.Filter.With<Translation>().With<Rotation>().With<Barrel>();
+        filter = World.Filter.With<Translation>().With<Rotation>().With<Barrel>().With<Controller>();
     }
 
     public override void OnUpdate(float deltaTime) {
@@ -24,7 +25,7 @@ public sealed class ShootSystem : UpdateSystem
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     parentBarrel.lastShotRemain = 0;
-                    var bullet = Instantiate(prefab);
+                    var bullet = PhotonNetwork.Instantiate(prefab.name,Vector3.zero, Quaternion.identity);
                     ref var bulletTranslation = ref bullet.GetComponent<TranslationProvider>().GetData();
                     ref var bulletDirection = ref bullet.GetComponent<DirectionProvider>().GetData();
                     ref var bulletSpeed = ref bullet.GetComponent<SpeedProvider>().GetData();
