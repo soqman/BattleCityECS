@@ -2749,13 +2749,6 @@ MonoBehaviour:
     stamp: 0
     type: 9
     UseGUIDsList: []
-  - guid: 1fec5f1f580c14546b40c513fc6cd318
-    loadInfoTS: 0
-    stamp: 1587039322
-    type: 5
-    UseGUIDsList:
-    - guid: cd89a60346b168c4b83ee1e4dccdab3c
-      ids: 73000000
   - guid: 3f5b5dff67a942289a9defa416b206f3
     loadInfoTS: 0
     stamp: 1555457215
@@ -2894,6 +2887,51 @@ MonoBehaviour:
     type: 2
     UseGUIDsList: []
   - guid: 00dda376e55c9044b97d4701cd09365f
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
+  - guid: d96a819f5fdd65e488e05597e588bd97
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: 6303e6f9613d4314992de83226731d49
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: 4a3fa88d1a6b7394cac7c15231f7cb14
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: 3f4ba71785d24ae46bf60a8ab1742016
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: e89cf1a14a4f26f458094688c825244d
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: 401fdc45423cc7e448e9d6f604499d90
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
+  - guid: d0ff5ff75baa4fa4d90b9d86fea3bace
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
+  - guid: 14dee9b1459f0504f857ab0b5e1eed64
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
+  - guid: fbd74b13b55efee41a9d3ca80b799fec
     loadInfoTS: 0
     stamp: 0
     type: 5

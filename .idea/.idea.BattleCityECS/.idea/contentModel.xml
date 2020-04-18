@@ -225,10 +225,13 @@
               <e p="Collider.cs" t="Include" />
               <e p="Collision.cs" t="Include" />
               <e p="Controller.cs" t="Include" />
+              <e p="Damage.cs" t="Include" />
               <e p="Engine.cs" t="Include" />
+              <e p="Health.cs" t="Include" />
               <e p="NetworkControllerComponent.cs" t="Include" />
               <e p="Rotation.cs" t="Include" />
               <e p="Speed.cs" t="Include" />
+              <e p="TankResetIndicator.cs" t="Include" />
               <e p="TankView.cs" t="Include" />
               <e p="TeamComponent.cs" t="Include" />
               <e p="Translation.cs" t="Include" />
@@ -243,8 +246,10 @@
               <e p="BulletViewProvider.cs" t="Include" />
               <e p="ColliderProvider.cs" t="Include" />
               <e p="ControllerProvider.cs" t="Include" />
+              <e p="DamageProvider.cs" t="Include" />
               <e p="DirectionProvider.cs" t="Include" />
               <e p="EngineProvider.cs" t="Include" />
+              <e p="HealthProvider.cs" t="Include" />
               <e p="NetworkControllerProvider.cs" t="Include" />
               <e p="SpeedProvider.cs" t="Include" />
               <e p="TankViewProvider.cs" t="Include" />

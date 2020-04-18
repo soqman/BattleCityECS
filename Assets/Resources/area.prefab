@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6337394303362005613}
   - component: {fileID: 8233363685638531005}
   - component: {fileID: 7423297549296281068}
+  - component: {fileID: -6073775703742065579}
   m_Layer: 0
   m_Name: area
   m_TagString: Untagged
@@ -214,3 +215,17 @@ MonoBehaviour:
   serializedData:
     x: 0
     y: 0
+--- !u!114 &-6073775703742065579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5017796263077825093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6303e6f9613d4314992de83226731d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    value: -1

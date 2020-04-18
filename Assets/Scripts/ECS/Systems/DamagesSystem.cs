@@ -10,12 +10,37 @@ using Unity.IL2CPP.CompilerServices;
 public sealed class DamagesSystem : UpdateSystem
 {
     private Filter areasFilter;
+    private Filter unitsFilter;
     public override void OnAwake()
     {
-        areasFilter = World.Filter.With<Collision>().With<Area>();
+        areasFilter = World.Filter.With<Collision>().With<Area>().With<Health>();
+        unitsFilter = World.Filter.With<Collision>().With<Health>().With<Barrel>();
     }
 
-    public override void OnUpdate(float deltaTime) {
+    public override void OnUpdate(float deltaTime)
+    {
+        UpdateUnits();
+        UpdateAreas();
+    }
+
+    private void UpdateUnits()
+    {
+        foreach (var entity in unitsFilter)
+        {
+            ref var collision = ref entity.GetComponent<Collision>();
+            ref var health = ref entity.GetComponent<Health>();
+            foreach (var collisionItem in collision.collisions)
+            {
+                if (collisionItem.collideWith.Has<Damage>())
+                {
+                    health.value -= collisionItem.collideWith.GetComponent<Damage>().value;
+                }
+            }
+        }
+    }
+
+    private void UpdateAreas()
+    {
         foreach (var entity in areasFilter)
         {
             ref var area = ref entity.GetComponent<Area>();
@@ -25,34 +50,10 @@ public sealed class DamagesSystem : UpdateSystem
                 area.State=AddDamage(area.State,collisionItem.direction);
                 if (entity.Has<Collider>())
                 {
-                    UpdateCollider(area.State,ref entity.GetComponent<Collider>());
                     if (area.State == DamagedState.Destroyed) entity.RemoveComponent<Collider>();
                 }
                 entity.AddComponent<AreaUpdateIndicator>();
             }
-        }
-    }
-
-    private void UpdateCollider(DamagedState state, ref Collider collider)
-    {
-        switch (state)
-        {
-            case DamagedState.Left:
-                break;
-            case DamagedState.Right:
-                break;
-            case DamagedState.Up:
-                break;
-            case DamagedState.Down:
-                break;
-            case DamagedState.LeftUp:
-                break;
-            case DamagedState.LeftDown:
-                break;
-            case DamagedState.RightUp:
-                break;
-            case DamagedState.RightDown:
-                break;
         }
     }
 
