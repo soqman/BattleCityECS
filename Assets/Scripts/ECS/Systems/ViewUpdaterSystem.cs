@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Morpeh;
 using Photon.Pun;
 using UnityEngine;
@@ -8,26 +9,32 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [CreateAssetMenu(menuName = "ECS/Systems/" + nameof(ViewUpdaterSystem))]
-public sealed class ViewUpdaterSystem : UpdateSystem, IPunObservable
+public sealed class ViewUpdaterSystem : UpdateSystem
 {
     private Filter tankFilter;
     private Filter bulletFilter;
     private Filter areaFilter;
+    private Filter areaInitFilter;
+    [SerializeField] private List<AreaType> areaTypes;
     public override void OnAwake()
     {
         tankFilter=World.Filter.With<Translation>().With<Rotation>().With<TankView>();
         bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Rotation>();
         areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>().With<AreaUpdateIndicator>();
+        areaInitFilter = areaFilter.With<AreaInitIndicator>();
     }
 
-    public override void OnUpdate(float deltaTime) {
+    public override void OnUpdate(float deltaTime)
+    {
+        InitAreas();
+        UpdateAreas();
         UpdateTanks();
         UpdateBullets();
-        UpdateAreas();
     }
 
     private void UpdateTanks()
     {
+        if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) return;
         foreach (var entity in tankFilter)
         {
             var translation = entity.GetComponent<Translation>();
@@ -56,6 +63,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem, IPunObservable
 
     private void UpdateBullets()
     {
+        if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) return;
         foreach (var entity in bulletFilter)
         {
             var translation = entity.GetComponent<Translation>();
@@ -77,6 +85,29 @@ public sealed class ViewUpdaterSystem : UpdateSystem, IPunObservable
                     bulletView.Transform.localRotation=Quaternion.Euler(0,0,-90);
                     break;
             }
+        }
+    }
+
+    private void InitAreas()
+    {
+        foreach (var entity in areaInitFilter)
+        {
+            ref var areaView = ref entity.GetComponent<AreaView>();
+            var area = entity.GetComponent<Area>();
+            var areaType=areaTypes.Find(x => x.name == area.areaType);
+            if (areaType != null)
+            {
+                areaView.wholeSprite = areaType.wholeSprite;
+                areaView.leftSprite = areaType.leftSprite;
+                areaView.rightSprite = areaType.rightSprite;
+                areaView.downSprite = areaType.downSprite;
+                areaView.upSprite = areaType.upSprite;
+                areaView.leftUpSprite = areaType.leftUpSprite;
+                areaView.rightUpSprite = areaType.rightUpSprite;
+                areaView.leftDownSprite = areaType.leftDownSprite;
+                areaView.rightDownSprite = areaType.rightDownSprite;
+            }
+            entity.RemoveComponent<AreaInitIndicator>();
         }
     }
     
@@ -123,10 +154,5 @@ public sealed class ViewUpdaterSystem : UpdateSystem, IPunObservable
             }
             entity.RemoveComponent<AreaUpdateIndicator>();
         }
-    }
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        
     }
 }

@@ -6,11 +6,11 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [System.Serializable]
-public struct Area : IComponent
+public struct NetworkControllerComponent : IComponent
 {
-    public int x;
-    public int y;
-    public DamagedState State;
-    public string areaType;
+    public bool up;
+    public bool down;
+    public bool left;
+    public bool right;
+    public bool fire;
 }
-public enum DamagedState{Whole,Left,Right,Up,Down,LeftUp,LeftDown,RightUp,RightDown,Destroyed}

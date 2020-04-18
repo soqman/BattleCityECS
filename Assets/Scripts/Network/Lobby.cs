@@ -6,9 +6,11 @@ using UnityEngine.Events;
 public class Lobby : MonoBehaviourPunCallbacks
     {
         [SerializeField] private string version;
-        [SerializeField] private GameObject unit;
-        [SerializeField] private GameObject installerECS;
+        [SerializeField] private GameObject masterUnit;
+        [SerializeField] private GameObject clientUnit;
+        [SerializeField] private GameObject installerMaster;
         [SerializeField] private GameObject lobbyMenu;
+        [SerializeField] private UnityEvent connectedToMasterEvent;
         private void Start()
         {
             ConnectToPhoton();
@@ -22,13 +24,14 @@ public class Lobby : MonoBehaviourPunCallbacks
         }
         public override void OnConnectedToMaster()
         {
-            Debug.Log("CONNECTED TO PHOTON");
+            connectedToMasterEvent.Invoke();
         }
 
         public override void OnJoinedRoom()
         {
             Debug.Log("CONNECTED TO ROOM");
             lobbyMenu.SetActive(false);
+            if (PhotonNetwork.IsMasterClient)installerMaster.SetActive(true);
         }
 
         public override void OnDisconnected(DisconnectCause cause)
@@ -44,12 +47,14 @@ public class Lobby : MonoBehaviourPunCallbacks
 
         public override void OnCreatedRoom()
         {
-            installerECS.SetActive(true);
-            PhotonNetwork.Instantiate( unit.name, Vector3.zero, Quaternion.identity);
+            PhotonNetwork.Instantiate( masterUnit.name, new Vector3(-1,-6,0), Quaternion.identity);
+            PhotonNetwork.Instantiate( clientUnit.name, new Vector3(1,6,0),Quaternion.Euler(0,0,180));
         }
 
         public void JoinGame()
         {
             PhotonNetwork.JoinRoom("TEST-ROOM");
         }
+        
+        
     }

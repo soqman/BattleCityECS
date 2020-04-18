@@ -13,12 +13,12 @@ TagManager:
   - UI
   - 
   - 
-  - Bullets
-  - Tanks
-  - Player
-  - AreaBulletTransparent
+  - YellowBullets
+  - GreenBullets
+  - YellowTeam
+  - GreenTeam
   - AreaSolid
-  - 
+  - AreaBulletTransparent
   - 
   - 
   - 

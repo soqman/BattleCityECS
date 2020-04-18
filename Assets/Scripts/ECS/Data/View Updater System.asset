@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d0034c17dd57a49878d9b10a626878, type: 3}
   m_Name: View Updater System
   m_EditorClassIdentifier: 
+  areaTypes:
+  - {fileID: 11400000, guid: b0fd181a3ccdb274bb64ee47d0acccb3, type: 2}
+  - {fileID: 11400000, guid: 17bc0baf36d2ec24c946d8c19cb63708, type: 2}
+  - {fileID: 11400000, guid: dfcc4c64743bdca419c8455c7da027a0, type: 2}
+  - {fileID: 11400000, guid: 49e2057c69be45c47b79f756d27b0c7b, type: 2}
+  - {fileID: 11400000, guid: 391bb32844e70334ea6bc112a249a414, type: 2}

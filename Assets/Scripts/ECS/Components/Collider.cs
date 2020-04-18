@@ -14,4 +14,5 @@ public struct Collider : IComponent
     public float yOffset;
     public LayerMask mask;
     public int layer;
+    public int exceptionEntity;
 }

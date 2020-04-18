@@ -6,11 +6,6 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [System.Serializable]
-public struct Area : IComponent
+public struct AreaInitIndicator : IComponent
 {
-    public int x;
-    public int y;
-    public DamagedState State;
-    public string areaType;
 }
-public enum DamagedState{Whole,Left,Right,Up,Down,LeftUp,LeftDown,RightUp,RightDown,Destroyed}

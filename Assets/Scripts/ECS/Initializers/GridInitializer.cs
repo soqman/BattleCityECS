@@ -27,8 +27,12 @@ public sealed class GridInitializer : Initializer
         {
             for (var i = 0; i < COLUMNS_COUNT; i++)
             {
-                var entity = World.CreateEntity();
-                ref var area = ref entity.AddComponent<Area>();
+                var areaGameObject=PhotonNetwork.Instantiate(areaPrefab.name,Vector3.zero, Quaternion.identity);
+                var areaViewProvider = areaGameObject.GetComponent<AreaViewProvider>();
+                ref var areaView = ref areaViewProvider.GetData();
+                var entity = areaViewProvider.Entity;
+                ref var area = ref areaGameObject.GetComponent<AreaProvider>().GetData();
+                ref var translation = ref areaGameObject.GetComponent<TranslationProvider>().GetData();
                 AreaType areaType;
                 if (i % 2 == 0 && j % 2 == 0)
                 {
@@ -52,8 +56,7 @@ public sealed class GridInitializer : Initializer
                 area.x = i;
                 area.y = j;
                 areaTypesHolder[i,j]=areaType;
-
-                ref var translation = ref entity.AddComponent<Translation>();
+                
                 var position = grid.GetWorldPosition(i, j);
                 translation.x = position.x;
                 translation.y = position.y;
@@ -67,23 +70,12 @@ public sealed class GridInitializer : Initializer
                     collider.yOffset = CELL_SIZE / 2;
                     collider.mask = areaType.mask;
                     collider.layer = areaType.layer;
+                    collider.exceptionEntity = -1;
                 }
 
+                area.areaType = areaType.name;
+                entity.AddComponent<AreaInitIndicator>();
                 entity.AddComponent<AreaUpdateIndicator>();
-                
-                var areaGameObject=PhotonNetwork.Instantiate(areaPrefab.name,Vector3.zero, Quaternion.identity);
-                ref var areaView = ref entity.AddComponent<AreaView>();
-                areaView.spriteRenderer = areaGameObject.GetComponentInChildren<SpriteRenderer>();
-                areaView.Transform = areaGameObject.transform;
-                areaView.wholeSprite = areaType.wholeSprite;
-                areaView.leftSprite = areaType.leftSprite;
-                areaView.rightSprite = areaType.rightSprite;
-                areaView.downSprite = areaType.downSprite;
-                areaView.upSprite = areaType.upSprite;
-                areaView.leftUpSprite = areaType.leftUpSprite;
-                areaView.rightUpSprite = areaType.rightUpSprite;
-                areaView.leftDownSprite = areaType.leftDownSprite;
-                areaView.rightDownSprite = areaType.rightDownSprite;
             }
         }
     }

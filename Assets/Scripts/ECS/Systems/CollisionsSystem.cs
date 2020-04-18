@@ -33,7 +33,7 @@ public sealed class CollisionsSystem : UpdateSystem
             {
                 ref var currentCollider = ref collidersBag.GetComponent(i);
 
-                if (entity.ID == colliders.GetEntity(i).ID) continue;
+                if (entity.ID == colliders.GetEntity(i).ID || entity.ID == collidersBag.GetComponent(i).exceptionEntity) continue;
                 var xPositionA = collider.xOffset+translation.x;
                 var yPositionA = collider.yOffset+translation.y;
                 var xPositionB = currentCollider.xOffset+translationsBag.GetComponent(i).x;

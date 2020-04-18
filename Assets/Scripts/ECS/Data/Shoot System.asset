@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc91be224bf3434f87c64feb7c01ceb, type: 3}
   m_Name: Shoot System
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7584534776024164887, guid: f48d6ca7239850c449a440253b9a6d51, type: 3}
+  yellowPrefab: {fileID: 7584534776024164887, guid: f48d6ca7239850c449a440253b9a6d51,
+    type: 3}
+  greenPrefab: {fileID: 7584534776024164887, guid: 00dda376e55c9044b97d4701cd09365f,
+    type: 3}

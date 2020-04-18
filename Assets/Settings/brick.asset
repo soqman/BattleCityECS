@@ -32,5 +32,5 @@ MonoBehaviour:
     type: 3}
   mask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   layer: 12

@@ -10,11 +10,13 @@ using Unity.IL2CPP.CompilerServices;
 public sealed class MovementSystem : UpdateSystem
 {
     private Filter filterController;
+    private Filter filterNetworkController;
     private Filter filterBullets;
     
     public override void OnAwake() {
         filterController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<Controller>();
         filterBullets = World.Filter.With<Translation>().With<Rotation>().With<Speed>().Without<Controller>().Without<Collision>().With<BulletView>();
+        filterNetworkController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<NetworkControllerComponent>();
     }
 
     private void UnitsMove(float deltaTime)
@@ -56,6 +58,55 @@ public sealed class MovementSystem : UpdateSystem
                 }
                 translation.x -= deltaTime * speed.value;
             }else if (Input.GetKey(KeyCode.RightArrow))
+            {
+                direction.direction = Direction.Right;
+                translation.y = Closest(translation.y, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Right))break;
+                }
+                translation.x += deltaTime * speed.value;
+            }
+        }
+        foreach (var entity in filterNetworkController) {
+            
+            ref var translation = ref entity.GetComponent<Translation>();
+            ref var direction = ref entity.GetComponent<Rotation>();
+            ref var speed = ref entity.GetComponent<Speed>();
+            ref var networkController = ref entity.GetComponent<NetworkControllerComponent>();
+            
+            if (networkController.up)
+            {
+                direction.direction = Direction.Up;
+                translation.x = Closest(translation.x, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Up))break;
+                }
+                translation.y += deltaTime * speed.value;
+            }else if (networkController.down)
+            {
+                direction.direction = Direction.Down;
+                translation.x = Closest(translation.x, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Down))break;
+                }
+                translation.y -= deltaTime * speed.value;
+            }else if (networkController.left)
+            {
+                direction.direction = Direction.Left;
+                translation.y = Closest(translation.y, 0.5f);
+                if (entity.Has<Collision>())
+                {
+                    ref var collision = ref entity.GetComponent<Collision>();
+                    if(HasCollisionInThisDirection(collision,Direction.Left))break;
+                }
+                translation.x -= deltaTime * speed.value;
+            }else if (networkController.right)
             {
                 direction.direction = Direction.Right;
                 translation.y = Closest(translation.y, 0.5f);

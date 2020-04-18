@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 266719630}
   - component: {fileID: 266719629}
   m_Layer: 0
-  m_Name: '[Installer]'
+  m_Name: installer-master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,8 +577,6 @@ MonoBehaviour:
     system: {fileID: 11400000, guid: ca22f4099586db5489c6f6417a1bc3ac, type: 2}
   - enabled: 1
     system: {fileID: 11400000, guid: 28cd38f9e548e0b4490fcb22ff29a49f, type: 2}
-  - enabled: 1
-    system: {fileID: 11400000, guid: ca5f1bd6b14937044b9bd8e995425ace, type: 2}
   fixedUpdateSystems: []
   lateUpdateSystems: []
 --- !u!4 &266719630
@@ -695,7 +693,7 @@ RectTransform:
   - {fileID: 480444986}
   - {fileID: 1801124961}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -875,7 +873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &480444986
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1015,7 +1013,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &584467569
 MonoBehaviour:
@@ -1030,9 +1028,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1.0.0
-  unit: {fileID: 1269907097746926296, guid: 14c04347b2e4d4948a3cf8c701c508d8, type: 3}
-  installerECS: {fileID: 266719628}
+  masterUnit: {fileID: 1269907097746926296, guid: 14c04347b2e4d4948a3cf8c701c508d8,
+    type: 3}
+  clientUnit: {fileID: 1269907097746926296, guid: 834683a7d1bf05341a24540408258845,
+    type: 3}
+  installerMaster: {fileID: 266719628}
   lobbyMenu: {fileID: 307776538}
+  connectedToMasterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1049688644}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 480444985}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!1 &652780633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652780635}
+  - component: {fileID: 652780634}
+  m_Layer: 0
+  m_Name: installer-client
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &652780634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652780633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3e5db895821594790574b8473edacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 1
+  initializers: []
+  updateSystems:
+  - enabled: 1
+    system: {fileID: 11400000, guid: ca5f1bd6b14937044b9bd8e995425ace, type: 2}
+  fixedUpdateSystems: []
+  lateUpdateSystems: []
+--- !u!4 &652780635
+Transform:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652780633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2, y: -0.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865517083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1049688645
 RectTransform:
   m_ObjectHideFlags: 0
