@@ -10,16 +10,17 @@ using Unity.IL2CPP.CompilerServices;
 [CreateAssetMenu(menuName = "ECS/Initializers/" + nameof(GridInitializer))]
 public sealed class GridInitializer : Initializer
 {
-    private const int COLUMNS_COUNT = 26;
-    private const int ROWS_COUNT = 26;
+    private const int COLUMNS_COUNT = 30;
+    private const int ROWS_COUNT = 30;
     private const float CELL_SIZE = 0.5f;
-    private readonly Vector3 OFFSET = new Vector3(-6.5f,-6.5f,0);
+    private readonly Vector3 OFFSET = new Vector3(-7f,-7.5f,0);
     [SerializeField] private GameObject areaPrefab;
     [SerializeField] private GameObject greenBasePrefab;
     [SerializeField] private GameObject yellowBasePrefab;
     [SerializeField] private GameObject wallPrefab;
     [SerializeField] private List<AreaType> areaTypes;
     [SerializeField] private AreaType empty;
+    [SerializeField] private AreaType wall;
     [SerializeField] private Vector2 greenBasePosition;
     [SerializeField] private Vector2 yellowBasePosition;
     private Grid grid;
@@ -41,7 +42,8 @@ public sealed class GridInitializer : Initializer
                 AreaType areaType;
                 if (i % 2 == 0 && j % 2 == 0)
                 {
-                    if (i / 2 % 2 == 0 || j / 2 % 2 == 0)
+                    if (i == 0 || i == COLUMNS_COUNT - 2 || j == 0 || j == COLUMNS_COUNT - 2) areaType = wall;
+                    else if (i / 2 % 2 != 0 || j / 2 % 2 != 0)
                     {
                         areaType = empty;
                     }
