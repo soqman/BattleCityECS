@@ -31,7 +31,7 @@ public sealed class BurstSystem : UpdateSystem
             if (health.value == 0)
             {
                 tankView.Animator.SetTrigger("burst");
-                if(entity.Has<Collider>())entity.RemoveComponent<Collider>();
+                if(entity.Has<Collider>()) entity.RemoveComponent<Collider>();
                 entity.AddComponent<TankResetIndicator>();
             }
         }

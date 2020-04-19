@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2a4cf64c11dd7448794b9d9fbc7e9a, type: 3}
+  m_Name: base
+  m_EditorClassIdentifier: 
+  wholeSprite: {fileID: -1804259268324756993, guid: 10dcb08eb3aabbe4684a202f743c7f49,
+    type: 3}
+  leftSprite: {fileID: 0}
+  rightSprite: {fileID: 0}
+  upSprite: {fileID: 0}
+  downSprite: {fileID: 0}
+  leftUpSprite: {fileID: 0}
+  rightUpSprite: {fileID: 0}
+  rightDownSprite: {fileID: 0}
+  leftDownSprite: {fileID: 0}
+  destroyed: {fileID: 3934227817281542617, guid: 10dcb08eb3aabbe4684a202f743c7f49,
+    type: 3}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  layer: 13

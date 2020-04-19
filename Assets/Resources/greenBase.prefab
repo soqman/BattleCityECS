@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2730216204497039765, guid: 4f2c0736d5ee3d64f94aa903078d092c,
+  m_Sprite: {fileID: -1804259268324756993, guid: 10dcb08eb3aabbe4684a202f743c7f49,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 7423297549296281068}
   - component: {fileID: -6073775703742065579}
   m_Layer: 0
-  m_Name: area
+  m_Name: greenBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
     x: 0
     y: 0
     State: 0
-    areaType: 
+    areaType: base
 --- !u!114 &8233363685638531005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +191,8 @@ MonoBehaviour:
   serializedData:
     Transform: {fileID: 6828432784982032322}
     spriteRenderer: {fileID: 2781693295112440191}
-    wholeSprite: {fileID: 0}
+    wholeSprite: {fileID: -1804259268324756993, guid: 10dcb08eb3aabbe4684a202f743c7f49,
+      type: 3}
     leftSprite: {fileID: 0}
     rightSprite: {fileID: 0}
     upSprite: {fileID: 0}
@@ -200,7 +201,8 @@ MonoBehaviour:
     rightUpSprite: {fileID: 0}
     rightDownSprite: {fileID: 0}
     leftDownSprite: {fileID: 0}
-    destroyed: {fileID: 0}
+    destroyed: {fileID: 3934227817281542617, guid: 10dcb08eb3aabbe4684a202f743c7f49,
+      type: 3}
 --- !u!114 &7423297549296281068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     x: 0
-    y: 0
+    y: 6
 --- !u!114 &-6073775703742065579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,4 +231,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    value: -1
+    value: 3

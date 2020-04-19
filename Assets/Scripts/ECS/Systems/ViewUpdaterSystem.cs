@@ -106,6 +106,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
                 areaView.rightUpSprite = areaType.rightUpSprite;
                 areaView.leftDownSprite = areaType.leftDownSprite;
                 areaView.rightDownSprite = areaType.rightDownSprite;
+                areaView.destroyed = areaType.destroyed;
             }
             entity.RemoveComponent<AreaInitIndicator>();
         }

@@ -15,8 +15,13 @@ public sealed class GridInitializer : Initializer
     private const float CELL_SIZE = 0.5f;
     private readonly Vector3 OFFSET = new Vector3(-6.5f,-6.5f,0);
     [SerializeField] private GameObject areaPrefab;
+    [SerializeField] private GameObject greenBasePrefab;
+    [SerializeField] private GameObject yellowBasePrefab;
+    [SerializeField] private GameObject wallPrefab;
     [SerializeField] private List<AreaType> areaTypes;
     [SerializeField] private AreaType empty;
+    [SerializeField] private Vector2 greenBasePosition;
+    [SerializeField] private Vector2 yellowBasePosition;
     private Grid grid;
 
     public override void OnAwake()

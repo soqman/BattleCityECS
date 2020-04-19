@@ -20,4 +20,5 @@ public struct AreaView : IComponent
     public Sprite rightUpSprite;
     public Sprite rightDownSprite;
     public Sprite leftDownSprite;
+    public Sprite destroyed;
 }

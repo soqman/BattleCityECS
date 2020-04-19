@@ -12,6 +12,7 @@ public class AreaType : ScriptableObject
     public Sprite rightUpSprite;
     public Sprite rightDownSprite;
     public Sprite leftDownSprite;
+    public Sprite destroyed;
     public LayerMask mask;
     public int layer;
 }
