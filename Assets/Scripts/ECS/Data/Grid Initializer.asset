@@ -18,8 +18,6 @@ MonoBehaviour:
     type: 3}
   yellowBasePrefab: {fileID: 5017796263077825093, guid: 1d4768a1bf0e67547ac292339e0c84e3,
     type: 3}
-  wallPrefab: {fileID: 5017796263077825093, guid: 3dcf09bf614429e40b06d006e413c1ca,
-    type: 3}
   areaTypes:
   - {fileID: 11400000, guid: b0fd181a3ccdb274bb64ee47d0acccb3, type: 2}
   - {fileID: 11400000, guid: dfcc4c64743bdca419c8455c7da027a0, type: 2}
@@ -27,5 +25,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 391bb32844e70334ea6bc112a249a414, type: 2}
   empty: {fileID: 11400000, guid: 17bc0baf36d2ec24c946d8c19cb63708, type: 2}
   wall: {fileID: 11400000, guid: 9ecd9d8b556a6a849bc8a1e3a2a4196d, type: 2}
-  greenBasePosition: {x: 0, y: 6}
-  yellowBasePosition: {x: 0, y: -6}
+  greenBasePosition: {x: 0, y: 5.5}
+  yellowBasePosition: {x: 0, y: -6.5}

@@ -13,29 +13,71 @@ public sealed class GridInitializer : Initializer
     private const int COLUMNS_COUNT = 30;
     private const int ROWS_COUNT = 30;
     private const float CELL_SIZE = 0.5f;
-    private readonly Vector3 OFFSET = new Vector3(-7f,-7.5f,0);
+    private readonly Vector3 OFFSET = new Vector3(-7.5f,-7.5f,0);
     [SerializeField] private GameObject areaPrefab;
     [SerializeField] private GameObject greenBasePrefab;
     [SerializeField] private GameObject yellowBasePrefab;
-    [SerializeField] private GameObject wallPrefab;
     [SerializeField] private List<AreaType> areaTypes;
     [SerializeField] private AreaType empty;
     [SerializeField] private AreaType wall;
-    [SerializeField] private Vector2 greenBasePosition;
-    [SerializeField] private Vector2 yellowBasePosition;
+    private Vector2 greenBasePosition;
+    private Vector2 yellowBasePosition;
     private Grid grid;
 
     public override void OnAwake()
     {
+        GridInit();
+        PlaceBases();
+        PlaceAreas();
+    }
+
+    private void GridInit()
+    {
         grid = new Grid(COLUMNS_COUNT,ROWS_COUNT, CELL_SIZE, OFFSET);
+    }
+    private void PlaceBases()
+    {
+        var yBase = PhotonNetwork.Instantiate(yellowBasePrefab.name,new Vector3(yellowBasePosition.x,yellowBasePosition.y), Quaternion.identity);
+        var yellowEntity=yBase.GetComponent<AreaProvider>().Entity;
+        var yellowTranslation = yBase.GetComponent<TranslationProvider>().GetData();
+        yellowBasePosition=new Vector2(yellowTranslation.x,yellowTranslation.y);
+        yellowEntity.AddComponent<AreaInitIndicator>();
+        yellowEntity.AddComponent<AreaUpdateIndicator>();
+        var gBase=PhotonNetwork.Instantiate(greenBasePrefab.name,new Vector3(greenBasePosition.x,greenBasePosition.y), Quaternion.identity);
+        var greenEntity=gBase.GetComponent<AreaProvider>().Entity;
+        var greenTranslation = gBase.GetComponent<TranslationProvider>().GetData();
+        greenBasePosition=new Vector2(greenTranslation.x,greenTranslation.y);
+        greenEntity.AddComponent<AreaInitIndicator>();
+        greenEntity.AddComponent<AreaUpdateIndicator>();
+    }
+
+    private bool IsPlaceForBase(int x, int y)
+    {
+        if (grid == null) return false;
+        var position = grid.GetWorldPosition(x, y);
+        var res = position.x == greenBasePosition.x && position.y == greenBasePosition.y || position.x == yellowBasePosition.x && position.y == yellowBasePosition.y;
+        var resRight = position.x == greenBasePosition.x+CELL_SIZE && position.y == greenBasePosition.y || position.x == yellowBasePosition.x+CELL_SIZE && position.y == yellowBasePosition.y;
+        var resUp = position.x == greenBasePosition.x && position.y == greenBasePosition.y+CELL_SIZE || position.x == yellowBasePosition.x && position.y == yellowBasePosition.y+CELL_SIZE;
+        var resRightUp = position.x == greenBasePosition.x+CELL_SIZE && position.y == greenBasePosition.y+CELL_SIZE || position.x == yellowBasePosition.x+CELL_SIZE && position.y == yellowBasePosition.y+CELL_SIZE;
+        return res || resUp || resRight || resRightUp;
+    }
+
+    private void PlaceAreas()
+    {
+        if (grid == null) return;
         var areaTypesHolder = new AreaType[COLUMNS_COUNT,ROWS_COUNT];
         for (var j = 0; j < ROWS_COUNT; j++)
         {
             for (var i = 0; i < COLUMNS_COUNT; i++)
             {
+                if(IsPlaceForBase(i,j))
+                {
+                    Debug.Log(i+" "+j);
+                    continue;
+                }
+                var position = grid.GetWorldPosition(i, j);
                 var areaGameObject=PhotonNetwork.Instantiate(areaPrefab.name,Vector3.zero, Quaternion.identity);
                 var areaViewProvider = areaGameObject.GetComponent<AreaViewProvider>();
-                ref var areaView = ref areaViewProvider.GetData();
                 var entity = areaViewProvider.Entity;
                 ref var area = ref areaGameObject.GetComponent<AreaProvider>().GetData();
                 ref var translation = ref areaGameObject.GetComponent<TranslationProvider>().GetData();
@@ -63,13 +105,10 @@ public sealed class GridInitializer : Initializer
                 area.x = i;
                 area.y = j;
                 areaTypesHolder[i,j]=areaType;
-                
-                var position = grid.GetWorldPosition(i, j);
                 translation.x = position.x;
                 translation.y = position.y;
-
                 if (areaType != empty)
-                {
+                { 
                     ref var collider = ref entity.AddComponent<Collider>();
                     collider.xSize = CELL_SIZE;
                     collider.ySize = CELL_SIZE;
@@ -79,7 +118,6 @@ public sealed class GridInitializer : Initializer
                     collider.layer = areaType.layer;
                     collider.exceptionEntity = -1;
                 }
-
                 area.areaType = areaType.name;
                 entity.AddComponent<AreaInitIndicator>();
                 entity.AddComponent<AreaUpdateIndicator>();
