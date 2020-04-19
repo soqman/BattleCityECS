@@ -80,6 +80,7 @@ public sealed class CollisionsSystem : UpdateSystem
         if (collisionTarget.Has<Collision>())
         {
             ref var alreadyCollision = ref collisionTarget.GetComponent<Collision>();
+            if (alreadyCollision.collisions.Exists(x => x.collideWith == collisionItem.collideWith)) return;
             alreadyCollision.collisions.Add(collisionItem);
         }
         else
