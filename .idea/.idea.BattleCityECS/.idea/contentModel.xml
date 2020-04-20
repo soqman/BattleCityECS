@@ -228,12 +228,13 @@
               <e p="Damage.cs" t="Include" />
               <e p="Engine.cs" t="Include" />
               <e p="Health.cs" t="Include" />
-              <e p="NetworkControllerComponent.cs" t="Include" />
+              <e p="InputController.cs" t="Include" />
+              <e p="Respawn.cs" t="Include" />
               <e p="Rotation.cs" t="Include" />
               <e p="Speed.cs" t="Include" />
               <e p="TankResetIndicator.cs" t="Include" />
               <e p="TankView.cs" t="Include" />
-              <e p="TeamComponent.cs" t="Include" />
+              <e p="TeamHolder.cs" t="Include" />
               <e p="Translation.cs" t="Include" />
             </e>
             <e p="Initializers" t="Include">
@@ -250,7 +251,8 @@
               <e p="DirectionProvider.cs" t="Include" />
               <e p="EngineProvider.cs" t="Include" />
               <e p="HealthProvider.cs" t="Include" />
-              <e p="NetworkControllerProvider.cs" t="Include" />
+              <e p="InputControllerProvider.cs" t="Include" />
+              <e p="RespawnPointProvider.cs" t="Include" />
               <e p="SpeedProvider.cs" t="Include" />
               <e p="TankViewProvider.cs" t="Include" />
               <e p="TeamProvider.cs" t="Include" />
@@ -260,7 +262,9 @@
               <e p="BurstSystem.cs" t="Include" />
               <e p="CollisionsSystem.cs" t="Include" />
               <e p="DamagesSystem.cs" t="Include" />
+              <e p="InputSystem.cs" t="Include" />
               <e p="MovementSystem.cs" t="Include" />
+              <e p="RespawnerSystem.cs" t="Include" />
               <e p="ShootSystem.cs" t="Include" />
               <e p="ViewUpdaterSystem.cs" t="Include" />
             </e>

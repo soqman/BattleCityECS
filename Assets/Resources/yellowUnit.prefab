@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: -8206918055704775620}
   - component: {fileID: -4635709750514042952}
   - component: {fileID: -5010099989321823358}
+  - component: {fileID: -7312672901489845784}
+  - component: {fileID: 2478179379038904253}
   m_Layer: 0
   m_Name: yellowUnit
   m_TagString: Untagged
@@ -202,6 +204,7 @@ MonoBehaviour:
       m_Bits: 15872
     layer: 10
     exceptionEntity: -1
+    isActive: 0
 --- !u!114 &-2992167056056731027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: 3
+    max: 0
 --- !u!95 &-4635709750514042952
 Animator:
   serializedVersion: 3
@@ -308,6 +312,45 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 2
     Name: burst
+  - Type: 9
+    SynchronizeType: 0
+    Name: reset
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
+--- !u!114 &-7312672901489845784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269907097746926296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8d3fdf3c527ce4fb9450381c6108d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    x: -1
+    y: -6
+    direction: 2
+    invisibleTime: 0
+    currentTime: 0
+--- !u!114 &2478179379038904253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269907097746926296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea065c577f314ae4f9e3b29757b36215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    up: 0
+    down: 0
+    left: 0
+    right: 0
+    fire: 0

@@ -192,6 +192,7 @@ MonoBehaviour:
       m_Bits: 7168
     layer: 8
     exceptionEntity: -1
+    isActive: 0
 --- !u!114 &7288188805689896057
 MonoBehaviour:
   m_ObjectHideFlags: 0

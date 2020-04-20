@@ -3,33 +3,33 @@ using UnityEngine;
 
 public class NetworkController : MonoBehaviourPun{
     
-    [SerializeField] private NetworkControllerProvider networkControllerProvider;
+    [SerializeField] private ControllerProvider controllerProvider;
     [PunRPC]
     public void NetworkInput(bool up, bool down, bool left, bool right, bool fire)
     {
-        ref var networkController=ref networkControllerProvider.GetData();
-        networkController.up = up;
-        networkController.down = down;
-        networkController.left = left;
-        networkController.right = right;
-        networkController.fire = fire;
+        ref var controller=ref controllerProvider.GetData();
+        controller.up = up;
+        controller.down = down;
+        controller.left = left;
+        controller.right = right;
+        controller.fire = fire;
     }
 
     private void Update()
     {
         if (PhotonNetwork.IsMasterClient) return;
-        if (Input.GetKeyUp(KeyCode.UpArrow) || 
-            Input.GetKeyDown(KeyCode.UpArrow) || 
-            Input.GetKeyUp(KeyCode.DownArrow)||
-            Input.GetKeyDown(KeyCode.DownArrow)||
-            Input.GetKeyUp(KeyCode.LeftArrow)||
-            Input.GetKeyDown(KeyCode.LeftArrow)||
-            Input.GetKeyUp(KeyCode.RightArrow)||
-            Input.GetKeyDown(KeyCode.RightArrow)||
+        if (Input.GetKeyUp(KeyCode.W) || 
+            Input.GetKeyDown(KeyCode.W) || 
+            Input.GetKeyUp(KeyCode.S)||
+            Input.GetKeyDown(KeyCode.S)||
+            Input.GetKeyUp(KeyCode.A)||
+            Input.GetKeyDown(KeyCode.A)||
+            Input.GetKeyUp(KeyCode.D)||
+            Input.GetKeyDown(KeyCode.D)||
             Input.GetKeyUp(KeyCode.Space)||
             Input.GetKeyDown(KeyCode.Space))
         {
-            photonView.RPC("NetworkInput",RpcTarget.MasterClient,Input.GetKey(KeyCode.UpArrow),Input.GetKey(KeyCode.DownArrow),Input.GetKey(KeyCode.LeftArrow),Input.GetKey(KeyCode.RightArrow),Input.GetKey(KeyCode.Space));
+            photonView.RPC("NetworkInput",RpcTarget.MasterClient,Input.GetKey(KeyCode.W),Input.GetKey(KeyCode.S),Input.GetKey(KeyCode.A),Input.GetKey(KeyCode.D),Input.GetKey(KeyCode.Space));
         }
     }
 }

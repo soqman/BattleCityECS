@@ -8,4 +8,5 @@ using Unity.IL2CPP.CompilerServices;
 [System.Serializable]
 public struct Health : IComponent {
     public int value;
+    public int max;
 }

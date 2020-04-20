@@ -1,4 +1,5 @@
-﻿using Morpeh;
+﻿using System;
+using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 using UnityEngine.UI;
@@ -31,8 +32,21 @@ public sealed class BurstSystem : UpdateSystem
             if (health.value == 0)
             {
                 tankView.Animator.SetTrigger("burst");
-                if(entity.Has<Collider>()) entity.RemoveComponent<Collider>();
-                entity.AddComponent<TankResetIndicator>();
+                if (entity.Has<Collider>())
+                {
+                    ref var collider = ref entity.GetComponent<Collider>();
+                    collider.isActive = false;
+                }
+
+                if (entity.Has<InputController>())
+                {
+                    entity.RemoveComponent<InputController>();
+                }
+
+                if (entity.Has<Controller>())
+                {
+                    entity.RemoveComponent<Controller>();
+                }
             }
         }
     }

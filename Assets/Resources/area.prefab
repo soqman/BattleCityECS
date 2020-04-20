@@ -230,3 +230,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: -1
+    max: 0

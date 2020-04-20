@@ -568,6 +568,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9f2f1009e7c06914da474c8e5237ff0a, type: 2}
   updateSystems:
   - enabled: 1
+    system: {fileID: 11400000, guid: 013b7945f3391bd4f9d3fd654ec7acdf, type: 2}
+  - enabled: 1
     system: {fileID: 11400000, guid: 83e5b124321d8c448a74425094d3c126, type: 2}
   - enabled: 1
     system: {fileID: 11400000, guid: d27997f1d6bdbcc429f984f31afff42e, type: 2}
@@ -577,6 +579,8 @@ MonoBehaviour:
     system: {fileID: 11400000, guid: 28cd38f9e548e0b4490fcb22ff29a49f, type: 2}
   - enabled: 1
     system: {fileID: 11400000, guid: ca22f4099586db5489c6f6417a1bc3ac, type: 2}
+  - enabled: 1
+    system: {fileID: 11400000, guid: 55c9eb2fb790cd04091ad1e68097e310, type: 2}
   fixedUpdateSystems: []
   lateUpdateSystems: []
 --- !u!4 &266719630

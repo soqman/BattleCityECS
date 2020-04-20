@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: -1572550832200606077}
   - component: {fileID: -6669207990791373109}
   - component: {fileID: 392223190424642658}
+  - component: {fileID: -6221463821852333329}
   m_Layer: 0
   m_Name: greenUnit
   m_TagString: Untagged
@@ -192,6 +193,7 @@ MonoBehaviour:
       m_Bits: 15616
     layer: 11
     exceptionEntity: -1
+    isActive: 0
 --- !u!114 &-2992167056056731027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4c8b87cca2cc6408d2c98507b76110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  networkControllerProvider: {fileID: 682209483260640566}
+  controllerProvider: {fileID: 682209483260640566}
 --- !u!114 &682209483260640566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: 3
+    max: 0
 --- !u!95 &-6669207990791373109
 Animator:
   serializedVersion: 3
@@ -329,6 +332,27 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 2
     Name: burst
+  - Type: 9
+    SynchronizeType: 0
+    Name: reset
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
+--- !u!114 &-6221463821852333329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269907097746926296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8d3fdf3c527ce4fb9450381c6108d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    x: 1
+    y: 6
+    direction: 3
+    invisibleTime: 0
+    currentTime: 0

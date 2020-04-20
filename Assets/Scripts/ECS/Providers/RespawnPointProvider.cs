@@ -1,14 +1,8 @@
 ﻿using Morpeh;
-using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
-[System.Serializable]
-public struct TeamComponent : IComponent
-{
-    public Team team;
+public sealed class RespawnPointProvider : MonoProvider<Respawn> {
 }
-
-public enum Team{Yellow,Green}

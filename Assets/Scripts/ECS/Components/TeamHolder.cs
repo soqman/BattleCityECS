@@ -6,11 +6,9 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [System.Serializable]
-public struct Controller : IComponent
+public struct TeamHolder : IComponent
 {
-    public bool up;
-    public bool down;
-    public bool left;
-    public bool right;
-    public bool fire;
+    public Team team;
 }
+
+public enum Team{Yellow,Green}

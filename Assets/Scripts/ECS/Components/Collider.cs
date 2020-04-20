@@ -15,4 +15,5 @@ public struct Collider : IComponent
     public LayerMask mask;
     public int layer;
     public int exceptionEntity;
+    public bool isActive;
 }

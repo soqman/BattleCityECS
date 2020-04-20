@@ -241,6 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: 3
+    max: 0
 --- !u!114 &3085202002043295077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,3 +264,4 @@ MonoBehaviour:
       m_Bits: 256
     layer: 11
     exceptionEntity: 0
+    isActive: 0

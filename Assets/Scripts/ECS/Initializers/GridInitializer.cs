@@ -94,7 +94,6 @@ public sealed class GridInitializer : Initializer
             {
                 if(IsPlaceForBase(i,j))
                 {
-                    Debug.Log(i+" "+j);
                     continue;
                 }
                 var position = grid.GetWorldPosition(i, j);
