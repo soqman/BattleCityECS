@@ -19,7 +19,7 @@ public sealed class GridInitializer : Initializer
     [SerializeField] private GameObject yellowBasePrefab;
     [SerializeField] private List<AreaType> areaTypes;
     [SerializeField] private AreaType empty;
-    [SerializeField] private AreaType wall;
+    [SerializeField] private GameObject wallPrefab;
     private Vector2 greenBasePosition;
     private Vector2 yellowBasePosition;
     private Grid grid;
@@ -28,6 +28,7 @@ public sealed class GridInitializer : Initializer
     {
         GridInit();
         PlaceBases();
+        PlaceWalls();
         PlaceAreas();
     }
 
@@ -51,6 +52,27 @@ public sealed class GridInitializer : Initializer
         greenEntity.AddComponent<AreaUpdateIndicator>();
     }
 
+    private void PlaceWalls()
+    {
+        if (grid == null) return;
+        for (var j = 0; j < ROWS_COUNT; j+=2)
+        {
+            for (var i = 0; i < COLUMNS_COUNT; i+=2)
+            {
+                if (i != 0 && i != COLUMNS_COUNT - 2 && j != 0 && j != ROWS_COUNT - 2) continue;
+                var position = grid.GetWorldPosition(i, j);
+                var areaGameObject=PhotonNetwork.Instantiate(wallPrefab.name,new Vector3(position.x,position.y,0), Quaternion.identity);
+                var translationProvider =areaGameObject.GetComponent<TranslationProvider>();
+                ref var translation =ref translationProvider.GetData();
+                translation.x = position.x;
+                translation.y = position.y;
+                var entity = translationProvider.Entity;
+                entity.AddComponent<AreaUpdateIndicator>();
+                entity.AddComponent<AreaInitIndicator>();
+            }
+        }
+    }
+
     private bool IsPlaceForBase(int x, int y)
     {
         if (grid == null) return false;
@@ -66,9 +88,9 @@ public sealed class GridInitializer : Initializer
     {
         if (grid == null) return;
         var areaTypesHolder = new AreaType[COLUMNS_COUNT,ROWS_COUNT];
-        for (var j = 0; j < ROWS_COUNT; j++)
+        for (var j = 2; j < ROWS_COUNT-2; j++)
         {
-            for (var i = 0; i < COLUMNS_COUNT; i++)
+            for (var i = 2; i < COLUMNS_COUNT-2; i++)
             {
                 if(IsPlaceForBase(i,j))
                 {
@@ -84,8 +106,7 @@ public sealed class GridInitializer : Initializer
                 AreaType areaType;
                 if (i % 2 == 0 && j % 2 == 0)
                 {
-                    if (i == 0 || i == COLUMNS_COUNT - 2 || j == 0 || j == COLUMNS_COUNT - 2) areaType = wall;
-                    else if (i / 2 % 2 != 0 || j / 2 % 2 != 0)
+                    if (i / 2 % 2 != 0 || j / 2 % 2 != 0)
                     {
                         areaType = empty;
                     }

@@ -24,6 +24,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 49e2057c69be45c47b79f756d27b0c7b, type: 2}
   - {fileID: 11400000, guid: 391bb32844e70334ea6bc112a249a414, type: 2}
   empty: {fileID: 11400000, guid: 17bc0baf36d2ec24c946d8c19cb63708, type: 2}
-  wall: {fileID: 11400000, guid: 9ecd9d8b556a6a849bc8a1e3a2a4196d, type: 2}
-  greenBasePosition: {x: 0, y: 5.5}
-  yellowBasePosition: {x: 0, y: -6.5}
+  wallPrefab: {fileID: 5017796263077825093, guid: 3dcf09bf614429e40b06d006e413c1ca,
+    type: 3}
