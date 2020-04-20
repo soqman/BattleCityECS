@@ -17,7 +17,7 @@ public class NetworkController : MonoBehaviourPun{
 
     private void Update()
     {
-        if (PhotonNetwork.IsMasterClient) return;
+        if (PhotonNetwork.IsMasterClient || !PhotonNetwork.IsConnectedAndReady) return;
         if (Input.GetKeyUp(KeyCode.W) || 
             Input.GetKeyDown(KeyCode.W) || 
             Input.GetKeyUp(KeyCode.S)||

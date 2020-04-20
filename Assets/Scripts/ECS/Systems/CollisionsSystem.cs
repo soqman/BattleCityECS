@@ -27,13 +27,13 @@ public sealed class CollisionsSystem : UpdateSystem
         foreach (var entity in rigidbodies)
         {
             ref var collider = ref entity.GetComponent<Collider>();
+            if (!collider.isActive) continue;
             ref var translation = ref entity.GetComponent<Translation>();
             ref var rotation = ref entity.GetComponent<Rotation>();
             for (var i = 0; i < colliders.Length; i++)
             {
                 ref var currentCollider = ref collidersBag.GetComponent(i);
-
-                if (entity.ID == colliders.GetEntity(i).ID || entity.ID == collidersBag.GetComponent(i).exceptionEntity) continue;
+                if (!currentCollider.isActive || entity.ID == colliders.GetEntity(i).ID || entity.ID == collidersBag.GetComponent(i).exceptionEntity) continue;
                 var xPositionA = collider.xOffset+translation.x;
                 var yPositionA = collider.yOffset+translation.y;
                 var xPositionB = currentCollider.xOffset+translationsBag.GetComponent(i).x;

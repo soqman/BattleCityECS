@@ -137,6 +137,7 @@ public sealed class GridInitializer : Initializer
                     collider.mask = areaType.mask;
                     collider.layer = areaType.layer;
                     collider.exceptionEntity = -1;
+                    collider.isActive = true;
                 }
                 area.areaType = areaType.name;
                 entity.AddComponent<AreaInitIndicator>();

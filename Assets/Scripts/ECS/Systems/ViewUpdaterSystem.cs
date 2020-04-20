@@ -18,7 +18,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
     [SerializeField] private List<AreaType> areaTypes;
     public override void OnAwake()
     {
-        tankFilter=World.Filter.With<Translation>().With<Rotation>().With<TankView>();
+        tankFilter=World.Filter.With<Translation>().With<Rotation>().With<TankView>().With<Engine>();
         bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Rotation>();
         areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>().With<AreaUpdateIndicator>();
         areaInitFilter = areaFilter.With<AreaInitIndicator>();
@@ -37,10 +37,10 @@ public sealed class ViewUpdaterSystem : UpdateSystem
         if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) return;
         foreach (var entity in tankFilter)
         {
-            var translation = entity.GetComponent<Translation>();
-            var direction = entity.GetComponent<Rotation>();
-            //var engine = entity.GetComponent<Engine>();
-            var tankView = entity.GetComponent<TankView>();
+            ref var translation = ref entity.GetComponent<Translation>();
+            ref var direction = ref entity.GetComponent<Rotation>();
+            ref var tankView = ref entity.GetComponent<TankView>();
+            ref var engine = ref entity.GetComponent<Engine>();
             tankView.Transform.position=new Vector3(translation.x,translation.y,0);
             switch (direction.direction)
             {
@@ -57,7 +57,8 @@ public sealed class ViewUpdaterSystem : UpdateSystem
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,-90);
                     break;
             }
-            //tankView.Animator.SetBool("on",engine.isActive);
+            if(engine.isActive)tankView.NetworkAnimator.SetBool("on",true);
+            else tankView.NetworkAnimator.SetBool("on",false);
         }
     }
 

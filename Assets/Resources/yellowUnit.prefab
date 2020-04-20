@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: -3438608456692934554}
   - component: {fileID: -8206918055704775620}
   - component: {fileID: -4635709750514042952}
-  - component: {fileID: -5010099989321823358}
   - component: {fileID: -7312672901489845784}
   - component: {fileID: 2478179379038904253}
+  - component: {fileID: 7488294228077924692}
+  - component: {fileID: -5710729258628489256}
   m_Layer: 0
   m_Name: yellowUnit
   m_TagString: Untagged
@@ -131,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     Transform: {fileID: 1269907097746926298}
-    Animator: {fileID: -4635709750514042952}
+    NetworkAnimator: {fileID: 7488294228077924692}
 --- !u!212 &1269907097746926299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ MonoBehaviour:
       m_Bits: 15872
     layer: 10
     exceptionEntity: -1
-    isActive: 0
+    isActive: 1
 --- !u!114 &-2992167056056731027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +225,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 3474590573573953578}
-  - {fileID: -5010099989321823358}
+  - {fileID: 7488294228077924692}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -291,33 +292,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-5010099989321823358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269907097746926296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 4
-    SynchronizeType: 2
-    Name: on
-  - Type: 9
-    SynchronizeType: 2
-    Name: burst
-  - Type: 9
-    SynchronizeType: 0
-    Name: reset
-  m_SynchronizeLayers:
-  - SynchronizeType: 2
-    LayerIndex: 0
 --- !u!114 &-7312672901489845784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,3 +328,33 @@ MonoBehaviour:
     left: 0
     right: 0
     fire: 0
+--- !u!114 &7488294228077924692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269907097746926296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1c2bfee3d2d814892e8e3a5cf59bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: -4635709750514042952}
+  onKey: on
+  resetKey: reset
+  burstKey: burst
+--- !u!114 &-5710729258628489256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269907097746926296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9ef2cf0f3881647a5657c19ae76f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    isActive: 0

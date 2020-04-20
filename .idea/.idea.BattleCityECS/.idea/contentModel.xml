@@ -275,6 +275,7 @@
           </e>
           <e p="Network" t="Include">
             <e p="Lobby.cs" t="Include" />
+            <e p="NetworkAnimator.cs" t="Include" />
             <e p="NetworkController.cs" t="Include" />
             <e p="Observers" t="Include">
               <e p="AreaObserver.cs" t="Include" />

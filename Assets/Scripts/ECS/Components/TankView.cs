@@ -9,5 +9,5 @@ using Unity.IL2CPP.CompilerServices;
 public struct TankView : IComponent
 {
     public Transform Transform;
-    public Animator Animator;
+    public NetworkAnimator NetworkAnimator;
 }

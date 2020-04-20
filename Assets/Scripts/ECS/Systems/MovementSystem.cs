@@ -13,7 +13,7 @@ public sealed class MovementSystem : UpdateSystem
     private Filter filterBullets;
     
     public override void OnAwake() {
-        filterController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<Controller>();
+        filterController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<Controller>().With<Engine>();
         filterBullets = World.Filter.With<Translation>().With<Rotation>().With<Speed>().Without<InputController>().Without<Collision>().With<BulletView>();
     }
 
@@ -24,48 +24,82 @@ public sealed class MovementSystem : UpdateSystem
             ref var translation = ref entity.GetComponent<Translation>();
             ref var direction = ref entity.GetComponent<Rotation>();
             ref var speed = ref entity.GetComponent<Speed>();
-            ref var networkController = ref entity.GetComponent<Controller>();
-            
-            if (networkController.up)
+            ref var controller = ref entity.GetComponent<Controller>();
+            ref var engine = ref entity.GetComponent<Engine>();
+            if (controller.up)
             {
+                engine.isActive = true;
                 direction.direction = Direction.Up;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
                 {
                     ref var collision = ref entity.GetComponent<Collision>();
-                    if(HasCollisionInThisDirection(collision,Direction.Up))break;
+                    if (!HasCollisionInThisDirection(collision, Direction.Up))
+                    {
+                        translation.y += deltaTime * speed.value;
+                    }
                 }
-                translation.y += deltaTime * speed.value;
-            }else if (networkController.down)
+                else
+                {
+                    translation.y += deltaTime * speed.value;
+                }
+            }else if (controller.down)
             {
+                engine.isActive = true;
                 direction.direction = Direction.Down;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
                 {
                     ref var collision = ref entity.GetComponent<Collision>();
-                    if(HasCollisionInThisDirection(collision,Direction.Down))break;
+                    if (!HasCollisionInThisDirection(collision, Direction.Down))
+                    {
+                        translation.y -= deltaTime * speed.value;
+                    }
                 }
-                translation.y -= deltaTime * speed.value;
-            }else if (networkController.left)
+                else
+                {
+                    translation.y -= deltaTime * speed.value;
+                }
+                
+            }else if (controller.left)
             {
+                engine.isActive = true;
                 direction.direction = Direction.Left;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
                 {
                     ref var collision = ref entity.GetComponent<Collision>();
-                    if(HasCollisionInThisDirection(collision,Direction.Left))break;
+                    if(!HasCollisionInThisDirection(collision,Direction.Left))
+                    {
+                        translation.x -= deltaTime * speed.value;
+                    }
                 }
-                translation.x -= deltaTime * speed.value;
-            }else if (networkController.right)
+                else
+                {
+                    translation.x -= deltaTime * speed.value;
+                }
+            }else if (controller.right)
             {
+                engine.isActive = true;
                 direction.direction = Direction.Right;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
                 {
                     ref var collision = ref entity.GetComponent<Collision>();
-                    if(HasCollisionInThisDirection(collision,Direction.Right))break;
+                    if(!HasCollisionInThisDirection(collision,Direction.Right))
+                    {
+                        translation.x += deltaTime * speed.value;
+                    }
                 }
-                translation.x += deltaTime * speed.value;
+                else
+                {
+                    translation.x += deltaTime * speed.value;
+                }
+                
+            }
+            else
+            {
+                engine.isActive = false;
             }
         }
     }

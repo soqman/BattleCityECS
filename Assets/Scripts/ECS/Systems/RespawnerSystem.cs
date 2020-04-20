@@ -25,7 +25,7 @@ public sealed class RespawnerSystem : UpdateSystem
     {
         foreach (var entity in tanks)
         {
-            ref var respawn = ref entity.GetComponent<Respawn>();
+            /*ref var respawn = ref entity.GetComponent<Respawn>();
             if (respawn.currentTime == respawn.invisibleTime)
             {
                 ref var translation = ref entity.GetComponent<Translation>();
@@ -36,15 +36,16 @@ public sealed class RespawnerSystem : UpdateSystem
                 translation.y = respawn.y;
                 rotation.direction = respawn.direction;
                 health.value = health.max;
-                tankView.Animator.SetTrigger("reset");
+                //tankView.NetworkAnimator.SetTrigger("reset");
             }
             respawn.currentTime -= deltaTime;
             if (respawn.currentTime <= 0)
             {
                 ref var collider = ref entity.GetComponent<Collider>();
                 collider.isActive = true;
+                respawn.currentTime = respawn.invisibleTime;
                 entity.RemoveComponent<TankResetIndicator>();
-            }
+            }*/
         }
     }
 }

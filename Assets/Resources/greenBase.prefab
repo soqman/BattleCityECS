@@ -263,5 +263,5 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 256
     layer: 11
-    exceptionEntity: 0
-    isActive: 0
+    exceptionEntity: -1
+    isActive: 1

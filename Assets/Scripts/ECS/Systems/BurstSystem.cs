@@ -31,22 +31,20 @@ public sealed class BurstSystem : UpdateSystem
             ref var health = ref entity.GetComponent<Health>();
             if (health.value == 0)
             {
-                tankView.Animator.SetTrigger("burst");
+                tankView.NetworkAnimator.SetTrigger("burst");
+                health.value = -1;
                 if (entity.Has<Collider>())
                 {
                     ref var collider = ref entity.GetComponent<Collider>();
                     collider.isActive = false;
                 }
 
-                if (entity.Has<InputController>())
-                {
-                    entity.RemoveComponent<InputController>();
-                }
-
                 if (entity.Has<Controller>())
                 {
                     entity.RemoveComponent<Controller>();
                 }
+
+                entity.AddComponent<TankResetIndicator>();
             }
         }
     }
