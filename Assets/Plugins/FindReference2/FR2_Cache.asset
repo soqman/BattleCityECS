@@ -3246,11 +3246,6 @@ MonoBehaviour:
     stamp: 0
     type: 5
     UseGUIDsList: []
-  - guid: 7d9ef2cf0f3881647a5657c19ae76f52
-    loadInfoTS: 0
-    stamp: 0
-    type: 2
-    UseGUIDsList: []
   - guid: 2901549121ca99f4da9e4720086a069a
     loadInfoTS: 0
     stamp: 0

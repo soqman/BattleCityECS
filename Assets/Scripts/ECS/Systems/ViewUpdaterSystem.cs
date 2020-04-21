@@ -17,7 +17,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
     [SerializeField] private List<AreaType> areaTypes;
     public override void OnAwake()
     {
-        tankFilter=World.Filter.With<Translation>().With<Rotation>().With<TankView>().With<Engine>();
+        tankFilter=World.Filter.With<Translation>().With<Rotation>().With<TankView>();
         bulletFilter=World.Filter.With<Translation>().With<BulletView>().With<Rotation>();
         areaFilter = World.Filter.With<Translation>().With<AreaView>().With<Area>().With<AreaUpdateIndicator>();
         areaInitFilter = areaFilter.With<AreaInitIndicator>();
@@ -35,11 +35,9 @@ public sealed class ViewUpdaterSystem : UpdateSystem
     {
         foreach (var entity in tankFilter)
         {
-            Debug.Log(entity.ID);
             ref var translation = ref entity.GetComponent<Translation>();
             ref var direction = ref entity.GetComponent<Rotation>();
             ref var tankView = ref entity.GetComponent<TankView>();
-            ref var engine = ref entity.GetComponent<Engine>();
             tankView.Transform.position=new Vector3(translation.x,translation.y,0);
             switch (direction.direction)
             {
@@ -57,7 +55,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
                     break;
             }
             if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) continue;
-            if(engine.on)tankView.NetworkAnimator.SetBool("on",true);
+            if(entity.Has<Engine>())tankView.NetworkAnimator.SetBool("on",true);
             else tankView.NetworkAnimator.SetBool("on",false);
         }
     }

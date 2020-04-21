@@ -8,7 +8,4 @@ using Unity.IL2CPP.CompilerServices;
 [System.Serializable]
 public struct Engine : IComponent
 {
-    public bool on;
-    public int value;
-    //if delete "value" morpeh dont see "on" and filters works wrong;
 }

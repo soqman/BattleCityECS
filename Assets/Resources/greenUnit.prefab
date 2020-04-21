@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: -6669207990791373109}
   - component: {fileID: -6221463821852333329}
   - component: {fileID: 1911447846602267746}
-  - component: {fileID: -8667989628270420066}
   - component: {fileID: 8612639371627735686}
   m_Layer: 0
   m_Name: greenUnit
@@ -331,21 +330,6 @@ MonoBehaviour:
   onKey: on
   resetKey: reset
   burstKey: burst
---- !u!114 &-8667989628270420066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269907097746926296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d9ef2cf0f3881647a5657c19ae76f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializedData:
-    on: 0
-    value: 0
 --- !u!114 &8612639371627735686
 MonoBehaviour:
   m_ObjectHideFlags: 0

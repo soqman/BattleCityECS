@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: -7312672901489845784}
   - component: {fileID: 2478179379038904253}
   - component: {fileID: 7488294228077924692}
-  - component: {fileID: -5710729258628489256}
   - component: {fileID: -5191725876183973540}
   m_Layer: 0
   m_Name: yellowUnit
@@ -329,21 +328,6 @@ MonoBehaviour:
   onKey: on
   resetKey: reset
   burstKey: burst
---- !u!114 &-5710729258628489256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269907097746926296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d9ef2cf0f3881647a5657c19ae76f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializedData:
-    on: 0
-    value: 0
 --- !u!114 &-5191725876183973540
 MonoBehaviour:
   m_ObjectHideFlags: 0

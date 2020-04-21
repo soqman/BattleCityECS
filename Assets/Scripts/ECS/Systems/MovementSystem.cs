@@ -13,7 +13,7 @@ public sealed class MovementSystem : UpdateSystem
     private Filter filterBullets;
     
     public override void OnAwake() {
-        filterController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<Controller>().With<Engine>();
+        filterController = World.Filter.With<Translation>().With<Rotation>().With<Speed>().With<Controller>();
         filterBullets = World.Filter.With<Translation>().With<Rotation>().With<Speed>().Without<InputController>().Without<Collision>().With<BulletView>();
     }
 
@@ -25,10 +25,9 @@ public sealed class MovementSystem : UpdateSystem
             ref var direction = ref entity.GetComponent<Rotation>();
             ref var speed = ref entity.GetComponent<Speed>();
             ref var controller = ref entity.GetComponent<Controller>();
-            ref var engine = ref entity.GetComponent<Engine>();
             if (controller.up)
             {
-                engine.on = true;
+                entity.AddComponent<Engine>();
                 direction.direction = Direction.Up;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
@@ -45,7 +44,7 @@ public sealed class MovementSystem : UpdateSystem
                 }
             }else if (controller.down)
             {
-                engine.on = true;
+                entity.AddComponent<Engine>();
                 direction.direction = Direction.Down;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
@@ -63,7 +62,7 @@ public sealed class MovementSystem : UpdateSystem
                 
             }else if (controller.left)
             {
-                engine.on = true;
+                entity.AddComponent<Engine>();
                 direction.direction = Direction.Left;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
@@ -80,7 +79,7 @@ public sealed class MovementSystem : UpdateSystem
                 }
             }else if (controller.right)
             {
-                engine.on = true;
+                entity.AddComponent<Engine>();
                 direction.direction = Direction.Right;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
@@ -99,7 +98,7 @@ public sealed class MovementSystem : UpdateSystem
             }
             else
             {
-                engine.on = false;
+                if (entity.Has<Engine>()) entity.RemoveComponent<Engine>();
             }
         }
     }
