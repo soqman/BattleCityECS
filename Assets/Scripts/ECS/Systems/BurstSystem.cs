@@ -1,5 +1,6 @@
 ﻿using System;
 using Morpeh;
+using Photon.Pun;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 using UnityEngine.UI;
@@ -55,8 +56,9 @@ public sealed class BurstSystem : UpdateSystem
         {
             ref var bulletView = ref entity.GetComponent<BulletView>();
             if (entity.Has<Collider>()) entity.RemoveComponent<Collider>();
+            if (entity.Has<Speed>()) entity.RemoveComponent<Speed>();
             bulletView.Animator.SetTrigger("burst");
-            Destroy(bulletView.GameObject,1f);
+            PhotonNetwork.Destroy(bulletView.GameObject);
         }
     }
 }

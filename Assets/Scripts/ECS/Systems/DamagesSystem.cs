@@ -11,9 +11,10 @@ public sealed class DamagesSystem : UpdateSystem
 {
     private Filter areasFilter;
     private Filter unitsFilter;
+    private Filter baseFilter;
     public override void OnAwake()
     {
-        areasFilter = World.Filter.With<Collision>().With<Area>().With<Health>();
+        areasFilter = World.Filter.With<Collision>().With<Area>();
         unitsFilter = World.Filter.With<Collision>().With<Health>().With<Barrel>();
     }
 
@@ -47,14 +48,22 @@ public sealed class DamagesSystem : UpdateSystem
             ref var collision = ref entity.GetComponent<Collision>();
             foreach (var collisionItem in collision.collisions)
             {
-                area.State=AddDamage(area.State,collisionItem.direction);
-                if (entity.Has<Collider>())
+                if (entity.Has<Health>())
                 {
-                    if (area.State == DamagedState.Destroyed) entity.RemoveComponent<Collider>();
+                    ref var health = ref entity.GetComponent<Health>();
+                    health.value--;
+                    area.State = AddDamageDependsOnHealth(health);
                 }
+                else area.State=AddDamage(area.State,collisionItem.direction);
+                if (entity.Has<Collider>() && area.State == DamagedState.Destroyed) entity.RemoveComponent<Collider>();
                 entity.AddComponent<AreaUpdateIndicator>();
             }
         }
+    }
+
+    private DamagedState AddDamageDependsOnHealth(Health health)
+    {
+        return health.value > 0 ? DamagedState.Whole : DamagedState.Destroyed;
     }
 
     private DamagedState AddDamage(DamagedState damage, Direction direction)

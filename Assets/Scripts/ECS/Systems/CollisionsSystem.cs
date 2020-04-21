@@ -12,11 +12,14 @@ public sealed class CollisionsSystem : UpdateSystem
 {
     private Filter rigidbodies;
     private Filter colliders;
+    private Filter collisions;
     
     public override void OnAwake()
     {
+        
         rigidbodies = World.Filter.With<Speed>().With<Collider>().With<Translation>().With<Rotation>();
         colliders = World.Filter.With<Collider>().With<Translation>();
+        collisions = World.Filter.With<Collision>();
     }
 
     public override void OnUpdate(float deltaTime)
@@ -92,9 +95,9 @@ public sealed class CollisionsSystem : UpdateSystem
 
     private void RemoveCollisions()
     {
-        foreach (var entity in colliders)
+        foreach (var entity in collisions)
         {
-            if (entity.Has<Collision>()) entity.RemoveComponent<Collision>();
+            entity.RemoveComponent<Collision>();
         }
     }
 }

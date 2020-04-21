@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: 3
-    max: 0
+    max: 3
 --- !u!114 &682266582924348193
 MonoBehaviour:
   m_ObjectHideFlags: 0
