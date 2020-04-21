@@ -6,11 +6,12 @@ using UnityEngine.Events;
 public class Lobby : MonoBehaviourPunCallbacks
     {
         [SerializeField] private string version;
-        [SerializeField] private GameObject masterUnit;
-        [SerializeField] private GameObject clientUnit;
-        [SerializeField] private GameObject installerMaster;
-        [SerializeField] private GameObject lobbyMenu;
         [SerializeField] private UnityEvent connectedToMasterEvent;
+        [SerializeField] private UnityEvent disconnectedEvent;
+        [SerializeField] private UnityEvent joinToRoomAsMasterEvent;
+        [SerializeField] private UnityEvent joinToRoomAsClientEvent;
+        [SerializeField] private UnityEvent readyToPlayEvent;
+        [SerializeField] private UnityEvent notReadyToPlayEvent;
         private void Start()
         {
             ConnectToPhoton();
@@ -29,32 +30,39 @@ public class Lobby : MonoBehaviourPunCallbacks
 
         public override void OnJoinedRoom()
         {
-            Debug.Log("CONNECTED TO ROOM");
-            lobbyMenu.SetActive(false);
-            if (PhotonNetwork.IsMasterClient)installerMaster.SetActive(true);
+              if (PhotonNetwork.IsMasterClient) joinToRoomAsMasterEvent.Invoke();
+              else joinToRoomAsClientEvent.Invoke();
+        }
+
+        public override void OnPlayerEnteredRoom(Player newPlayer)
+        {
+            CheckPlayerNums();
+        }
+
+        public override void OnPlayerLeftRoom(Player otherPlayer)
+        {
+            CheckPlayerNums();
+        }
+
+        private void CheckPlayerNums()
+        {
+            if(PhotonNetwork.IsConnectedAndReady && PhotonNetwork.InRoom && PhotonNetwork.PlayerList.Length>=2)readyToPlayEvent.Invoke();
+            else notReadyToPlayEvent.Invoke();
         }
 
         public override void OnDisconnected(DisconnectCause cause)
         {
-            
+            disconnectedEvent.Invoke();
         }
 
-        public void CreateGame()
+        public void CreateGame(TMPro.TMP_InputField input)
         {
-            PhotonNetwork.NickName = "PLAYER"+Random.Range(0,100);
-            PhotonNetwork.CreateRoom("TEST-ROOM", new RoomOptions(){MaxPlayers = 4}, TypedLobby.Default);
+            if (input.text.Length == 0) return;
+            PhotonNetwork.CreateRoom(input.text, new RoomOptions{MaxPlayers = 2}, TypedLobby.Default);
         }
-
-        public override void OnCreatedRoom()
+        public void JoinGame(TMPro.TMP_InputField input)
         {
-            PhotonNetwork.Instantiate( masterUnit.name, new Vector3(-1,-6,0), Quaternion.identity);
-            PhotonNetwork.Instantiate( clientUnit.name, new Vector3(1,6,0),Quaternion.Euler(0,0,180));
+            if (input.text.Length == 0) return;
+            PhotonNetwork.JoinRoom(input.text);
         }
-
-        public void JoinGame()
-        {
-            PhotonNetwork.JoinRoom("TEST-ROOM");
-        }
-        
-        
     }

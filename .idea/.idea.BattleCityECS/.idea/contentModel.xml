@@ -248,7 +248,6 @@
               <e p="ColliderProvider.cs" t="Include" />
               <e p="ControllerProvider.cs" t="Include" />
               <e p="DamageProvider.cs" t="Include" />
-              <e p="EngineProvider.cs" t="Include" />
               <e p="HealthProvider.cs" t="Include" />
               <e p="InputControllerProvider.cs" t="Include" />
               <e p="RespawnPointProvider.cs" t="Include" />
@@ -274,6 +273,7 @@
             <e p="Node.cs" t="Include" />
           </e>
           <e p="Network" t="Include">
+            <e p="Game.cs" t="Include" />
             <e p="Lobby.cs" t="Include" />
             <e p="NetworkAnimator.cs" t="Include" />
             <e p="NetworkController.cs" t="Include" />

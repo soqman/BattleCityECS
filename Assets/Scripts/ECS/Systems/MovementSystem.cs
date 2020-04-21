@@ -27,7 +27,7 @@ public sealed class MovementSystem : UpdateSystem
             ref var controller = ref entity.GetComponent<Controller>();
             if (controller.up)
             {
-                entity.AddComponent<Engine>();
+                if (!entity.Has<Engine>())entity.AddComponent<Engine>();
                 direction.direction = Direction.Up;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
@@ -44,7 +44,7 @@ public sealed class MovementSystem : UpdateSystem
                 }
             }else if (controller.down)
             {
-                entity.AddComponent<Engine>();
+                if (!entity.Has<Engine>())entity.AddComponent<Engine>();
                 direction.direction = Direction.Down;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
@@ -62,7 +62,7 @@ public sealed class MovementSystem : UpdateSystem
                 
             }else if (controller.left)
             {
-                entity.AddComponent<Engine>();
+                if (!entity.Has<Engine>())entity.AddComponent<Engine>();
                 direction.direction = Direction.Left;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
@@ -79,7 +79,7 @@ public sealed class MovementSystem : UpdateSystem
                 }
             }else if (controller.right)
             {
-                entity.AddComponent<Engine>();
+                if (!entity.Has<Engine>())entity.AddComponent<Engine>();
                 direction.direction = Direction.Right;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
