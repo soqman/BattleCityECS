@@ -35,6 +35,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
     {
         foreach (var entity in tankFilter)
         {
+            Debug.Log(entity.ID);
             ref var translation = ref entity.GetComponent<Translation>();
             ref var direction = ref entity.GetComponent<Rotation>();
             ref var tankView = ref entity.GetComponent<TankView>();
@@ -55,7 +56,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,-90);
                     break;
             }
-            if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) return;
+            if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) continue;
             if(engine.on)tankView.NetworkAnimator.SetBool("on",true);
             else tankView.NetworkAnimator.SetBool("on",false);
         }
