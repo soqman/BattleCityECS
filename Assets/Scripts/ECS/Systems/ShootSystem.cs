@@ -35,7 +35,7 @@ public sealed class ShootSystem : UpdateSystem
                     var position = new Vector3(parentTranslation.x,parentTranslation.y,0);
                     var bullet = PhotonNetwork.Instantiate(parentTeam.team == Team.Green ? greenPrefab.name : yellowPrefab.name, position, Quaternion.identity);
                     ref var bulletTranslation = ref bullet.GetComponent<TranslationProvider>().GetData();
-                    ref var bulletDirection = ref bullet.GetComponent<DirectionProvider>().GetData();
+                    ref var bulletDirection = ref bullet.GetComponent<RotationProvider>().GetData();
                     ref var bulletSpeed = ref bullet.GetComponent<SpeedProvider>().GetData();
                     ref var bulletCollider = ref bullet.GetComponent<ColliderProvider>().GetData();
                     

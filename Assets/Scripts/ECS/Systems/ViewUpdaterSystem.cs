@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Morpeh;
 using Photon.Pun;
 using UnityEngine;
@@ -34,7 +33,6 @@ public sealed class ViewUpdaterSystem : UpdateSystem
 
     private void UpdateTanks()
     {
-        if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) return;
         foreach (var entity in tankFilter)
         {
             ref var translation = ref entity.GetComponent<Translation>();
@@ -57,7 +55,8 @@ public sealed class ViewUpdaterSystem : UpdateSystem
                     tankView.Transform.localRotation=Quaternion.Euler(0,0,-90);
                     break;
             }
-            if(engine.isActive)tankView.NetworkAnimator.SetBool("on",true);
+            if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) return;
+            if(engine.on)tankView.NetworkAnimator.SetBool("on",true);
             else tankView.NetworkAnimator.SetBool("on",false);
         }
     }

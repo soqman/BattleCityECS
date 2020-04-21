@@ -248,11 +248,11 @@
               <e p="ColliderProvider.cs" t="Include" />
               <e p="ControllerProvider.cs" t="Include" />
               <e p="DamageProvider.cs" t="Include" />
-              <e p="DirectionProvider.cs" t="Include" />
               <e p="EngineProvider.cs" t="Include" />
               <e p="HealthProvider.cs" t="Include" />
               <e p="InputControllerProvider.cs" t="Include" />
               <e p="RespawnPointProvider.cs" t="Include" />
+              <e p="RotationProvider.cs" t="Include" />
               <e p="SpeedProvider.cs" t="Include" />
               <e p="TankViewProvider.cs" t="Include" />
               <e p="TeamProvider.cs" t="Include" />
@@ -279,6 +279,7 @@
             <e p="NetworkController.cs" t="Include" />
             <e p="Observers" t="Include">
               <e p="AreaObserver.cs" t="Include" />
+              <e p="TranslationRotationObserver.cs" t="Include" />
             </e>
           </e>
           <e p="ScriptableObjects" t="Include">

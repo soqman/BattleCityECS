@@ -28,7 +28,7 @@ public sealed class MovementSystem : UpdateSystem
             ref var engine = ref entity.GetComponent<Engine>();
             if (controller.up)
             {
-                engine.isActive = true;
+                engine.on = true;
                 direction.direction = Direction.Up;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
@@ -45,7 +45,7 @@ public sealed class MovementSystem : UpdateSystem
                 }
             }else if (controller.down)
             {
-                engine.isActive = true;
+                engine.on = true;
                 direction.direction = Direction.Down;
                 translation.x = Closest(translation.x, 0.5f);
                 if (entity.Has<Collision>())
@@ -63,7 +63,7 @@ public sealed class MovementSystem : UpdateSystem
                 
             }else if (controller.left)
             {
-                engine.isActive = true;
+                engine.on = true;
                 direction.direction = Direction.Left;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
@@ -80,7 +80,7 @@ public sealed class MovementSystem : UpdateSystem
                 }
             }else if (controller.right)
             {
-                engine.isActive = true;
+                engine.on = true;
                 direction.direction = Direction.Right;
                 translation.y = Closest(translation.y, 0.5f);
                 if (entity.Has<Collision>())
@@ -99,7 +99,7 @@ public sealed class MovementSystem : UpdateSystem
             }
             else
             {
-                engine.isActive = false;
+                engine.on = false;
             }
         }
     }

@@ -12,6 +12,7 @@ public class NetworkAnimator : MonoBehaviourPun, IPunObservable
     [SerializeField] private string resetKey = "reset";
     [SerializeField] private string burstKey = "burst";
 
+
     [PunRPC]
     private void SetBurstTriggerRPC()
     {
@@ -45,7 +46,6 @@ public class NetworkAnimator : MonoBehaviourPun, IPunObservable
             networkOn = value;
         }
     }
-
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {

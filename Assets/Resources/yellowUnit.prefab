@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 1269907097746926299}
   - component: {fileID: 1269907097746926247}
   - component: {fileID: -2992167056056731027}
-  - component: {fileID: 3474590573573953578}
   - component: {fileID: -3438608456692934554}
   - component: {fileID: -8206918055704775620}
   - component: {fileID: -4635709750514042952}
@@ -26,6 +25,7 @@ GameObject:
   - component: {fileID: 2478179379038904253}
   - component: {fileID: 7488294228077924692}
   - component: {fileID: -5710729258628489256}
+  - component: {fileID: -5191725876183973540}
   m_Layer: 0
   m_Name: yellowUnit
   m_TagString: Untagged
@@ -221,29 +221,14 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 1
+  Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 3474590573573953578}
+  - {fileID: -5191725876183973540}
   - {fileID: 7488294228077924692}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &3474590573573953578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269907097746926296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!114 &-3438608456692934554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,4 +342,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    isActive: 0
+    on: 0
+    value: 0
+--- !u!114 &-5191725876183973540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269907097746926296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2901549121ca99f4da9e4720086a069a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationProvider: {fileID: 1269907097746926245}
+  rotationProvider: {fileID: 1269907097746926246}

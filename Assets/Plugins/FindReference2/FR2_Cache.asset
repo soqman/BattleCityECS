@@ -1057,11 +1057,6 @@ MonoBehaviour:
     stamp: 0
     type: 9
     UseGUIDsList: []
-  - guid: 7d9ef2cf0f3881647a5657c19ae76f52
-    loadInfoTS: 0
-    stamp: 1586586260
-    type: 2
-    UseGUIDsList: []
   - guid: 9df30a32ed1cf754781c2fc9955f98f9
     loadInfoTS: 0
     stamp: 1586626505
@@ -3242,6 +3237,21 @@ MonoBehaviour:
     - guid: 869e2dfe27e9f2d4aadb6c5ad5dc833b
       ids: 73000000
   - guid: 1a1c2bfee3d2d814892e8e3a5cf59bf5
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: 289cceffb9604d54ea9bffe4552db3e6
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
+  - guid: 7d9ef2cf0f3881647a5657c19ae76f52
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: 2901549121ca99f4da9e4720086a069a
     loadInfoTS: 0
     stamp: 0
     type: 2
