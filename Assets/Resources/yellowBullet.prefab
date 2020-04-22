@@ -13,13 +13,13 @@ GameObject:
   - component: {fileID: 7584534776024164881}
   - component: {fileID: 7584534776024164886}
   - component: {fileID: 7584534776024164882}
-  - component: {fileID: 3954000289092721795}
   - component: {fileID: 5629797561255091564}
   - component: {fileID: 9193749733599248349}
   - component: {fileID: 7288188805689896057}
-  - component: {fileID: 8888235071506831246}
-  - component: {fileID: 7420426094065148597}
   - component: {fileID: 2502018260232552386}
+  - component: {fileID: -1228253627987934368}
+  - component: {fileID: 8097524590929774391}
+  - component: {fileID: -1569851842924545900}
   m_Layer: 0
   m_Name: yellowBullet
   m_TagString: Untagged
@@ -135,22 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: 5
---- !u!114 &3954000289092721795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7584534776024164887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6922109aeb0bdd340a5ac6ab3b0ca57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializedData:
-    Transform: {fileID: 7584534776024164883}
-    GameObject: {fileID: 7584534776024164887}
-    Animator: {fileID: 5629797561255091564}
 --- !u!95 &5629797561255091564
 Animator:
   serializedVersion: 3
@@ -211,47 +195,11 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 7420426094065148597}
-  - {fileID: 8888235071506831246}
+  - {fileID: -1228253627987934368}
+  - {fileID: 8097524590929774391}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &8888235071506831246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7584534776024164887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 9
-    SynchronizeType: 2
-    Name: burst
-  m_SynchronizeLayers:
-  - SynchronizeType: 2
-    LayerIndex: 0
---- !u!114 &7420426094065148597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7584534776024164887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!114 &2502018260232552386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,3 +214,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: 1
+--- !u!114 &-1228253627987934368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584534776024164887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2901549121ca99f4da9e4720086a069a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationProvider: {fileID: 7584534776024164886}
+  rotationProvider: {fileID: 7584534776024164881}
+  speedProvider: {fileID: 7584534776024164882}
+--- !u!114 &8097524590929774391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584534776024164887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1c2bfee3d2d814892e8e3a5cf59bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5629797561255091564}
+  onKey: on
+  resetKey: reset
+  burstKey: burst
+--- !u!114 &-1569851842924545900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584534776024164887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6922109aeb0bdd340a5ac6ab3b0ca57e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    Transform: {fileID: 7584534776024164883}
+    GameObject: {fileID: 7584534776024164887}
+    NetworkAnimator: {fileID: 8097524590929774391}

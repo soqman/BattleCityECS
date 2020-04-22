@@ -62,7 +62,6 @@ public sealed class ViewUpdaterSystem : UpdateSystem
 
     private void UpdateBullets()
     {
-        if (PhotonNetwork.IsConnectedAndReady && !PhotonNetwork.IsMasterClient) return;
         foreach (var entity in bulletFilter)
         {
             var translation = entity.GetComponent<Translation>();

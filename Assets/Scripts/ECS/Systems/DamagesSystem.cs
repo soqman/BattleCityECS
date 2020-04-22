@@ -46,6 +46,7 @@ public sealed class DamagesSystem : UpdateSystem
         {
             ref var area = ref entity.GetComponent<Area>();
             ref var collision = ref entity.GetComponent<Collision>();
+            
             foreach (var collisionItem in collision.collisions)
             {
                 if (entity.Has<Health>())
@@ -55,7 +56,11 @@ public sealed class DamagesSystem : UpdateSystem
                     area.State = AddDamageDependsOnHealth(health);
                 }
                 else area.State=AddDamage(area.State,collisionItem.direction);
-                if (entity.Has<Collider>() && area.State == DamagedState.Destroyed) entity.RemoveComponent<Collider>();
+                if (entity.Has<Collider>() && area.State == DamagedState.Destroyed)
+                {
+                    entity.RemoveComponent<Collider>();
+                     entity.AddComponent<Destroyer>();
+                }
                 entity.AddComponent<AreaUpdateIndicator>();
             }
         }

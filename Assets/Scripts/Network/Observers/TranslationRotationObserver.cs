@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using Photon.Pun;
 using UnityEngine;
 
@@ -7,9 +6,16 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
 {
     [SerializeField] private TranslationProvider translationProvider;
     [SerializeField] private RotationProvider rotationProvider;
+    [SerializeField] private SpeedProvider speedProvider;
     private float networkXPosition;
     private float networkYPosition;
     private Direction networkDirection;
+    private float speed;
+
+    private void Start()
+    {
+        speed = speedProvider.GetData().value;
+    }
     private void GetTranslation()
     {
         ref var translation = ref translationProvider.GetData();
@@ -43,6 +49,22 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
             networkXPosition = (float) stream.ReceiveNext();
             networkYPosition = (float) stream.ReceiveNext();
             networkDirection = (Direction) stream.ReceiveNext();
+            var lag = Mathf.Abs((float) (PhotonNetwork.Time - info.timestamp));
+            switch (networkDirection)
+            {
+                case Direction.Left:
+                    networkXPosition -= speed * lag;
+                    break;
+                case Direction.Right:
+                    networkXPosition += speed * lag;
+                    break;
+                case Direction.Up:
+                    networkYPosition += speed * lag;
+                    break;
+                case Direction.Down:
+                    networkYPosition -= speed * lag;
+                    break;
+            }
             SetTranslation();
             SetRotation();
         }

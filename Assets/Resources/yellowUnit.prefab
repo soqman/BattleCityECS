@@ -342,3 +342,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   translationProvider: {fileID: 1269907097746926245}
   rotationProvider: {fileID: 1269907097746926246}
+  speedProvider: {fileID: 1269907097746926244}
