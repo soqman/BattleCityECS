@@ -3359,6 +3359,16 @@ MonoBehaviour:
     UseGUIDsList:
     - guid: 94ed06fe7c1ccea4b8dc3f57df85ec7e
       ids: 73000000
+  - guid: aa34860415d8f6942a12492a7557d9e4
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
+  - guid: b8a0eb188fc771241bb16f56152b677b
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
   priority: 3
   setting:
     alternateColor: 1

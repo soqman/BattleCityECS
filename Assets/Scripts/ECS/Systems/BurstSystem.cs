@@ -44,7 +44,6 @@ public sealed class BurstSystem : UpdateSystem
                 {
                     entity.RemoveComponent<Controller>();
                 }
-
                 entity.AddComponent<TankResetIndicator>();
             }
         }

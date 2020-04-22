@@ -276,7 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedData:
     value: 3
-    max: 0
+    max: 3
 --- !u!95 &-6669207990791373109
 Animator:
   serializedVersion: 3
@@ -312,7 +312,7 @@ MonoBehaviour:
     x: 1
     y: 6
     direction: 3
-    invisibleTime: 0
+    delay: 1
     currentTime: 0
 --- !u!114 &1911447846602267746
 MonoBehaviour:

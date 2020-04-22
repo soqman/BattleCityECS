@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71911dd4ca9dae4c9a9abe72ff73101, type: 3}
   m_Name: Respawner System
   m_EditorClassIdentifier: 
+  invincibleTime: 3

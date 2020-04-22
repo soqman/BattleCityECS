@@ -12,16 +12,32 @@ public sealed class DamagesSystem : UpdateSystem
     private Filter areasFilter;
     private Filter unitsFilter;
     private Filter baseFilter;
+    private Filter invinciblesFilter;
     public override void OnAwake()
     {
         areasFilter = World.Filter.With<Collision>().With<Area>();
-        unitsFilter = World.Filter.With<Collision>().With<Health>().With<Barrel>();
+        unitsFilter = World.Filter.With<Collision>().With<Health>().With<Barrel>().Without<Invincible>();
+        invinciblesFilter = World.Filter.With<Invincible>();
     }
 
     public override void OnUpdate(float deltaTime)
     {
+        UpdateInvincibles(deltaTime);
         UpdateUnits();
         UpdateAreas();
+    }
+
+    private void UpdateInvincibles(float deltaTime)
+    {
+        foreach (var entity in invinciblesFilter)
+        {
+            ref var invincibles = ref entity.GetComponent<Invincible>();
+            invincibles.currentTimer += deltaTime;
+            if (invincibles.currentTimer >= invincibles.maxTimer)
+            {
+                entity.RemoveComponent<Invincible>();
+            }
+        }
     }
 
     private void UpdateUnits()

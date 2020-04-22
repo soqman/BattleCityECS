@@ -6,11 +6,8 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [System.Serializable]
-public struct Respawn : IComponent
+public struct Invincible : IComponent
 {
-    public float x;
-    public float y;
-    public Direction direction;
-    public float delay;
-    public float currentTime;
+    public float maxTimer;
+    public float currentTimer;
 }

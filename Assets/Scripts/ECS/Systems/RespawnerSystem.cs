@@ -8,12 +8,13 @@ using Unity.IL2CPP.CompilerServices;
 [CreateAssetMenu(menuName = "ECS/Systems/" + nameof(RespawnerSystem))]
 public sealed class RespawnerSystem : UpdateSystem
 {
+    [SerializeField] private float invincibleTime;
     private Filter tanks;
     
     
     public override void OnAwake()
     {
-        tanks = World.Filter.With<Respawn>().With<TankResetIndicator>().With<Translation>().With<Rotation>().With<Health>().With<TankView>();
+        tanks = World.Filter.With<Respawn>().With<TankResetIndicator>().With<Translation>().With<Rotation>().With<Health>().With<TankView>().With<Collider>();
     }
 
     public override void OnUpdate(float deltaTime)
@@ -25,27 +26,32 @@ public sealed class RespawnerSystem : UpdateSystem
     {
         foreach (var entity in tanks)
         {
-            /*ref var respawn = ref entity.GetComponent<Respawn>();
-            if (respawn.currentTime == respawn.invisibleTime)
+            ref var respawn = ref entity.GetComponent<Respawn>();
+            respawn.currentTime += deltaTime;
+            if (respawn.currentTime >= respawn.delay)
             {
-                ref var translation = ref entity.GetComponent<Translation>();
-                ref var rotation = ref entity.GetComponent<Rotation>();
-                ref var health = ref entity.GetComponent<Health>();
-                ref var tankView = ref entity.GetComponent<TankView>();
-                translation.x = respawn.x;
-                translation.y = respawn.y;
-                rotation.direction = respawn.direction;
-                health.value = health.max;
-                //tankView.NetworkAnimator.SetTrigger("reset");
+                Respawn(entity,ref respawn);
             }
-            respawn.currentTime -= deltaTime;
-            if (respawn.currentTime <= 0)
-            {
-                ref var collider = ref entity.GetComponent<Collider>();
-                collider.isActive = true;
-                respawn.currentTime = respawn.invisibleTime;
-                entity.RemoveComponent<TankResetIndicator>();
-            }*/
         }
+    }
+
+    private void Respawn(IEntity entity, ref Respawn respawn)
+    {
+        ref var translation = ref entity.GetComponent<Translation>();
+        ref var rotation = ref entity.GetComponent<Rotation>();
+        ref var health = ref entity.GetComponent<Health>();
+        ref var tankView = ref entity.GetComponent<TankView>();
+        ref var collider = ref entity.GetComponent<Collider>();
+        collider.isActive = true;
+        respawn.currentTime = 0;
+        translation.x = respawn.x;
+        translation.y = respawn.y;
+        rotation.direction = respawn.direction;
+        health.value = health.max;
+        tankView.NetworkAnimator.SetTrigger("reset");
+        entity.RemoveComponent<TankResetIndicator>();
+        entity.AddComponent<Controller>();
+        ref var invincible = ref entity.AddComponent<Invincible>();
+        invincible.maxTimer = invincibleTime;
     }
 }
