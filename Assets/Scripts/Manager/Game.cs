@@ -1,4 +1,6 @@
-﻿using ExitGames.Client.Photon;
+﻿using System.Collections;
+using System.Timers;
+using ExitGames.Client.Photon;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
@@ -15,6 +17,7 @@ public class Game : Singleton<Game>, IOnEventCallback
     [SerializeField] private UnityEvent winYellowEvent;
     [SerializeField] private UnityEvent winGreenEvent;
     [SerializeField] private GameObject masterInstaller;
+    [SerializeField] private float startGameTimer;
     private const byte readyToPlayNetworkEvent = 11;
     private const byte gameStartNetworkEvent = 12;
     private const byte gameStopNetworkEvent = 13;
@@ -23,6 +26,8 @@ public class Game : Singleton<Game>, IOnEventCallback
     private readonly RaiseEventOptions raiseOptionsToMaster = new RaiseEventOptions { Receivers = ReceiverGroup.MasterClient };
     private readonly RaiseEventOptions raiseOptionsToClients = new RaiseEventOptions { Receivers = ReceiverGroup.Others};
     private readonly SendOptions sendOptions = new SendOptions { Reliability = true };
+    private bool gameIsOver;
+    public static bool inputActive;
   
     private void ReadyToPlayRemote()
     {
@@ -46,6 +51,7 @@ public class Game : Singleton<Game>, IOnEventCallback
 
     public void BaseDestroyed(bool yellowWin)
     {
+        if (gameIsOver) return;
         if (PhotonNetwork.IsMasterClient)
         {
             PhotonNetwork.RaiseEvent(yellowWin?winYellowNetworkEvent:winGreenNetworkEvent, null, raiseOptionsToClients, sendOptions);
@@ -57,7 +63,8 @@ public class Game : Singleton<Game>, IOnEventCallback
         else
         {
             winGreenEvent.Invoke();
-        }  
+        }
+        gameIsOver = true;
     }
     
     private void CheckPlayersCount()
@@ -76,8 +83,18 @@ public class Game : Singleton<Game>, IOnEventCallback
             PhotonNetwork.Instantiate(yellowUnit.name, Vector3.zero, Quaternion.identity);
             PhotonNetwork.Instantiate(greenUnit.name, Vector3.zero, Quaternion.identity);
             PhotonNetwork.RaiseEvent(gameStartNetworkEvent, null, raiseOptionsToClients, sendOptions);
+            readyPlayers = 0;
         }
         startGameEvent.Invoke();
+        gameIsOver = false;
+        StartCoroutine(StartTimer());
+    }
+
+    private IEnumerator StartTimer()
+    {
+        inputActive = false;
+        yield return new WaitForSeconds(startGameTimer);
+        inputActive = true;
     }
 
     public void OnEnable()
@@ -106,7 +123,8 @@ public class Game : Singleton<Game>, IOnEventCallback
             masterInstaller.SetActive(false);
             PhotonNetwork.RaiseEvent(gameStopNetworkEvent, null, raiseOptionsToClients, sendOptions);
         }
-        stopGameEvent.Invoke();
         PhotonNetwork.LeaveRoom();
+        readyPlayers = 0;
+        stopGameEvent.Invoke();
     }
 }

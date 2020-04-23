@@ -96,7 +96,11 @@ public sealed class DamagesSystem : UpdateSystem
             health.value -= collision.collisions.Count;
             area.State = AddDamageDependsOnHealth(health);  
             if(!entity.Has<AreaUpdateIndicator>())entity.AddComponent<AreaUpdateIndicator>();
-            if(area.State==DamagedState.Destroyed)Game.Instance.BaseDestroyed(teamHolder.team==Team.Green);
+            if (area.State == DamagedState.Destroyed)
+            {
+                if (entity.Has<Collider>()) entity.RemoveComponent<Collider>();
+                Game.Instance.BaseDestroyed(teamHolder.team==Team.Green);
+            }
         }
     }
 

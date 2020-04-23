@@ -15,7 +15,9 @@ public sealed class InputSystem : UpdateSystem
         filter = World.Filter.With<Controller>().With<InputController>();
     }
 
-    public override void OnUpdate(float deltaTime) {
+    public override void OnUpdate(float deltaTime)
+    {
+        if (!Game.inputActive) return;
         foreach (var entity in filter)
         {
             ref var controller = ref entity.GetComponent<Controller>();

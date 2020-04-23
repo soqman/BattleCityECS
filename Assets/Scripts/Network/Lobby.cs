@@ -54,9 +54,25 @@ public class Lobby : MonoBehaviourPunCallbacks
 
         private void CheckPlayerNums()
         {
-            if (gameStarted) return;
-            if(PhotonNetwork.IsConnectedAndReady && PhotonNetwork.InRoom && PhotonNetwork.PlayerList.Length>=2)readyToPlayEvent.Invoke();
-            else notReadyToPlayEvent.Invoke();
+            if (!PhotonNetwork.IsMasterClient || gameStarted || !PhotonNetwork.IsConnectedAndReady) return;
+            if (PhotonNetwork.InRoom && PhotonNetwork.PlayerList.Length >= 2)
+            {
+                readyToPlayEvent.Invoke();
+                PhotonNetwork.CurrentRoom.IsOpen = false;
+            }
+            else
+            {
+                notReadyToPlayEvent.Invoke();
+                PhotonNetwork.CurrentRoom.IsOpen = true;
+            }
+        }
+
+        public override void OnMasterClientSwitched(Player newMasterClient)
+        {
+            if (!gameStarted) return;
+            if (PhotonNetwork.InRoom) PhotonNetwork.LeaveRoom();
+            gameStarted = false;
+            connectedToMasterEvent.Invoke();
         }
 
         public override void OnDisconnected(DisconnectCause cause)
@@ -67,7 +83,7 @@ public class Lobby : MonoBehaviourPunCallbacks
         public void CreateGame(TMPro.TMP_InputField input)
         {
             if (input.text.Length == 0) return;
-            PhotonNetwork.CreateRoom(input.text, new RoomOptions{MaxPlayers = 2}, TypedLobby.Default);
+            PhotonNetwork.CreateRoom(input.text, new RoomOptions{MaxPlayers = 2, PlayerTtl=0}, TypedLobby.Default);
         }
         public void JoinGame(TMPro.TMP_InputField input)
         {
