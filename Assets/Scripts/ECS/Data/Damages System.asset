@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39064e9818c3764d885a3f0dddec71d, type: 3}
   m_Name: Damages System
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}

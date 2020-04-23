@@ -26,6 +26,7 @@ public sealed class DestroyerSystem : UpdateSystem
             destroyer.timer -= deltaTime;
             if (destroyer.timer <= 0)
             {
+                entity.RemoveComponent<Destroyer>();
                 PhotonNetwork.Destroy(bulletView.GameObject);
             }
         }

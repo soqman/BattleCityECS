@@ -12,6 +12,14 @@ public class Lobby : MonoBehaviourPunCallbacks
         [SerializeField] private UnityEvent joinToRoomAsClientEvent;
         [SerializeField] private UnityEvent readyToPlayEvent;
         [SerializeField] private UnityEvent notReadyToPlayEvent;
+        private bool gameStarted;
+
+        public bool GameStarted
+        {
+            get { return gameStarted; }
+            set { gameStarted = value; }
+        }
+
         private void Start()
         {
             ConnectToPhoton();
@@ -46,6 +54,7 @@ public class Lobby : MonoBehaviourPunCallbacks
 
         private void CheckPlayerNums()
         {
+            if (gameStarted) return;
             if(PhotonNetwork.IsConnectedAndReady && PhotonNetwork.InRoom && PhotonNetwork.PlayerList.Length>=2)readyToPlayEvent.Invoke();
             else notReadyToPlayEvent.Invoke();
         }

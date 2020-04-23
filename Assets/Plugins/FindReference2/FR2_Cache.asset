@@ -3369,6 +3369,26 @@ MonoBehaviour:
     stamp: 0
     type: 5
     UseGUIDsList: []
+  - guid: 149c1904d31bec740ba622c517028bdd
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
+  - guid: e50d0795ecfb7ce47806921776d2c5aa
+    loadInfoTS: 0
+    stamp: 0
+    type: 5
+    UseGUIDsList: []
+  - guid: 08e150c9b60d69d4eac8a3dc66b4f7b3
+    loadInfoTS: 0
+    stamp: 0
+    type: 1
+    UseGUIDsList: []
+  - guid: ecc6b378e1c2b5742ac8cea5a9461600
+    loadInfoTS: 0
+    stamp: 0
+    type: 2
+    UseGUIDsList: []
   priority: 3
   setting:
     alternateColor: 1

@@ -1,5 +1,6 @@
 ﻿using System;
 using Morpeh;
+using Morpeh.Globals;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
 
@@ -15,9 +16,10 @@ public sealed class DamagesSystem : UpdateSystem
     private Filter invinciblesFilter;
     public override void OnAwake()
     {
-        areasFilter = World.Filter.With<Collision>().With<Area>();
+        areasFilter = World.Filter.With<Collision>().With<Area>().Without<TeamHolder>();
         unitsFilter = World.Filter.With<Collision>().With<Health>().With<Barrel>().Without<Invincible>();
         invinciblesFilter = World.Filter.With<Invincible>();
+        baseFilter = World.Filter.With<Collision>().With<Area>().With<TeamHolder>().With<Health>();
     }
 
     public override void OnUpdate(float deltaTime)
@@ -25,6 +27,7 @@ public sealed class DamagesSystem : UpdateSystem
         UpdateInvincibles(deltaTime);
         UpdateUnits();
         UpdateAreas();
+        UpdateBases();
     }
 
     private void UpdateInvincibles(float deltaTime)
@@ -62,7 +65,6 @@ public sealed class DamagesSystem : UpdateSystem
         {
             ref var area = ref entity.GetComponent<Area>();
             ref var collision = ref entity.GetComponent<Collision>();
-            
             foreach (var collisionItem in collision.collisions)
             {
                 if (entity.Has<Health>())
@@ -72,13 +74,29 @@ public sealed class DamagesSystem : UpdateSystem
                     area.State = AddDamageDependsOnHealth(health);
                 }
                 else area.State=AddDamage(area.State,collisionItem.direction);
+
                 if (entity.Has<Collider>() && area.State == DamagedState.Destroyed)
                 {
                     entity.RemoveComponent<Collider>();
-                     entity.AddComponent<Destroyer>();
+                    entity.AddComponent<Destroyer>(); 
                 }
-                entity.AddComponent<AreaUpdateIndicator>();
+                if(!entity.Has<AreaUpdateIndicator>())entity.AddComponent<AreaUpdateIndicator>();
             }
+        }
+    }
+
+    private void UpdateBases()
+    {
+        foreach (var entity in baseFilter)
+        {
+            ref var area = ref entity.GetComponent<Area>();
+            ref var collision = ref entity.GetComponent<Collision>();
+            ref var health = ref entity.GetComponent<Health>();
+            ref var teamHolder = ref entity.GetComponent<TeamHolder>();
+            health.value -= collision.collisions.Count;
+            area.State = AddDamageDependsOnHealth(health);  
+            if(!entity.Has<AreaUpdateIndicator>())entity.AddComponent<AreaUpdateIndicator>();
+            if(area.State==DamagedState.Destroyed)Game.Instance.BaseDestroyed(teamHolder.team==Team.Green);
         }
     }
 

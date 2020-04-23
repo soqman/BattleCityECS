@@ -148,7 +148,7 @@ public sealed class ViewUpdaterSystem : UpdateSystem
                     areaView.spriteRenderer.sprite = areaView.rightDownSprite;
                     break;
                 case DamagedState.Destroyed:
-                    areaView.spriteRenderer.sprite = null;
+                    areaView.spriteRenderer.sprite = areaView.destroyed;
                     break;
             }
             entity.RemoveComponent<AreaUpdateIndicator>();

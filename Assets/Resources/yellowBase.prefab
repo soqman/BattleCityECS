@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 7423297549296281068}
   - component: {fileID: -6073775703742065579}
   - component: {fileID: 682266582924348193}
+  - component: {fileID: -5846789096673176411}
   m_Layer: 0
   m_Name: yellowBase
   m_TagString: Untagged
@@ -265,3 +266,17 @@ MonoBehaviour:
     layer: 10
     exceptionEntity: -1
     isActive: 1
+--- !u!114 &-5846789096673176411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5017796263077825093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c29ae8e217b1bc46bf144da685ad627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializedData:
+    team: 0

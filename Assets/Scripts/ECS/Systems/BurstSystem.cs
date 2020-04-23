@@ -58,7 +58,7 @@ public sealed class BurstSystem : UpdateSystem
             if (entity.Has<Speed>()) entity.RemoveComponent<Speed>();
             bulletView.NetworkAnimator.SetTrigger("burst");
             ref var destroyer = ref entity.AddComponent<Destroyer>();
-            destroyer.timer = 2f;
+            destroyer.timer = 1f;
         }
     }
 }
