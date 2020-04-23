@@ -8,5 +8,6 @@ using Unity.IL2CPP.CompilerServices;
 [System.Serializable]
 public struct Speed : IComponent
 {
-    public float value;
+    public float maxSpeed;
+    public float currentSpeed;
 }

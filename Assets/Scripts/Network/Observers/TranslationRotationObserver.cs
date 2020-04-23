@@ -10,12 +10,28 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
     private float networkXPosition;
     private float networkYPosition;
     private Direction networkDirection;
-    private float speed;
-
-    private void Start()
+    private float networkSpeed;
+    private void FixedUpdate()
     {
-        speed = speedProvider.GetData().value;
+        if (photonView.IsMine) return;
+        switch (networkDirection)
+        {
+            case Direction.Left:
+                networkXPosition -= networkSpeed * Time.deltaTime;
+                break;
+            case Direction.Right:
+                networkXPosition += networkSpeed * Time.deltaTime;
+                break;
+            case Direction.Up:
+                networkYPosition += networkSpeed * Time.deltaTime;
+                break;
+            case Direction.Down:
+                networkYPosition -= networkSpeed * Time.deltaTime;
+                break;
+        }
+        SetTranslation();
     }
+
     private void GetTranslation()
     {
         ref var translation = ref translationProvider.GetData();
@@ -42,6 +58,12 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
         rotation.direction = networkDirection;
     }
 
+    private void GetSpeed()
+    {
+        ref var speed = ref speedProvider.GetData();
+        networkSpeed = speed.currentSpeed;
+    }
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsReading)
@@ -49,20 +71,21 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
             networkXPosition = (float) stream.ReceiveNext();
             networkYPosition = (float) stream.ReceiveNext();
             networkDirection = (Direction) stream.ReceiveNext();
+            networkSpeed = (float) stream.ReceiveNext();
             var lag = Mathf.Abs((float) (PhotonNetwork.Time - info.timestamp));
             switch (networkDirection)
             {
                 case Direction.Left:
-                    networkXPosition -= speed * lag;
+                    networkXPosition -= networkSpeed * lag;
                     break;
                 case Direction.Right:
-                    networkXPosition += speed * lag;
+                    networkXPosition += networkSpeed * lag;
                     break;
                 case Direction.Up:
-                    networkYPosition += speed * lag;
+                    networkYPosition += networkSpeed * lag;
                     break;
                 case Direction.Down:
-                    networkYPosition -= speed * lag;
+                    networkYPosition -= networkSpeed * lag;
                     break;
             }
             SetTranslation();
@@ -72,9 +95,11 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
         {
             GetTranslation();
             GetRotation();
+            GetSpeed();
             stream.SendNext(networkXPosition);
             stream.SendNext(networkYPosition);
             stream.SendNext(networkDirection);
+            stream.SendNext(networkSpeed);
         }
     }
 }

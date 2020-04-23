@@ -1,4 +1,3 @@
-using System;
 using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
@@ -35,12 +34,18 @@ public sealed class MovementSystem : UpdateSystem
                     ref var collision = ref entity.GetComponent<Collision>();
                     if (!HasCollisionInThisDirection(collision, Direction.Up))
                     {
-                        translation.y += deltaTime * speed.value;
+                        speed.currentSpeed = speed.maxSpeed;
+                        translation.y += deltaTime * speed.currentSpeed;
+                    }
+                    else
+                    {
+                        speed.currentSpeed = 0;
                     }
                 }
                 else
                 {
-                    translation.y += deltaTime * speed.value;
+                    speed.currentSpeed = speed.maxSpeed;
+                    translation.y += deltaTime * speed.currentSpeed;
                 }
             }else if (controller.down)
             {
@@ -52,12 +57,17 @@ public sealed class MovementSystem : UpdateSystem
                     ref var collision = ref entity.GetComponent<Collision>();
                     if (!HasCollisionInThisDirection(collision, Direction.Down))
                     {
-                        translation.y -= deltaTime * speed.value;
+                        speed.currentSpeed = speed.maxSpeed;
+                        translation.y -= deltaTime * speed.currentSpeed;
+                    }else
+                    {
+                        speed.currentSpeed = 0;
                     }
                 }
                 else
                 {
-                    translation.y -= deltaTime * speed.value;
+                    speed.currentSpeed = speed.maxSpeed;
+                    translation.y -= deltaTime * speed.currentSpeed;
                 }
                 
             }else if (controller.left)
@@ -70,12 +80,17 @@ public sealed class MovementSystem : UpdateSystem
                     ref var collision = ref entity.GetComponent<Collision>();
                     if(!HasCollisionInThisDirection(collision,Direction.Left))
                     {
-                        translation.x -= deltaTime * speed.value;
+                        speed.currentSpeed = speed.maxSpeed;
+                        translation.x -= deltaTime * speed.currentSpeed;
+                    }else
+                    {
+                        speed.currentSpeed = 0;
                     }
                 }
                 else
                 {
-                    translation.x -= deltaTime * speed.value;
+                    speed.currentSpeed = speed.maxSpeed;
+                    translation.x -= deltaTime * speed.currentSpeed;
                 }
             }else if (controller.right)
             {
@@ -87,17 +102,23 @@ public sealed class MovementSystem : UpdateSystem
                     ref var collision = ref entity.GetComponent<Collision>();
                     if(!HasCollisionInThisDirection(collision,Direction.Right))
                     {
-                        translation.x += deltaTime * speed.value;
+                        speed.currentSpeed = speed.maxSpeed;
+                        translation.x += deltaTime * speed.currentSpeed;
+                    }else
+                    {
+                        speed.currentSpeed = 0;
                     }
                 }
                 else
                 {
-                    translation.x += deltaTime * speed.value;
+                    speed.currentSpeed = speed.maxSpeed;
+                    translation.x += deltaTime * speed.currentSpeed;
                 }
                 
             }
             else
             {
+                speed.currentSpeed = 0;
                 if (entity.Has<Engine>()) entity.RemoveComponent<Engine>();
             }
         }
@@ -131,19 +152,19 @@ public sealed class MovementSystem : UpdateSystem
             {
                 case Direction.Up:
                     rotation.direction = Direction.Up;
-                    translation.y -= -deltaTime * speed.value;
+                    translation.y -= -deltaTime * speed.maxSpeed;
                     break;
                 case Direction.Down:
                     rotation.direction = Direction.Down;
-                    translation.y -= deltaTime * speed.value;
+                    translation.y -= deltaTime * speed.maxSpeed;
                     break;
                 case Direction.Left:
                     rotation.direction = Direction.Left;
-                    translation.x -= deltaTime * speed.value;
+                    translation.x -= deltaTime * speed.maxSpeed;
                     break;
                 case Direction.Right:
                     rotation.direction = Direction.Right;
-                    translation.x -= -deltaTime * speed.value;
+                    translation.x -= -deltaTime * speed.maxSpeed;
                     break;
             }
         }

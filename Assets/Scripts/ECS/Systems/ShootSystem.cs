@@ -42,7 +42,7 @@ public sealed class ShootSystem : UpdateSystem
                     bulletTranslation.x = parentTranslation.x;
                     bulletTranslation.y = parentTranslation.y;
                     bulletDirection.direction = parentDirection.direction;
-                    bulletSpeed.value = parentBarrel.bulletSpeed;
+                    bulletSpeed.maxSpeed = parentBarrel.bulletSpeed;
                     bulletCollider.exceptionEntity = entity.ID;
                 }
             }

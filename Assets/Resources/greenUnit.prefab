@@ -73,7 +73,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    value: 2
+    maxSpeed: 2
+    currentSpeed: 0
 --- !u!114 &1269907097746926245
 MonoBehaviour:
   m_ObjectHideFlags: 0

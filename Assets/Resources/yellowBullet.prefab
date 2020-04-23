@@ -134,7 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializedData:
-    value: 5
+    maxSpeed: 5
+    currentSpeed: 5
 --- !u!95 &5629797561255091564
 Animator:
   serializedVersion: 3
