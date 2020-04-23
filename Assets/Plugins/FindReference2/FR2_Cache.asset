@@ -3421,6 +3421,11 @@ MonoBehaviour:
     stamp: 1587636691
     type: 2
     UseGUIDsList: []
+  - guid: ade5574b8838b4143822813d3344f9d7
+    loadInfoTS: 0
+    stamp: 0
+    type: 9
+    UseGUIDsList: []
   priority: 3
   setting:
     alternateColor: 1

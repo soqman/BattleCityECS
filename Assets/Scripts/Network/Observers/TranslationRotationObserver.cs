@@ -2,7 +2,7 @@
 using Photon.Pun;
 using UnityEngine;
 
-public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
+public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable, IPunInstantiateMagicCallback 
 {
     [SerializeField] private TranslationProvider translationProvider;
     [SerializeField] private RotationProvider rotationProvider;
@@ -11,27 +11,28 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
     private float networkYPosition;
     private Direction networkDirection;
     private float networkSpeed;
+    private bool firstDataReceived;
+
     private void FixedUpdate()
     {
-        if (photonView.IsMine) return;
+        if (photonView.IsMine || !firstDataReceived) return;
         switch (networkDirection)
         {
             case Direction.Left:
-                networkXPosition -= networkSpeed * Time.deltaTime;
+                networkXPosition -= networkSpeed * Time.fixedDeltaTime;
                 break;
             case Direction.Right:
-                networkXPosition += networkSpeed * Time.deltaTime;
+                networkXPosition += networkSpeed * Time.fixedDeltaTime;
                 break;
             case Direction.Up:
-                networkYPosition += networkSpeed * Time.deltaTime;
+                networkYPosition += networkSpeed * Time.fixedDeltaTime;
                 break;
             case Direction.Down:
-                networkYPosition -= networkSpeed * Time.deltaTime;
+                networkYPosition -= networkSpeed * Time.fixedDeltaTime;
                 break;
         }
         SetTranslation();
     }
-
     private void GetTranslation()
     {
         ref var translation = ref translationProvider.GetData();
@@ -88,6 +89,7 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
                     networkYPosition -= networkSpeed * lag;
                     break;
             }
+            firstDataReceived = true;
             SetTranslation();
             SetRotation();
         }
@@ -101,5 +103,14 @@ public class TranslationRotationObserver : MonoBehaviourPun, IPunObservable
             stream.SendNext(networkDirection);
             stream.SendNext(networkSpeed);
         }
+    }
+
+    public void OnPhotonInstantiate(PhotonMessageInfo info)
+    {
+        if (info.photonView.InstantiationData == null) return;
+        var position = (Vector2)info.photonView.InstantiationData[0];
+        networkXPosition = position.x;
+        networkYPosition = position.y;
+        SetTranslation();
     }
 }
